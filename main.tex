@@ -1,0 +1,848 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage[unicode]{hyperref}
+\usepackage{tocloft}
+\usepackage{array}   % Za tabele
+\usepackage{lipsum}  % Za generisanje uzorka teksta (nije obavezno)
+\usepackage{titlesec}
+
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
+\hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,urlcolor=blue}
+
+\renewcommand{\contentsname}{Sadržaj}
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftsecpagefont}{\bfseries}
+\setlength{\cftbeforesecskip}{0.5cm}
+\setlength{\cftsecindent}{0pt}
+\setlength{\cftsubsecindent}{1.5cm}
+
+\begin{document}
+
+\begin{titlepage}
+
+    \newcommand{\HRule}{\rule{\linewidth}{0.4mm}}
+    \center
+    \textsc{\LARGE Matematički fakultet}\\[5cm]
+
+    \HRule\\[0.4cm]
+    {\LARGE\bfseries Odgovori na teorijska ispitna pitanja iz geometrije}\\[0.2cm]
+    \HRule\\[2cm]
+
+    \vspace{17\baselineskip}
+    \begin{minipage}[t]{0.4\textwidth}
+        \begin{flushleft}
+            \large
+            \textit{Radio}\\
+            Lazar Jovanović 34/2023
+        \end{flushleft}
+    \end{minipage}
+    \hspace*{1cm}
+    \begin{minipage}[t]{0.4\textwidth}
+        \begin{flushright}
+            \large
+            \textit{Profesor}\\
+            dr Srđan Vukmirović
+        \end{flushright}
+    \end{minipage}
+
+    \vfill\vfill\vfill\vfill
+    {\large Beograd, 2024/2025}
+    \vfill
+
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Konvencija}
+
+\newpage
+
+\section{Pitanja}
+\subsection{Vektori i osnovne operacije sa vektorima}
+\textit{Sabiranje i množenje skalarom, nula vektor, suprotan vektor,
+    kolinearni i komplanarni vektori, jedinični vektor, Dokaz T1.1
+    (tvrđenja S1-S4).}\\
+\textbf{Odgovor:}\\
+Definicija vektora: Klasa ekvivalencije usmerenih duži koje
+imaju isti pravac smer i intenzitet.\\
+Sabiranje vektora:
+$\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$.\\
+Množenje vektora skalarom: Vektor $\alpha\cdot\overrightarrow{v}$
+ima isti pravac kao $\overrightarrow{v}$, ima intenzitet
+$|\overrightarrow{v}|\cdot|\alpha|$ i ima isti smer ako je $\alpha>0$,
+a različit smer ako je $\alpha<0$. Specijalno, ako je $\alpha=0$, svaki
+vektor $\overrightarrow{v}$ postaje nula vektor.\\
+Nula vektor: Vektor $\overrightarrow{v}$ je nula vektor (zapisujemo
+$\overrightarrow{0}$) ako je njegov intenzitet jednak nuli. Nula vektor
+nema pravac i smer.\\
+Suprotni vektor: Suprotni vektor vektora $\overrightarrow{v}$
+(zapisujemo sa $-\overrightarrow{v}$) ima isti intenzitet i pravac kao
+vektor $\overrightarrow{v}$, a suprotan smer. Takođe, suprotan vektor
+vektora $\overrightarrow{AB}$ možemo da zapišemo kao $\overrightarrow{BA}$\\
+Kolinearni vektori: Vektori su kolinearni ako pripadaju istoj pravoj.\\
+Komplanarni vektori: Vektori su komplanarni ako pripadaju istoj ravni.\\
+Jedinični vektor: Jedinični vektor je vektor koji je dužine $1$. Od
+svakog ne-nula vektora možemo da dobijemo jedinični vektor normalizacijom.\\
+Normalizacija vektora: Normalizacijom se od vektora
+$\overrightarrow{v}$ dobija vektor $\frac{1}{|\overrightarrow{v}|}\cdot\overrightarrow{v}$.\\
+T1.1: Neka $\overrightarrow{u}$, $\overrightarrow{v}$, $\overrightarrow{w}\in\mathbb{V}$. Tada važe
+sledeća tvrđenja:\\
+\textbf{(S1)}
+$(\overrightarrow{u}+\overrightarrow{v})+\overrightarrow{w}=\overrightarrow{u}+(\overrightarrow{v}+\overrightarrow{w})$\\
+Dokaz:
+$(\overrightarrow{AB}+\overrightarrow{BC})+\overrightarrow{CD}=\overrightarrow{AC}+\overrightarrow{CD}=\overrightarrow{AD}
+    =\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AB}+(\overrightarrow{BC}+\overrightarrow{CD})$\\
+\textbf{(S2)}
+$\overrightarrow{u}+\overrightarrow{0}=\overrightarrow{u}=\overrightarrow{0}+\overrightarrow{u}$\\
+Dokaz:
+$\overrightarrow{AB}+\overrightarrow{BB}=\overrightarrow{AB}=\overrightarrow{AA}+\overrightarrow{AB}$\\
+\textbf{(S3)}
+$\overrightarrow{u}+\overrightarrow{-u}=\overrightarrow{0}$\\
+Dokaz:
+$\overrightarrow{AB}+\overrightarrow{BA}=\overrightarrow{AA}$\\
+\textbf{(S4)}
+$\overrightarrow{u}+\overrightarrow{v}=\overrightarrow{v}+\overrightarrow{u}$\\
+Dokaz:
+$\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}=-\overrightarrow{CA}=-\overrightarrow{CB}-\overrightarrow{BA}=\overrightarrow{BC}+\overrightarrow{AB}$
+
+\par
+
+\subsection{Linearna zavisnost i nezavisnost vektora}
+\textit{Definicija, primeri, T1.3 (dokaz), T1.4.}\\
+\textbf{Odgovor:}\\
+Definicija: Vektori $\overrightarrow{v_1}$, ..., $\overrightarrow{v_n}$ su linearno nezavisni ako važi:
+$$\alpha_1\cdot\overrightarrow{v_1}+...+\alpha_n\cdot\overrightarrow{v_n}=0 \iff \alpha_1=0, ..., \alpha_n=0$$
+T1.3: U ravni postoje dva linearno nezavisna vektora, a svaka
+tri su zavisna.\\
+U ravni postoje 3 nekolinearne tačke O, A, B. Tada su
+vektori $\overrightarrow{OA}$ i $\overrightarrow{OB}$
+linearno nezavisni.\\
+Posmatrajmo $\overrightarrow{u}$, $\overrightarrow{v}$ i
+$\overrightarrow{w}$ koji pripadaju istoj ravni. Ako su
+$\overrightarrow{u}$ i $\overrightarrow{v}$ linearno zavisni
+tada $\overrightarrow{u}=\alpha\cdot\overrightarrow{v}$ i
+$1\cdot\overrightarrow{u}-\alpha\cdot\overrightarrow{v}+0\cdot\overrightarrow{w}=0$.
+Dakle i $\overrightarrow{u}$, $\overrightarrow{v}$ i $\overrightarrow{w}$ su linearno
+zavisni.\\
+Pretpostavimo da su $\overrightarrow{u}$ i $\overrightarrow{v}$ linearno nezavisni.
+Posmatrajmo tačke u ravni O, A, B, C takve da $\overrightarrow{OA}=\overrightarrow{u}$,
+$\overrightarrow{OB}=\overrightarrow{v}$, $\overrightarrow{OC}=\overrightarrow{w}$.
+Obeležimo X, Y na OA, OB tako da je OXCY paralelogram. Važi
+$\overrightarrow{OX}=\alpha\overrightarrow{OA}$ i $\overrightarrow{OY}=\beta\overrightarrow{OB}$.
+Dakle: $$\overrightarrow{OX}+\overrightarrow{OY}=\overrightarrow{OC}=\alpha\overrightarrow{OA}+\beta\overrightarrow{OB}\implies \alpha\overrightarrow{OA}+\beta\overrightarrow{OB}-\overrightarrow{OC}=\overrightarrow{0}$$
+što je kraj dokaza.\\
+T1.4: U prostoru postoje tri linearno nezavisna vektora, a
+svaka 4 su linearno zavisni.
+
+\par
+
+\subsection{Koordinate vektora i tačaka}
+\textit{Baza i dimenzija vektorskog prostora, koordinate vektora
+    u bazi, primer, reper Oe, koordinate tačke u reperu,
+    primer, koordinate vektora
+    $\overrightarrow{AB}$ preko koordinata tačaka $A$, $B$ (dokaz).
+}\\
+\textbf{Odgovor:}\\
+Definicija baze: Baza je maksimalan skup linearno nezavisnih vektora.\\
+Definicija dimenzije: Dimenzija je broj vektora u bazi.\\
+Ako je baza vektorskog prostora $e=(\overrightarrow{e_1}, \overrightarrow{e_2})$,
+tada se svaki vektor može zapisati kao $\overrightarrow{v}=\alpha_1\cdot\overrightarrow{e_1}+\alpha_2\cdot\overrightarrow{e_2}$
+i kažemo da su njegove koordinate $(\alpha_1, \alpha_2)$. Njih zapisujemo
+sa $[\overrightarrow{v}]_e=[\alpha_1, \alpha_2]^T$.\\
+Ako fiksiramo bazu $e$ i tačku $O$, $Oe$ ćemo zvati reperom ili
+koodinatnim sistemom.\\
+Koordinate tačke $X$ u $Oe$ su: $[X]_{Oe}:=[\overrightarrow{OX}]_e$.\\
+Izraziti koordinate $[\overrightarrow{AB}]$ preko koordinata tačaka $A$ i $B$
+$$[\overrightarrow{AB}]_e=[\overrightarrow{AO}+\overrightarrow{OB}]_e=[\overrightarrow{AO}]_e+[\overrightarrow{OB}]_e=-[\overrightarrow{OA}]_e+[\overrightarrow{OB}]_e=[B]_{Oe}-[A]_{Oe}$$
+
+\par
+
+\subsection{Skalarni proizvod}
+\textit{Definicija, osobine, pojam ON baze, formula za skalarni proizvod u ON
+    bazi (dokaz), računanje dužina i uglova skalarnim proizvodom,
+    primeri.}\\
+\textbf{Odgovor:}\\
+Definicija skalarnog proizvoda: Za vektore $\overrightarrow{u}, \overrightarrow{v}\in\mathbb{V}$, $\overrightarrow{u}\cdot\overrightarrow{v}=|\overrightarrow{u}|\cdot\overrightarrow{v}\cdot\cos(\angle{\overrightarrow{u}\overrightarrow{v}})$\\
+Osobine:\\
+$\overrightarrow{u}\cdot\overrightarrow{v}=\overrightarrow{v}\cdot\overrightarrow{u}$\hspace*{1cm}(simetričnost)\\
+$\overrightarrow{u}\cdot(\alpha\cdot\overrightarrow{v}+\beta\cdot\overrightarrow{w})=\alpha\cdot(\overrightarrow{u}\cdot\overrightarrow{v})+\beta\cdot(\overrightarrow{u}\cdot\overrightarrow{w}$)\hspace*{1cm}(linearnost)\\
+$\overrightarrow{u}\cdot\overrightarrow{u}=|\overrightarrow{u}|^2\geq0$\hspace*{1cm}(pozitivnost)\\
+$\overrightarrow{u}\cdot\overrightarrow{u}=0\iff\overrightarrow{u}=0$\hspace*{1cm}(nedegenerisanost)\\
+    Definicija ON baze: ON baza je svaka baza $e=(\overrightarrow{e_1}, ..., \overrightarrow{e_n})$ za koju važi
+    da je svaki vektor jedinični i svaka dva su međusobno ortogonalna. Važi:
+$\overrightarrow{e_i}\cdot\overrightarrow{e_j} = \begin{cases}
+    0 & i=j     \\
+    1 & i\neq j
+\end{cases}$\\
+    Formula u ON bazi:
+    Neka je $\overrightarrow{v}=x_1\cdot\overrightarrow{e_1}+x_2\cdot\overrightarrow{e_2}$ i
+$\overrightarrow{u}=y_1\cdot\overrightarrow{e_1}+y_2\cdot\overrightarrow{e_2}$.
+    Tada:
+    \begin{align*}
+        \overrightarrow{v}\cdot\overrightarrow{u} & = (x_1\cdot\overrightarrow{v}+x_2\cdot\overrightarrow{v})\cdot(y_1\cdot\overrightarrow{u}+y_2\cdot\overrightarrow{u})                                                                                                                                                 \\
+                                                  & = x_1\cdot y_1\cdot \overrightarrow{e_1}\cdot \overrightarrow{e_1}+x_2\cdot y_1\cdot \overrightarrow{e_1}\cdot \overrightarrow{e_2}+x_1\cdot y_2\cdot \overrightarrow{e_1}\cdot \overrightarrow{e_2}+x_2\cdot y_2\cdot \overrightarrow{e_2}\cdot \overrightarrow{e_2} \\
+                                                  & = x_1\cdot y_1+x_2\cdot y_2
+    \end{align*}
+    Računanje dužine: $|\overrightarrow{v}|=\sqrt{|\overrightarrow{v}|^2}=\sqrt{\overrightarrow{v}\cdot\overrightarrow{v}}$\\
+    Računanje ugla: Ako sa $\phi$ označimo ugao između dva vektora tada:\\
+$\phi=\arccos(\cos(\phi))=\arccos(\frac{\overrightarrow{u}\cdot\overrightarrow{v}}{|\overrightarrow{u}|\cdot|\overrightarrow{v}|})$\\
+    Skalarni proizvod $\overrightarrow{u}\cdot\overrightarrow{v}$ možemo da zapišemo i kao $\overrightarrow{u}^T\cdot\overrightarrow{v}$
+    \par
+    \subsection{Vektorski proizvod}
+    \textit{Orijentacija u ravni, orijentacija u prostoru, definicija vektorskog proizvoda, osobine,
+        vektorski proizvod baznih vektora ON+ baze, formula za vektorski
+        proizvod u ON+ bazi (dokaz), matrica vektorskog množenja (dokaz),
+        računanje površine i orijentacije trougla vektorskim proizvodom
+        (dokaz), kolinearnost tačaka, da li tačka pripada trouglu (dokaz),
+        primeri.
+    }\\
+    \textbf{Odgovor:}\\
+    Orijentacija u ravni: pozitivna ako je obrnuta od smera kazaljke na satu, inače negativna.
+    Orijentacija u prostoru: koristimo pravilo desne ruke.\\
+    Definicija vektorskog proizvoda: Intenzitet vektorskog proizvoda $|\overrightarrow{u}\times\overrightarrow{v}|=|\overrightarrow{u}|\cdot|\overrightarrow{v}|\cdot\sin(\angle
+\overrightarrow{u}\overrightarrow{v})$. Pravac vektorskog proizvoda je normalan na ravan koju obrazuju vektori $\overrightarrow{u}$ i $\overrightarrow{v}$. Smer je takav
+    da je baza $(\overrightarrow{u}, \overrightarrow{v}, \overrightarrow{u}\times\overrightarrow{v})$ pozitivno orijentisana.\\
+    Osobine:\\
+$\overrightarrow{u}\times\overrightarrow{v}=-\overrightarrow{v}\times\overrightarrow{u}$\hspace*{1cm}(antisimetričnost)\\
+$(\alpha\cdot\overrightarrow{u}+\beta\cdot\overrightarrow{v})\times\overrightarrow{w}=\alpha\cdot(\overrightarrow{u}\times\overrightarrow{w})+\beta\cdot(\overrightarrow{v}\times\overrightarrow{w})$\hspace*{1cm}(linearnost)
+    \\[0.5cm]
+    \noindent
+    \begin{minipage}{0.65\textwidth}
+        \begin{flushleft}
+            Vektorski proizvod baznih vektora u ON+ bazi vidimo iz tabele desno.
+            Takođe, na osnovu tabele možemo da napravimo krug sa kog možemo da čitamo rezultate.
+            Vektori $\overrightarrow{e_1}$, $\overrightarrow{e_2}$ i $\overrightarrow{e_3}$
+            su postavljeni u krug i postoji strelica sa $\overrightarrow{e_1}$ na $\overrightarrow{e_2}$,
+            sa $\overrightarrow{e_2}$ na $\overrightarrow{e_3}$ i sa $\overrightarrow{e_3}$ na $\overrightarrow{e_1}$.
+            Tada, na primer, ako tražimo vektorski proizvod $\overrightarrow{e_2}$ i $\overrightarrow{e_1}$ vidimo da strelica
+            pokazuje sa $\overrightarrow{e_1}$ na $\overrightarrow{e_2}$ pa je znak negativan, a jedini neiskorišćen vektor je
+            $\overrightarrow{e_3}$ pa je rešenje $-\overrightarrow{e_3}$.
+        \end{flushleft}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\textwidth}
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            $\times$               & $\overrightarrow{e_1}$  & $\overrightarrow{e_2}$  & $\overrightarrow{e_3}$  \\
+            \hline
+            $\overrightarrow{e_1}$ & $\overrightarrow{0}$    & $-\overrightarrow{e_3}$ & $\overrightarrow{e_2}$  \\
+            \hline
+            $\overrightarrow{e_2}$ & $\overrightarrow{e_3}$  & $\overrightarrow{0}$    & $-\overrightarrow{e_1}$ \\
+            \hline
+            $\overrightarrow{e_3}$ & $-\overrightarrow{e_2}$ & $\overrightarrow{e_1}$  & $\overrightarrow{0}$    \\
+            \hline
+        \end{tabular}
+    \end{minipage}
+    Formula za vektorski proizvod u ON+ bazi: Neka je $\overrightarrow{v}=x_1\cdot\overrightarrow{e_1}+x_2\cdot\overrightarrow{e_2}+x_3\cdot\overrightarrow{e_3}$ i
+$\overrightarrow{u}=y_1\cdot\overrightarrow{e_1}+y_2\cdot\overrightarrow{e_2}+y_3\cdot\overrightarrow{e_3}$. Tada:
+    \begin{align*}
+        \overrightarrow{v}\times\overrightarrow{u} & = (x_1\cdot\overrightarrow{e_1}+x_2\cdot\overrightarrow{e_2}+x_3\cdot\overrightarrow{e_3})\times(y_1\cdot\overrightarrow{e_1}+y_2\cdot\overrightarrow{e_2}+y_3\cdot\overrightarrow{e_3})                \\
+                                                   & = x_1\cdot y_1\cdot \overrightarrow{e_1}\times \overrightarrow{e_1}+x_1\cdot y_2\cdot \overrightarrow{e_1}\times \overrightarrow{e_2}+x_1\cdot y_3\cdot \overrightarrow{e_1}\times \overrightarrow{e_3} \\
+                                                   & + x_2\cdot y_1\cdot \overrightarrow{e_2}\times \overrightarrow{e_1}+x_2\cdot y_2\cdot \overrightarrow{e_2}\times \overrightarrow{e_2}+x_2\cdot y_3\cdot \overrightarrow{e_2}\times \overrightarrow{e_3} \\
+                                                   & + x_3\cdot y_1\cdot \overrightarrow{e_3}\times \overrightarrow{e_1}+x_3\cdot y_2\cdot \overrightarrow{e_3}\times \overrightarrow{e_2}+x_3\cdot y_3\cdot \overrightarrow{e_3}\times \overrightarrow{e_3} \\
+                                                   & = x_1\cdot y_1\cdot \overrightarrow{0} + x_1\cdot y_2\cdot \overrightarrow{e_3}-x_1\cdot y_3\cdot \overrightarrow{e_2}                                                                                  \\
+                                                   & - x_2\cdot y_1\cdot \overrightarrow{e_3}+x_2\cdot y_2\cdot \overrightarrow{0}+x_2\cdot y_3\cdot \overrightarrow{e_1}                                                                                    \\
+                                                   & + x_3\cdot y_1\cdot \overrightarrow{e_2}-x_3\cdot y_2\cdot \overrightarrow{e_1}+x_3\cdot y_3\cdot \overrightarrow{0}                                                                                    \\
+                                                   & = \begin{vmatrix}
+                                                           \overrightarrow{e_1} & \overrightarrow{e_2} & \overrightarrow{e_3} \\
+                                                           x_1                  & x_2                  & x_3                  \\
+                                                           y_1                  & y_2                  & y_3
+                                                       \end{vmatrix}
+    \end{align*}
+    Matrica vektorskog množenja $\overrightarrow{v}_\times$ je matrica za fiksirani vektor $\overrightarrow{v}$.
+    Kada se ona pomnoži nekim vektorom $\overrightarrow{u}$ dobija se $\overrightarrow{v}\times\overrightarrow{u}$.
+    Izvodi se izračunavanjem $\overrightarrow{v}\times\overrightarrow{e_1}$ (prva kolona), $\overrightarrow{v}\times\overrightarrow{e_2}$ (druga kolona), $\overrightarrow{v}\times\overrightarrow{e_3}$ (treća kolona).
+    Neka je $\overrightarrow{v}=x_1\cdot\overrightarrow{e_1}+x_2\cdot\overrightarrow{e_2}+x_3\cdot\overrightarrow{e_3}$.\\
+    Tada  $\overrightarrow{v}_\times= \begin{vmatrix}
+    0    & x_3  & -x_2 \\
+    -x_3 & 0    & x_1  \\
+    x_2  & -x_1 & 0
+\end{vmatrix}$.\\
+    Površina trougla $ABC$:
+    $$P_{ABC}=\frac{1}{2}\cdot a\cdot h_a=\frac{1}{2}\cdot |\overrightarrow{BC}|\cdot|\overrightarrow{BA}|\sin(\angle\overrightarrow{BA}\overrightarrow{BC})=\frac{1}{2}\cdot |\overrightarrow{BC}\times\overrightarrow{BC}|$$
+    Trougao $ABC$ u reperu $Oe$ je zadat sa $[A]_{Oe}=(x_1,x_2)^T$, $[B]_{Oe}=(y_1,y_2)^T$ i $[C]_{Oe}=(z_1,z_2)^T$.
+    Njegove koordinate možemo da proširimo sa $[A]_{Oe}=(x_1,x_2,0)^T$, $[B]_{Oe}=(y_1,y_2,0)^T$ i $[C]_{Oe}=(z_1,z_2,0)^T$.
+    Kažemo da je trougao $ABC$ pozitivno orijentisan ako je
+$\overrightarrow{AB}\times\overrightarrow{AC}$ istog pravca i smera kao $\overrightarrow{e_3}$.\\
+    Tri tačke su kolinearne ako je "površina trougla" koji obrazuju 0.
+    Dakle $\frac{1}{2}\cdot |\overrightarrow{BC}\times\overrightarrow{BC}|=0$.\\
+    Tačka $P$ pripada trouglu $ABC$ ako su trouglovi $ABP$, $BCP$ i $CAP$ iste orijentacije.
+    \par
+    \subsection{Mešoviti proizvod}
+    Definicija, osobine, formula za mešoviti proizvod u ON+
+    bazi (dokaz), zapremina paralelopipeda - T1.7 (dokaz),
+    zapremina tetraedra, orijentacija baze prostora, nezavisnost
+    tri vektora prostora, primeri.\\
+    \textbf{Odgovor:}\\
+    Definicija: $[\overrightarrow{u},\overrightarrow{v},\overrightarrow{w}]=(\overrightarrow{u}\times\overrightarrow{v})\cdot\overrightarrow{w}$\\
+    Osobine:\\
+$[\overrightarrow{u},\overrightarrow{v},\overrightarrow{w}]=-[\overrightarrow{v},\overrightarrow{u},\overrightarrow{w}]$\hspace*{1cm}(antisimetričnost)\\
+$[\overrightarrow{u},\overrightarrow{v},\overrightarrow{w}]=[\overrightarrow{v},\overrightarrow{w},\overrightarrow{u}]$\hspace*{1cm}(cikličnost)\\
+$[\alpha\cdot\overrightarrow{u}+\beta\cdot\overrightarrow{v},\overrightarrow{w},\overrightarrow{z}]=\alpha\cdot[\overrightarrow{u},\overrightarrow{w},\overrightarrow{z}]+\beta\cdot[\overrightarrow{v},\overrightarrow{w},\overrightarrow{z}]$\hspace*{1cm}(linearnost)\\
+    Formula za mešoviti proizvod u ON+ bazi:\\
+$[\overrightarrow{u},\overrightarrow{v},\overrightarrow{w}]=(\overrightarrow{u}\times\overrightarrow{v})\cdot\overrightarrow{w}= \begin{vmatrix}
+    \overrightarrow{e_1}   & \overrightarrow{e_2}   & \overrightarrow{e_3}   \\
+    x_{\overrightarrow{u}} & y_{\overrightarrow{u}} & z_{\overrightarrow{u}} \\
+    x_{\overrightarrow{v}} & y_{\overrightarrow{v}} & z_{\overrightarrow{v}}
+\end{vmatrix}\cdot\overrightarrow{w}=\text{*sredi se*}= \begin{vmatrix}
+    x_{\overrightarrow{u}} & y_{\overrightarrow{u}} & z_{\overrightarrow{u}} \\
+    x_{\overrightarrow{v}} & y_{\overrightarrow{v}} & z_{\overrightarrow{v}} \\
+    x_{\overrightarrow{w}} & y_{\overrightarrow{w}} & z_{\overrightarrow{w}}
+\end{vmatrix}$\\[0.3cm]
+    T1.7: Zapremina paralelopipeda jednaka je mešovitom proizvodu tri vektora.\\
+    Dokaz:\\
+    Neka je dat paralelopiped $ABCDA_1B_1C_1D_1$ i neka su $\overrightarrow{AB}=\overrightarrow{u}$, $\overrightarrow{AD}=\overrightarrow{v}$ i $\overrightarrow{AA_1}=\overrightarrow{w}$.
+    Tada je zapremina $V=P_{ABCD}\cdot h=|\overrightarrow{u}\times\overrightarrow{v}|\cdot h=||\overrightarrow{u}\times\overrightarrow{v}|\cdot \overrightarrow{w}|\cos(\angle \overrightarrow{u}\times\overrightarrow{v},\overrightarrow{w})|=|\overrightarrow{u}\times\overrightarrow{v}\cdot \overrightarrow{w}|=|[\overrightarrow{u},\overrightarrow{v},\overrightarrow{w}]|$.\\
+    Zapremina tetraedra je $\frac{1}{6}\cdot |[\overrightarrow{u},\overrightarrow{v},\overrightarrow{w}]|$.\\
+    Dokaz:\\
+    Posmatrajmo paralelopiped $ABCDA_1B_1C_1D_1$ i u njemu trostranu prizmu $ABCA_1B_1C_1$ sa zapreminom
+$\frac{1}{2}\cdot|[\overrightarrow{u},\overrightarrow{v},\overrightarrow{w}]|$. Možemo da izdvojimo tetraedre $ABCC_1$, $AA_1B_1C_1$ i $ABC_1D_1$.
+    Tetraedri $ABCC_1$ i $AA_1B_1C_1$ imaju istu površinu baze $ABC$ i $A_1B_1C_1$ i istu visinu $CC_1$ i $AA_1$.
+    Tetraedri $ABCC_1$ i $AB_1C_1B$ imaju istu površinu baze $BCC_1$ i $C_1B_1B$ i istu visinu $AB$ i $AB$.
+    Zapremina tetraedra je dakle jedna šestina zapremine paralelopipeda.\\
+    Orijentacija baze prostora:\\
+    Ako je $[\overrightarrow{e_1},\overrightarrow{e_2},\overrightarrow{e_3}]>0$ onda je orijentacija pozitivna.\\
+    Tri vektora su nezavisna ako je njihova zapremina veća od nule.
+    \par
+    \subsection{Težište, centar mase i baricentričke koordinate}
+    Zakon poluge, rešavanje zakona poluge centrom mase dve tačke, centar
+    mase tri tačke, ”rešavanje trougla” centrom mase tri tačke, centar
+    mase n tačaka, težište n tačaka, dokaz da definicija težišta trougla
+    ne zavisi od tačke $O$ - vežbe, primeri, baricentričke koordinate.
+    \\
+    \textbf{Odgovor:}\\
+    Zakon poluge: $|\overrightarrow{AT}|:|\overrightarrow{TB}|=m_B:m_A$.\\
+    Centar mase tačaka $A(m_A)$ i $B(m_B)$: $\overrightarrow{TA}\cdot m_A+\overrightarrow{TB}\cdot m_B=\overrightarrow{0}$.\\
+    Centar mase tri tačke: $\overrightarrow{TA}\cdot m_A+\overrightarrow{TB}\cdot m_B+\overrightarrow{TC}\cdot m_C=\overrightarrow{0}$.\\
+    Centar mase n tačaka: $\overrightarrow{TA_1}\cdot m_{A_1}+...+\overrightarrow{TA_n}\cdot m_{A_n}=\overrightarrow{0}$.\\
+    Težište $n$ tačaka: $\frac{1}{m_{A_1}+...+m_{A_n}}\cdot(\overrightarrow{OA_1}\cdot m_{A_1}+...+\overrightarrow{OA_n}\cdot m_{A_n})=\overrightarrow{OT}$\\
+    Težište $n$ tačaka odgovara centru masa.\\
+    Dokaz da definicija težišta trougla ne zavisi od tačke $O$:\\
+    Neka je $m_{A}+m_{B}+m_{C}=M$. Tada:
+    \begin{align*}
+        \overrightarrow{OT}                     & =\frac{1}{M}\cdot(\overrightarrow{OA}\cdot m_{A}+\overrightarrow{OB}\cdot m_{B}+\overrightarrow{OC}\cdot m_{C})                                                                   \\
+        \overrightarrow{OS}+\overrightarrow{ST} & =\frac{1}{M}\cdot((\overrightarrow{OS}+\overrightarrow{SA})\cdot m_{A}+(\overrightarrow{OS}+\overrightarrow{SB})\cdot m_{B}+(\overrightarrow{OS}+\overrightarrow{SC})\cdot m_{C}) \\
+        \overrightarrow{OS}+\overrightarrow{ST} & =\frac{1}{M}\cdot(\overrightarrow{SA}\cdot m_{A}+\overrightarrow{SB}\cdot m_{B}+\overrightarrow{SC}\cdot m_{C})+\overrightarrow{OS}                                               \\
+        \overrightarrow{ST}                     & =\frac{1}{M}\cdot(\overrightarrow{SA}\cdot m_{A}+\overrightarrow{SB}\cdot m_{B}+\overrightarrow{SC}\cdot m_{C})
+    \end{align*}\\
+    U opštem slučaju za $n$ tačaka $A_1,...,A_n$ čije su mase redom $m(A_1),...,m(A_n)$, baricentričke koordinate će biti
+$(\frac{m(A_1)}{m(A_1)+...+m(A_n)},...,\frac{m(A_n)}{m(A_1)+...+m(A_n)})$. Primetimo da važi da je zbir svih baricentričkih
+    koordinata jednak $1$.
+
+    \par
+    \subsection{Transformacije koordinata vektora i tačaka}
+    Matrica prelaska, veza koordinata vektora u različitim bazama,
+    primer, transformacija koordinata tačaka - formule (1.23, 1.24)
+    izvodjenje, primer.\\
+    \textbf{Odgovor:}\\
+    Matrica prelaska: matrica čije su kolone koordinata vektora nove baze u staroj.\\
+    Transformacije koordinata tačaka:\\
+    Pretpostavimo da iz repera $Oe$ prelazimo u reper $Qf$. Dodatno, neka je
+$C$ matrica prelaska iz repera $Oe$ u reper $Qf$. Tada:
+    $$[X]_{Qf}  =[\overrightarrow{QX}]_f =[\overrightarrow{QO}]_f+[\overrightarrow{OX}]_e =[O]_{Qf}+C\cdot[\overrightarrow{OX}]_e =[O]_{Qf}+C\cdot[\overrightarrow{X}]_{Oe}$$
+    Ako je $[X]_{Oe}=x'$, $[X]_{Qf}=x$ i $[O]_{Qf}=q$, tada dobijamo $x=q+C\cdot x'$.
+    \par
+    \subsection{Transformacije koordinata u ON bazama ravni}
+    \label{subsec:pitanje_9}
+    Slučaj baza iste orijentacije, matrica rotacije, osobine matrice
+    rotacije, slučaj baza različite orijentacije, matrica refleksije,
+    osobine matrica refleksije, grupe $SO(2)$ i $O(2)$.\\
+    \textbf{Odgovor:}\\
+    \textit{I slučaj:} Neka su baze $Oe$ i $Qf$ ON i iste orijentacije. Neka je $e=(\overrightarrow{e_1},\overrightarrow{e_2})$
+    i $f=(\overrightarrow{f_1},\overrightarrow{f_2})$ i neka je $\angle(\overrightarrow{e_1}\overrightarrow{f_1})=\phi$, $\phi\in[0,2\cdot\pi)$.
+    Tada je:\\
+$\overrightarrow{f_1}=\overrightarrow{e_1}\cdot\cos(\phi)+\overrightarrow{e_2}\cdot\sin(\phi)$\\
+$\overrightarrow{f_2}=\overrightarrow{e_1}\cdot\cos(\phi+\frac{\pi}{2})+\overrightarrow{e_2}\cdot\sin(\phi+\frac{\pi}{2})=\overrightarrow{e_1}\cdot(-\sin(\phi))+\overrightarrow{e_2}\cdot\cos(\phi)$.\\
+    Odavde dobijamo formulu za istu orijentaciju: $x=q+\begin{bmatrix}
+    \cos(\phi) & -\sin(\phi) \\
+    \sin(\phi) & \cos(\phi)
+\end{bmatrix}\cdot x'$.\\
+    Matrica koju smo dobili je matrica rotacije oko $O$ za ugao $\phi$.\\
+    Osobine matrice rotacije:\\
+$(R_\phi)^{-1}=R_{-\phi}=(R_\phi)^T$\\
+$det(R_\phi)=1$\\
+$R_\phi\cdot R_\psi=R_{\phi+\psi}=R_\psi\cdot R_\phi$\\
+    \textit{II slučaj:} Neka su baze $Oe$ i $Qf$ ON i različite orijentacije. Neka je $e=(\overrightarrow{e_1},\overrightarrow{e_2})$
+    i $f=(\overrightarrow{f_1},\overrightarrow{f_2})$ i neka je $\angle(\overrightarrow{e_1}\overrightarrow{f_1})=\phi$, $\phi\in[0,2\cdot\pi)$.
+    Tada je:\\
+$\overrightarrow{f_1}=\overrightarrow{e_1}\cdot\cos(\phi)+\overrightarrow{e_2}\cdot\sin(\phi)$\\
+$\overrightarrow{f_2}=\overrightarrow{e_1}\cdot\cos(\phi-\frac{\pi}{2})+\overrightarrow{e_2}\cdot\sin(\phi-\frac{\pi}{2})=\overrightarrow{e_1}\cdot\sin(\phi)+\overrightarrow{e_2}\cdot(-\cos(\phi))$.\\
+    Odavde dobijamo formulu za istu orijentaciju: $x=q+\begin{bmatrix}
+    \cos(\phi) & \sin(\phi)  \\
+    \sin(\phi) & -\cos(\phi)
+\end{bmatrix}\cdot x'$.\\
+    Matrica koju smo dobili je matrica refleksije u odnosu na pravu $p_0$ koja
+    prolazi kroz $O$ i gradi sa $\overrightarrow{e_1}$ ugao $\frac{\phi}{2}$.\\
+    Osobine matrice refleksije:\\
+$(S_\phi)^{-1}=(S_\phi)^T$\\
+$(S_\phi)^{2}=E$\\
+$det(S_\phi)=-1$\\
+$S_\phi\cdot S_\psi=R_{\phi-\psi}$\\
+    Specijalna ortogonalna grupa reda 2: $SO(2)=\{R_\phi\mid\phi\in\mathbb{R}\}$.\\
+    Ortogonalna grupa reda 2: $O(2)=SO(2)\cup\{S_\phi\mid\phi\in\mathbb{R}\}=\{A\in Gl_2(\mathbb{R})\mid A^{-1}=A^T\}$.
+    \par
+    \subsection{Afina preslikavanja}
+    Definicija, pasivna i aktivna tačka gledišta, osobine afinih
+    preslikavanja (T5.2) (dokaz), odredjenost afinog
+    preslikavanja sa tri para odgovarajućih tačaka,
+    predstavljanje afinih preslikavanja ravni 3 x 3 matricama,
+    translacija, rotacija (oko O i oko proizvoljne tačke), refleksija
+    u odnosu na pravu, skaliranje, smicanje, primeri.
+    \\
+    \textbf{Odgovor:}\\
+    Definicija afinih preslikavanja: Neka je $\overline{f}: \mathbb{V}\rightarrow\mathbb{V}$
+    linearno preslikavanje vektorskog prostora koji je pridružen prostoru
+    tačaka $\mathbb{E}$. Afino preslikavanje $f: \mathbb{E}\rightarrow\mathbb{E}$
+    je preslikavanje tačaka koje je indukovano sa $\overline{f}$ u smislu
+    da važi $f(M)=M'\land f(N)=N' \iff \overline{f}(\overrightarrow{MN})=\overrightarrow{M'N'}$.\\
+    Pasivna tačka gledišta je kada fiksiramo tačku i posmatramo je iz više repera.\\
+    Aktivna tačka gledišta je kada fiksiramo reper i posmatramo neku tačku pre i posle afinog preslikavanja.\\
+    Teorema: Svako afino preslikavanje $f$, u fiksiranom reperu $Oe$, ima oblik:\\
+$[f(M)]_{Oe}=[\overline{f}]_{e}\cdot[M]_{Oe}+[f(O)]_{Oe}$.\\
+    Dokaz:
+    \begin{align*}
+        [f(M)]_{Oe}-[f(O)]_{Oe} & =[\overrightarrow{Of(M)}]_e-[\overrightarrow{Of(O)}]_e =[\overrightarrow{Of(M)}]_e+[\overrightarrow{f(O)O}]_e      \\
+                                & =[\overrightarrow{f(O)f(M)}]_e=[\overline{f}(\overrightarrow{OM})]_e =[\overline{f}]_e\cdot[\overrightarrow{OM}]_e \\
+                                & =[\overline{f}]_e\cdot[M]_{Oe}
+    \end{align*}
+    Napomena: Kolone matrice $[\overline{f}]_e$ su zapravo slike baznih vektora baze $e$ ($\overline{f}(\overrightarrow{e_i})$).\\
+    Osobine afinih preslikavanja ravni (\textit{T5.2}):\\
+    Preslikaju prave u prave:\\
+    S obzirom da je svako afino preslikavanje indukovano linearnim preslikavanjem
+    vektorskog prostora, a linearno preslikavanje vektorskog prostora
+    čuva kolinearnost, tada i afino preslikavanje čuva kolinearnost, odnosno slika prave u prave.\\
+    Čuvaju razmeru kolinearnih duži:\\
+    Analogno prošloj osobini.\\
+    Čuvaju paralelnost pravih:\\
+    Ako se posmatraju po dve tačke na dve paralelne prave,
+    dobijamo 2 kolinearna vektora. Odavde se analogno završava dokaz.\\
+    Odnos površina slike i originala jednak je $|det(a_{ij})|$:\\
+    Napomenimo da je $a_{ij}$ zapravo matrica $[\overline{f}]_e$.
+    Zbog jednostavnijeg zapisa i jer je reper fiksiran ćemo izostaviti reper iz zapisa.\\
+    Neka je $f(O)=O'$, $f(A)=A'$ i $f(B)=B'$. Površina trougla
+$OAB$ je $\frac{1}{2}\cdot |det(\overrightarrow{OA}\overrightarrow{OB})|$,
+    a površina trougla $O'A'B'$ je $\frac{1}{2}\cdot |det(\overrightarrow{O'A'}\overrightarrow{O'B'})|$.
+    Takođe su $\overrightarrow{O'A'}=a_{ij}\cdot \overrightarrow{OA}$ i $\overrightarrow{O'B'}=a_{ij}\cdot \overrightarrow{OB}$.
+    Za kraj, koristimo svojstvo $det(A\cdot B)=det(A)\cdot det(B)$.
+    \begin{align*}
+        1           & =\frac{det(\overrightarrow{OA}\ \overrightarrow{OB})}{det(\overrightarrow{OA}\ \overrightarrow{OB})}                       \\
+        det(a_{ij}) & =\frac{det(a_{ij}\cdot\overrightarrow{OA}\ a_{ij}\cdot\overrightarrow{OB})}{det(\overrightarrow{OA}\ \overrightarrow{OB})} \\
+        det(a_{ij}) & =\frac{det(\overrightarrow{O'A'}\ \overrightarrow{O'B'})}{det(\overrightarrow{OA}\ \overrightarrow{OB})}                   \\
+    \end{align*}
+    Čuvaju centar mase i baricentričke koordinate:\\
+    Ovo sledi direktno iz čuvanja razmere.\\
+    Preslikavanja za koje važi $det(a_{ij})>0$ čuvaju orijentaciju,
+    inače menjaju:\\
+    Po algebarskoj definiciji, dve baze su iste orijentacije ako
+    je determinanta matrice prelaska iz jedne u drugu veća od
+    nule. Ovo je aktivna varijanta ove definicije.\\
+    Ako su date tri nekolinearne tačke i njihove slike
+    može se odrediti jedinstveno afino preslikavanje ravni.\\
+    Matrica translacije:
+$\mathcal{T}_{\overrightarrow{t}}=\begin{bmatrix}
+    1 & 0 & x_t \\
+    0 & 1 & y_t \\
+    0 & 0 & 1
+\end{bmatrix}$, gde je $\overrightarrow{t}=(x_t,y_t)$.\\
+    Matrica rotacije oko $O$:
+$\mathcal{R}_\phi=\begin{bmatrix}
+    \cos(\phi) & -\sin(\phi) & 0 \\
+    \sin(\phi) & \cos(\phi)  & 0 \\
+    0          & 0           & 1
+\end{bmatrix}$, gde je $\phi$ ugao za koji se rotira.\\
+    Rotacija oko proizvoljne tačke $M$:
+$\mathcal{T}_{\overrightarrow{OM}}\circ\mathcal{R}_\phi\circ\mathcal{T}_{\overrightarrow{MO}}$.\\
+    Matrica refleksija u odnosu na pravu koja prolazi kroz $O$:
+$\mathcal{S}_{p_0}=\begin{bmatrix}
+    cos(\phi) & sin(\phi)  & 0 \\
+    sin(\phi) & -cos(\phi) & 0 \\
+    0         & 0          & 1
+\end{bmatrix}$, gde je $\frac{\phi}{2}$ ugao između $x$ ose i $p_0$.\\
+    Refleksija u odnosu na pravu koja prolazi kroz tačku $M$ se dobija analogno kao rotacija.\\
+    Matrica skaliranja sa centrom u tački $O$:
+$\mathcal{H}_{\lambda_1,\lambda_2}=\begin{bmatrix}
+    \lambda_1 & 0         & 0 \\
+    0         & \lambda_2 & 0 \\
+    0         & 0         & 1
+\end{bmatrix}$, gde je $\lambda_1$ koeficijent skaliranja u pravcu
+    prvog baznog vektora, a $\lambda_2$ koeficijent skaliranja u pravcu
+    drugog baznog vektora.\\
+    Skaliranje sa centrom u proizvoljnoj tački analogno rotaciji.\\
+    Smicanje preslikava kvadrat u pravougaonik iste površine.\\
+    Matrice smicanja:\\
+$\mathcal{S}_x(\lambda)=\begin{bmatrix}
+    x & \lambda & 0 \\
+    0 & y       & 0 \\
+    0 & 0       & 1
+\end{bmatrix}$, gde je $\lambda$ koeficijent smicanja u pravcu $x$ ose.\\
+$\mathcal{S}_y(\lambda)=\begin{bmatrix}
+    x & \lambda & 0 \\
+    0 & y       & 0 \\
+    0 & 0       & 1
+\end{bmatrix}$, gde je $\lambda$ koeficijent smicanja u pravcu $y$ ose.
+
+    \par
+    \subsection{Izometrije ravni i prostora}
+    Defincija, direktne i indirekne izometrije, ortogonalne
+    matrice i njihova determinanta, opis afinih transformacija
+    ravni (pitanje 9), rotacija oko prave u prostoru, rotacije
+    oko koordinatnih osa, Rodrigezova formula, refleksija u
+    odnosu na ravan (računanje), Prva Ojlerova teorema,
+    Ojlerovi uglovi, Druga Ojlerova teorema, veza sopstvenih i
+    svetskih rotacija - smisao, slučaj zaključanog žiroskopa.\\
+    \textbf{Odgovor:}\\
+    Definicija izometrije: Preslikavanje koje čuva dužine u prostoru
+$\mathbb{E}$ proizvoljne dimenzije.\\
+    Direktna izometrija čuva orijentaciju, to su kretanja.\\
+    Indirektna izometrija menja orijentaciju.\\
+    Ortogonalna matrica je matrica $A$ za koju važi $A\cdot A^T=E$.\\
+    Za determinantu ortogonalne matrice važi:\\
+$1=det(E)=det(A\cdot A^T)=det(A)\cdot det(A^T)=det(A)\cdot det(A)=det(A)^2$.\\
+    \hyperref[subsec:pitanje_9]{pitanje 9}\\
+    Matrica rotacje oko $x$ ose: $\mathcal{R}_x(\phi)=\begin{bmatrix}
+    1 & 0          & 0           \\
+    0 & \cos(\phi) & -\sin{\phi} \\
+    0 & \sin(\phi) & \cos(\phi)
+\end{bmatrix}$\\[0.5cm]
+    Matrica rotacje oko $y$ ose: $\mathcal{R}_y(\phi)=\begin{bmatrix}
+    \cos(\phi) & 0 & -\sin{\phi} \\
+    0          & 1 & 0           \\
+    \sin(\phi) & 0 & \cos(\phi)
+\end{bmatrix}$\\[0.5cm]
+    Matrica rotacje oko $z$ ose: $\mathcal{R}_z(\phi)=\begin{bmatrix}
+    \cos(\phi) & -\sin{\phi} & 0 \\
+    \sin(\phi) & \cos(\phi)  & 0 \\
+    0          & 0           & 1
+\end{bmatrix}$\\[0.5cm]
+    Rotacija oko proizvoljne prave koja sadrži koordinatni početak (Rodrigezova formula):\\
+    Neka su date tačka $M$ i prava $p$ koja sadrži koordinatni početak $O$ i ugao $\phi$ za koji rotiramo tačku $M$ oko prave $p$.
+    Neka je jedinični vektor pravca prave $p$ vektor $\overrightarrow{p}$.
+    Posmatrajmo ravan $\alpha$ koja sadrži tačku $M$ i njen normalni vektor je vektor $\overrightarrow{p}$.
+    Neka je $\alpha\cap p =\{O'\}$ i neka su $\overrightarrow{x}=\overrightarrow{OM}$, $\overrightarrow{x_1}=\overrightarrow{OO'}$ i $\overrightarrow{x_2}=\overrightarrow{O'M}$.
+    \begin{align*}
+        \overrightarrow{x}                        & =\overrightarrow{x_1}+\overrightarrow{x_2} = \lambda\cdot\overrightarrow{p}+\overrightarrow{x_2}   \\
+        \overrightarrow{p}\cdot\overrightarrow{x} & =\lambda\cdot\overrightarrow{p}\cdot\overrightarrow{p}+\overrightarrow{x_2}\cdot\overrightarrow{p} \\
+                                                  & =\lambda\cdot|\overrightarrow{p}|^2                                                                \\
+                                                  & =\lambda                                                                                           \\
+    \end{align*}
+    Dobijamo:\\
+$\overrightarrow{x_1}=\lambda\cdot \overrightarrow{p}=\overrightarrow{p}\cdot\lambda=\overrightarrow{p}\cdot(\overrightarrow{p}^T\cdot \overrightarrow{x})=(\overrightarrow{p}\cdot \overrightarrow{p}^T)\cdot \overrightarrow{x}$.
+    Treća jednakost važi jer se skalarni proizvod može preko koordinata zapisati kao $\overrightarrow{u}^T\cdot \overrightarrow{v}$.\\
+$\overrightarrow{x_2}=\overrightarrow{x}-\overrightarrow{x_1}=E\cdot\overrightarrow{x}-(\overrightarrow{p}\cdot \overrightarrow{p}^T)\cdot \overrightarrow{x}=(E-\overrightarrow{p}\cdot \overrightarrow{p}^T)\cdot \overrightarrow{x}$.\\
+    Neka je $M'$ tačka koja se dobija rotacijom tačke $M$ oko prave $p$ za ugao $\phi$.
+    Možemo da posmatramo ortogonalnu bazu $(\overrightarrow{p}$,$\overrightarrow{x_2}$,$\overrightarrow{p}\times\overrightarrow{x_2})$.\\
+    Tada $\overrightarrow{O'M'}=\cos(\phi)\cdot\overrightarrow{x_2}+\sin(\phi)(\overrightarrow{p}\times\overrightarrow{x_2})=\cos(\phi)\cdot\overrightarrow{x_2}+\sin(\phi)(\overrightarrow{p}\times(\overrightarrow{x_1}+\overrightarrow{x_2}))=\cos(\phi)\cdot\overrightarrow{x_2}+\sin(\phi)(\overrightarrow{p}\times\overrightarrow{x})$.
+    Na kraju dobijamo:
+    $$\overrightarrow{OM'}=\overrightarrow{OO'}+\overrightarrow{O'M'}=(\overrightarrow{p}\cdot \overrightarrow{p}^T)\cdot \overrightarrow{x}+\cos(\phi)\cdot(E-\overrightarrow{p}\cdot \overrightarrow{p}^T)\cdot \overrightarrow{x}+\sin(\phi)(\overrightarrow{p}_\times\cdot\overrightarrow{x})$$
+    Odavde dobijamo matricu: $[R_p(\phi)]_e=p\cdot p^T+\cos(\phi)\cdot(E-p\cdot p^T)+\sin(\phi)\cdot\overrightarrow{p}_\times$ koju nazivamo Rodrigezova formula.\\
+    Refleksija u odnosu na ravan koja sadrži koordinatni početak:\\
+    Neka je $\alpha$ ravan koja prolazi kroz $O$ zadata jediničnim
+    normalnim vektorom $\overrightarrow{p}$ i neka je data tačka $M$
+    na koju hoćemo da primenimo refleksiju u odnosu na ravan i neka se
+    tom refleksijom dobija tačka $M'$. Neka je $\alpha\cap MM'=\{O'\}$.\\
+$\overrightarrow{OM'}=\overrightarrow{OM}+\overrightarrow{MM'}=\overrightarrow{OM}-2\cdot \overrightarrow{O'M}$.
+    Analogno sa pitanjem za Rodrigezovu formulu:\\
+$\overrightarrow{O'M}=\lambda\cdot\overrightarrow{p}$\\
+$\overrightarrow{p}\cdot\overrightarrow{O'M}=\overrightarrow{p}\cdot(\overrightarrow{O'O}+\overrightarrow{OM})=\overrightarrow{p}\cdot\overrightarrow{OM}=\lambda$\\
+$\overrightarrow{O'M}=\overrightarrow{p}\cdot (\overrightarrow{p}^T\cdot\overrightarrow{OM})$\\
+$\overrightarrow{OM'}=\overrightarrow{OM}-2\cdot(\overrightarrow{p}\cdot \overrightarrow{p}^T)\cdot\overrightarrow{OM}$\\
+    Odavde dobijamo matricu: $[S_\alpha]_e=E-2\cdot p\cdot p^T$.\\
+    Prva Ojlerova teorema: Svako kretanje koje ima fiksiranu tačku
+$O'$ se može predstaviti kao rotacija oko neke orijentisane
+    prave koja sadrži tačku $O'$.\\
+    Druga Ojlerova teorema: Svako kretanje koje fiksira koordinatni
+    početak se može izraziti kao kompozicija tri sopstvene rotacije
+    oko koordinatnih osa:\\
+$R_{Ox_2}(\phi)\circ R_{Oy_1}(\theta)\circ R_{Oz}(\psi)$ gde su $\phi,\psi\in[0,2\cdot\pi),\theta\in[-\frac{\pi}{2},\frac{\pi}{2}]$.\\
+    Uglovi $\phi$,$\theta$,$\psi$ se nazivaju Ojerovi uglovi. Prvom rotacijom se $Oxyz$ slika u $Ox_1y_1z_1$,
+    drugom rotacijom u $Ox_2y_2z_2$ i trećom rotacijom u $Ox_3y_3z_3$.\\
+    Veza sopstvenih i svetskih koordinata je:\\
+$[R_{Ox_2}(\phi)\circ R_{Oy_1}(\theta)\circ R_{Oz}(\psi)]_e = R_{Oz}(\psi)\circ R_{Oy}(\theta)\circ R_{Ox}(\phi)$.\\
+    Zaključavanje žiroskopa se javlja kada se ravni $Oxy$ i $Oy_3z_3$ poklope. Tada
+    je $|Oz|=|Ox_3|$ zbog čega imamo jedan stepen slobode manje.
+    \par
+    \subsection{Kvaternioni}
+    Definicija, sabiranje, množenje, osobine, inverzni
+    kvaternion, primeri, konjugacija kvaternionom i izometrije.
+    \\
+    \textbf{Odgovor:}\\
+    Definicija: $\mathbb{H}=\{x\cdot i+y\cdot j+z\cdot k+w\mid x,y,z,w\in\mathbb{R}\}$\\
+    Sabiranje: normalno.\\
+    Množenje: $i\cdot j=k=-j\cdot i$ i $i^2=j^2=k^2=-1$.\\
+    Ako posmatramo kvaternion $q=x\cdot i +y\cdot j +z\cdot k+w$:\\
+    Realni deo je $\mathcal{R}(q)=w$.\\
+    Imaginarni deo je $\mathcal{I}(q)=x\cdot i +y\cdot j +z\cdot k=\overrightarrow{v}$.\\
+    Važi $q=x\cdot i +y\cdot j +z\cdot k+w=\mathcal{I}(q)+\mathcal{R}(q)=[(x,y,z),w]=[\overrightarrow{v},w]$.\\
+    Osobine:\\
+$q+q_1=[\overrightarrow{v},w]+[\overrightarrow{v_1},w_1]=[\overrightarrow{v}+\overrightarrow{v_1},w+w_1]$\\
+$q\cdot q_1=[\overrightarrow{v},0]\cdot[\overrightarrow{v_1},0]=[\overrightarrow{v}\times\overrightarrow{v_1},-\langle\overrightarrow{v},\overrightarrow{v_1}\rangle]$\\
+$q\cdot q_1=[\overrightarrow{v},w_1]\cdot[\overrightarrow{v_1},w_1]=[\overrightarrow{v}\times\overrightarrow{v_1}+w\cdot \overrightarrow{v_1}+w_1\cdot\overrightarrow{v},w\cdot w_1-\langle\overrightarrow{v},\overrightarrow{v_1}\rangle]$\\
+    Napomena: $\langle\overrightarrow{v},\overrightarrow{u}\rangle$ je drugi zapis za skalarni proizvod.\\
+    Konjugovani kvaternion: $\overline{q}=-x\cdot i -y\cdot j -z\cdot k+w$.\\
+    Inverzni kvaternion: $q\cdot q^{-1}=1$.\\
+    Osobina: $q\cdot \overline{q}=|q|^2 \implies q^{-1}=\frac{\overline{q}}{|q|^2}$.\\
+    Konjugacije kvaternionom:\\
+    Svaki kvaternion različit od nule određuje konjugaciju: $C_q=q\cdot p \cdot q^{-1}$.
+    Dve konjugacije su iste ako i samo ako važi $q=\lambda\cdot h$, gde je $\lambda\in\mathbb{R}$.\\
+    Konjugacija $C_q$ je izometrija prostora $\mathcal{I}\mathbb{H}\cong\mathbb{R}^3$.\\
+    Konjugacija kvaternionom $q=[\overrightarrow{v}\cdot\sin(\frac{\alpha}{2}),\cos(\frac{\alpha}{2})]$
+    je rotacija oko jediničnog vektora $\overrightarrow{v}$
+    za ugao $\alpha$ u pozitivnom smeru.
+    \par
+    \subsection{Afina geometrija ravni}
+    Predstavljanje prave, razne jednačine pravih, normalni
+    vektor prave, vektor pravca prave, presek dve prave zadate
+    jednačinama, presek pravih zadatih tačkom i vektorom pravca
+    (dokaz), presek dve duži, parametarsko zadavanje trougla,
+    paralelograma.
+    \\
+    \textbf{Odgovor:}\\
+    Implicitna jednačina prave: $a\cdot x+b\cdot y + c = 0$.\\
+    Parametarska jednačina prave: $M(t)=P+t\cdot \overrightarrow{p}$.\\
+    Iz implicitnog zapisa možemo da pročitamo normalni vektor $\overrightarrow{n_p}=(a,b)$.\\
+    Iz parametarskog zapisa možemo da pročitamo vektor pravca $\overrightarrow{p}$.\\
+    Presek pravih se dobija rešavanjem dve jednačine prave sa dve nepoznate.\\
+    Duž $AB$ možemo da zadamo sa parametarski sa: $M(t)=A+t\cdot \overrightarrow{AB}, t\in[0,1]$.\\
+    Presek duži: možemo da odredimo gde se nalazi presek rešavanjem jednačina,
+    a zatim da proverimo da li je ta tačka između tačaka $A_1$, $B_1$ i $A_2$, $B_2$.\\
+    Trougao možemo da zadamo sa: $M(t_1,t_2)=A+t_1\cdot \overrightarrow{AB}+t_2\cdot \overrightarrow{AC}, t_1, t_2\in[0,1], t_1+t_2\leq1$.
+    Paralelogram možemo da zadamo sa: $M(t_1,t_2)=A+t_1\cdot \overrightarrow{AB}+t_2\cdot \overrightarrow{AC}, t_1, t_2\in[0,1]$.
+    \par
+    \subsection{Ravan u prostoru}
+    Zadavanje ravni tačkom i normalnim vektorom (dokaz),
+    skiciranje ravni, specijalni slučajevi ravni, parametarska
+    jednačina ravni, jednačina ravni kroz 3 tačke, primeri.
+    \\
+    \textbf{Odgovor:}\\
+    Zadavanje ravni tačkom i normalnim vektorom:\\
+    Neka je dat normalni vektor $\overrightarrow{n_\alpha}=(a,b,c)$
+    i tačka $P=(x_1,y_1,z_1)$ koja pripada ravni.
+    Posmatrajmo tačku sa ravni $A=(x,y,z)$. Važi da
+    je $\overrightarrow{PA}\cdot\overrightarrow{n_\alpha}=0$.
+    Odavde:
+$\overrightarrow{PA}\circ\overrightarrow{n_\alpha}=(x-x_1,y-y_1,z-z_1)\circ(a,b,c)=a\cdot x+b\cdot y+c\cdot z-(a\cdot x_1+b\cdot y_1+c\cdot z_1)=0$.
+    Ako obeležimo $d=-(a\cdot x_1+b\cdot y_1+c\cdot z_1)$ dobijamo $a\cdot x+b\cdot y+c\cdot z+d=0$.
+    Skiciranje ravni može da se vrši tako što se prvo izračunaju i označe preseci sa osama.\\
+    Parametarska jednačina ravni: $M(t,s)=A+t\cdot\overrightarrow{v}+s\cdot\overrightarrow{u}$,
+    gde je $A$ tačka koja pripada ravni, a $\overrightarrow{v}$ i $\overrightarrow{u}$
+    su vektori paralelni sa ravni.\\
+    Jednačina ravni kroz tri tačke:\\
+    Ako su date nekolinearne tačke $A$, $B$ i $C$, tada
+    je jednačine ravni: $M(t,s)=A+t\cdot\overrightarrow{AB}+s\cdot\overrightarrow{AC}$.
+    Ako su tačke kolinearna ne može se jednoznačno odrediti ravan koja ih sadrži.
+    \par
+    \subsection{Prava u prostoru}
+    Parametarska i ”kanonska” jednačina prave, prava AB i
+    podela duži AB na jednake delove, prava kao presek dve
+    ravni, pramen ravni, primeri.
+    \\
+    \textbf{Odgovor:}\\
+    Parametarska jednačina: $M(t)=A+t\cdot\overrightarrow{p}$,
+    gde je $A$ tačka na pravoj, a $\overrightarrow{p}$ je vektor
+    pravca.\\
+    "Kanonska" jednačina je pod navodnicima jer nešto što je kanonsko bi
+    trebalo da bude jedinstveno, ali ova jednačina nije jedinstvena.\\
+    Kanonska jednačina prave: $\frac{x-x_0}{p_x}=\frac{y-y_0}{p_y}=\frac{z-z_0}{p_z}=t$.\\
+    Ako želimo da podelimo duž $AB$ na $n$ delova i
+    želimo da nađemo $m$-tu tačku podele to radimo sa:
+$T_m=A+\overrightarrow{AB}\cdot\frac{m}{n}$, važi da je
+$T_0=A$ i $T_n=B$.\\
+    Prava kao presek dve ravni se dobija kao rešenje sistema
+    dve jednačine od tri nepoznate. Može da nema rešenja, ravni su paralelne,
+    ima beskonačno mnogo rešenja koje će formirati prava, ravni se seku po pravoj ili
+    ima beskonačno mnogo rešenja koje će formirati ravan, ravni se poklapaju.\\
+    Ako se dve ravni seku u pravoj, njihovom linearnom kombinacijom
+    se dobija svaka ravan koja sadrži tu pravu i ovo se naziva
+    pramen ravni. Opšti primer:\\
+$\alpha: a_1\cdot x+b_1\cdot y+c_1\cdot z+d_1=0$\\
+$\beta: a_2\cdot x+b_2\cdot y+c_2\cdot z+d_2=0$\\
+    Tada je pramen ravni:\\
+$\lambda_1\cdot(a_1\cdot x+b_1\cdot y+c_1\cdot z+d_1)+\lambda_2\cdot (a_2\cdot x+b_2\cdot y+c_2\cdot z+d_2)=0$.
+    \par
+    \subsection{Međusobni položaji pravih i ravni}
+    \label{subsec:pitanje_16}
+    Međusobni položaji dve prave (zadatih tačkom i vektorom
+    pravca) u prostoru, međusobni položaj prave i ravni,
+    međusobni položaji dve ravni, mimoilazne prave, zajednička
+    normala - T4.3 (dokaz), rastojanje mimoilaznih pravih -
+    T4.4 (dokaz).
+    \\
+    \textbf{Odgovor:}\\
+    Dve prave mogu da budu paralelne, mimoilazne,
+    da se poklapaju i da se seku. Možemo da rešavamo
+    dve jednačine sa dve nepoznate. Ako postoji
+    jedno rešenje onda se seku. Ako postoji beskonačno
+    mnogo rešenja onda se poklapaju. Ako nema rešenja
+    a vektori su kolinearni onda su prave paralelne.
+    Ako ništa od prethodnog ne važi onda su mimoilazne.\\
+    Prava i ravan mogu da budu paralelne, da se seku
+    ili da ravan sadrži pravu. Ako sistem jednačina
+    ima jedinstveno rešenje, onda se seku, ako ima
+    beskonačno mnogo rešenja onda ravan sadrži pravu,
+    inače su paralelne.
+    Dve ravni mogu da se poklapaju, budu paralelne ili da se seku.
+    Analogni su slučajevi pravoj i ravni.\\
+    Mimoilazne prave su prave preko kojih ne može da se
+    postavi ravan.\\
+    T4.3 Mimoilazne prave $p$ i $q$ imaju jedinstvenu
+    zajedničku normalu:\\
+    Dokaz:\\
+    Neka su date prave $p$ i $q$. Vektor pravca
+    prave $n$ koja je normalna na obe prave će
+    biti $\overrightarrow{p}\times\overrightarrow{q}$ gde su
+$\overrightarrow{p}$ i $\overrightarrow{q}$ vektori
+    pravca pravih $p$ i $q$. Sve prave čiji su
+    vektori pravca ortogonalni
+    i sa $\overrightarrow{p}$ i sa $\overrightarrow{q}$
+    i koje seku pravu $p$ će
+    pripadati ravni $\alpha$ koja se konstruiše
+    jednom tačkom sa prave $p$ i vektorima $\overrightarrow{p}$
+    i $\overrightarrow{p}\times\overrightarrow{q}$.
+    Analogno možemo da konstruišemo ravan $\beta$
+    koja će sadržati sve prave čiji su
+    vektori pravca ortogonalni
+    i sa $\overrightarrow{p}$ i sa $\overrightarrow{q}$
+    i koje seku pravu $q$. Presek ove dve ravni
+    će biti prava $n$ koja je jedinstvena jer
+    su $p$ i $q$ mimoilazne. Prava $n$ je normalna
+    na prave $p$ i $q$ jer je njen koeficijent pravca
+$\overrightarrow{p}\times \overrightarrow{q}$ i seče
+    ih po konstrukciji.\\
+    T4.4 Rastojanje između mimoilaznih pravih je:
+$\frac{|[\overrightarrow{p},\overrightarrow{q},\overrightarrow{PQ}]|}{|p\times q|}$ gde su
+$P$ i $\overrightarrow{p}$ tačka i vektor pravca prave $p$,
+    a $Q$ i $\overrightarrow{q}$ tačka i vektor pravca prave $q$.\\
+    Dokaz:\\
+    U brojiocu je zapravo zapremina paralelopipeda, a u
+    imeniocu je površina baze pa se deljenjem tačno dobija
+    visina koju tražimo.
+    \subsection{Projekcije}
+    Normalna projekcija na ravan $Oxy$ (je linearno preslikavanje),
+    normalna projekcija na \\proizvoljnu ravan (dokaz),
+    centralna projekcija, formule centralne projekcije iz
+$C(0,0,0)$ na ravan $z=f$, kartografske projekcije,
+    definicija i formule stereografska projekcija.
+    \\
+    \textbf{Odgovor:}\\
+    Matrica normalne projekcije na $Oxy$ ravan:
+$\begin{bmatrix}
+    x' \\
+    y' \\
+    z' \\
+    1
+\end{bmatrix}=\begin{bmatrix}
+    1 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 0 \\
+    0 & 0 & 1 & 0 \\
+    0 & 0 & 0 & 1
+\end{bmatrix}=\begin{bmatrix}
+    x \\
+    y \\
+    z \\
+    1
+\end{bmatrix}$.\\
+    Matrica normalne projekcije na proizvoljnu ravan koja sadrži koordinatni početak:
+    Neka je $\alpha$ ravan koja prolazi kroz $O$ zadata jediničnim
+    normalnim vektorom $\overrightarrow{p}$ i neka je data tačka $M$
+    koju hoćemo da projektujemo na ravan i neka se
+    tom projekcijom dobija tačka $M'$.\\
+$\overrightarrow{OM'}=\overrightarrow{OM}-\overrightarrow{M'M}$.
+$\overrightarrow{M'M}=\lambda\cdot\overrightarrow{p}$\\
+$\overrightarrow{p}\cdot\overrightarrow{M'M}=\overrightarrow{p}\cdot(\overrightarrow{M'O}+\overrightarrow{OM})=\overrightarrow{p}\cdot\overrightarrow{OM}=\lambda$\\
+$\overrightarrow{M'M}=\overrightarrow{p}\cdot (\overrightarrow{p}^T\cdot\overrightarrow{OM})$\\
+$\overrightarrow{OM'}=\overrightarrow{OM}-(\overrightarrow{p}\cdot \overrightarrow{p}^T)\cdot\overrightarrow{OM}$\\
+    Odavde dobijamo matricu: $x'=(E-p\cdot p^T)\cdot x$.\\
+    Centralna projekcija: Za centralnu projekciju je potrebno
+    da fiksiramo ravan na koju projektujemo i tačku u odnosu
+    na koju projektujemo (iz koje posmatramo).\\
+    Centralna projekcija u odnosu na tačku $C(0,0,0)$ na ravan $z=d$:
+    Posmatrajmo proizvoljnu tačku $M(x,y,z)$. Neka je njena projekcija tačka $M'(x',y',z')$.
+    Tada je $x'=\frac{d}{z}\cdot x$, $y'=\frac{d}{z}\cdot y$ i $z'=\frac{d}{z}\cdot z=d$.
+    Ovo možemo izraziti matrično preko homogenih koordinata:\\
+    Neka je $x'=\frac{x_1'}{x_4'}$, $y'=\frac{x_2'}{x_4'}$ i $z'=\frac{x_3'}{x_4'}$.
+    Tada se centralna projekcija može predstaviti matricom:
+$\begin{bmatrix}
+    x_1' \\
+    x_2' \\
+    x_3' \\
+    x_4'
+\end{bmatrix}=\begin{bmatrix}
+    d & 0 & 0 & 0 \\
+    0 & d & 0 & 0 \\
+    0 & 0 & d & 0 \\
+    0 & 0 & 1 & 0
+\end{bmatrix}=\begin{bmatrix}
+    x \\
+    y \\
+    z \\
+    1
+\end{bmatrix}$.\\
+    Kartografske projekcije projektuju zakrivljene površine na
+    ravan.\\
+    Stereografska projekcija je specijalan slučaj centralne
+    projekcije kojom se jedinična sfera projektuje na ravan.
+    centar projekcije je neka tačka sfere, a ravan na koju se
+    projektuje tangira sferu.\\
+    Izvođenje formula:\\
+    Neka je $C=(0,0,1)$ i $z=-1$. Posmatrajmo tačku na lopti
+$M=(x,y,z)$ i pravu $p(\lambda)=C+\lambda\cdot\overrightarrow{CM}$.
+    Važi $x'=\lambda\cdot x$, $y'=\lambda\cdot y$ i $z'=\lambda\cdot z+\lambda=-1$.
+    Odavde dobijamo $\lambda=\frac{1}{1-z}$. Na kraju dobijamo formule stereografske
+    projekcije:
+$x'=\frac{x}{1-z}$, $y'=\frac{y}{1-z}$ i $z'=-1$.
+    \par
+    \subsection{Uglovi između pravih i ravni}
+    Merenje uglova (stepeni, radijani, nagib u procentima),
+    ugao između 2 prave, ugao između prave i ravni,
+    ugao između dve ravni, ugao između pljosni tetraedra
+    (na dva načina), računski primeri.\\
+    \textbf{Odgovor:}\\
+    Veza stepena i radijana: $180^\circ=\pi$.\\
+    Radijan predstavlja odnos dužine luka i dužine poluprečnika.\\
+    Merenje nagiba u procentima: Ako merimo ugao između hipotenuze
+    i jedne katete i dužina te katete je $a$, a dužina druge
+    katete je $b$, tada će nagib biti $\frac{b}{a}\cdot 100\%$. Dakle,
+    ako je dužina jedne hipotenuze $1$ metar, a dužina druge
+    hipotenuze $5$ centimetara, tada će nagib hipotenuze biti $5\%$.
+    Ugao između dve prave se određuje kao ugao između vektora pravca
+    tih pravi.\\
+    Ugao između prave i ravni se određuje kao $\frac{\pi}{2}-\angle(\overrightarrow{n_\alpha}\overrightarrow{p})$
+    gde je $\overrightarrow{n_\alpha}$ normalni vektor ravni, a $\overrightarrow{p}$ vektor pravca prave.\\
+    Ugao između dve ravni je ugao između njihovih normalnih vektora.
+    Ugao između pljosni tetraedra:\\
+    Prvi način:\\
+    Posmatrajmo jediničnu kocku $ABCDA'B'C'D'$.
+    Tačke $ACB'D'$ formiraju pravilni tetraedar. Lako možemo
+    da odredimo koordinate ovih tačaka.\\
+    Drugi način:\\
+    Posmatrajmo pravilni jedinični tetraedar $ABCD$. Označimo sredinu
+    stranice $AB$ sa $M$. Izdvojimo trougao $MDC$. Zanima nas
+    ugao $CMD$. Neka je $|MD|=\frac{\sqrt{3}}{2}$, $|DC|=1$ i $|MC|=\frac{\sqrt{3}}{2}$.
+    Preko kosinusne teoreme dobijamo:\\
+$|DC|^2=|MD|^2+|MC|^2-2\cdot|MD|\cdot|MC|\cos(\gamma)$.
+    Odavde je $\gamma=\arccos(\frac{\frac{1}{2}}{2\cdot\frac{3}{4}})=\arccos(\frac{1}{3})$.
+    \par
+    \subsection{Rastojanja}
+    Rastojanje između tačke i prave (sa izvodjenjem),
+    rastojanje između tačke i ravni (dokaz), rastojanje između
+    mimoilaznih pravih (pitanje 16).
+    \\
+    \textbf{Odgovor:}\\
+    Rastojanje između tačke i prave:\\
+    Neka je data prava $p$ i tačka $A$ čije rastojanje se traži.
+    Možemo da izaberemo neku tačku $P$ na pravi i da izračunamo
+    površinu paralelograma zadatog vektorima: $\overrightarrow{AB}$ i $\overrightarrow{p}$.
+    Tada se tražena visina dobija formulom: $d(A,p)=\frac{|\overrightarrow{AB}\times\overrightarrow{p}|}{|\overrightarrow{p}|}$.\\
+Rastojanje između tačke i ravni: potpuno analogno osim što
+se umesto površine i dužine koristi zapreina i površina.\\
+\hyperlink{subsec:pitanje_16}{pitanje 16}.
+\end{document}
