@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1735091647.64504 "/home/cwpko/Desktop/MATF/druga_godina/prvi_semestar/G/Odgovori na pitanja/main.tex" "main.pdf" "main" 1735091648.07792 0
+["pdflatex"] 1735138629.15347 "/home/cwpko/Desktop/MATF/druga_godina/prvi_semestar/G/Odgovori na pitanja/main.tex" "main.pdf" "main" 1735138629.58567 0
   "/etc/texmf/web2c/texmf.cnf" 1729275013.35261 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/cwpko/Desktop/MATF/druga_godina/prvi_semestar/G/Odgovori na pitanja/main.tex" 1735091647.43275 53392 89bc29b17ef623a2297474b59ad9f73f ""
+  "/home/cwpko/Desktop/MATF/druga_godina/prvi_semestar/G/Odgovori na pitanja/main.tex" 1735138628.94112 44821 e368a197e44a38af71a71d3e0b2e01c1 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1136768653 3584 13049b61b922a28b158a38aeff75ee9b ""
@@ -96,11 +96,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty" 1655478651 22555 6d8e155cfef6d82c3d5c742fea7c992e ""
   "/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty" 1665067230 13815 760b0c02f691ea230f5359c4e1de23a7 ""
   "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1704491087 30006 57b07afb710ee2f649c65cfbafda39c1 ""
-  "/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty" 1705955748 6565 cfd9fd0a1d5f5ad985151778771ff7a9 ""
-  "/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty" 1696969620 4674 15ab6bdfc97f65b00e59c2867851f715 ""
   "/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
-  "/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex" 1632168149 95525 6fd0552101a6b1f9b7a84b402ec435ba ""
-  "/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty" 1632168149 14690 c2c754218a7108db7823a4839c1bc3cd ""
   "/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657483315 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty" 1698436711 48766 0b93839be28e9744a24c45075c75b2e2 ""
@@ -121,10 +117,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1729275652.72073 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1729275753 6831175 b276a6fdbec604d4e839afc30b8e3deb ""
-  "main.aux" 1735091648.02373 3126 717d476a39c9811a33c32b8787b00e58 "pdflatex"
-  "main.out" 1735091648.02373 3859 6e124bb881b942b29fc433570af98817 "pdflatex"
-  "main.tex" 1735091647.43275 53392 89bc29b17ef623a2297474b59ad9f73f ""
-  "main.toc" 1735091648.02473 1904 5fe8d3e8a1b324b6d7f93f3ed4590d4f "pdflatex"
+  "main.aux" 1735138629.5281 3219 2fe8ab39e253ca608bcfbec0ce4ea2a1 "pdflatex"
+  "main.out" 1735138629.5281 3859 6e124bb881b942b29fc433570af98817 "pdflatex"
+  "main.tex" 1735138628.94112 44821 e368a197e44a38af71a71d3e0b2e01c1 ""
+  "main.toc" 1735138629.5281 1904 d4a199ea8f36fd5cea347a7583cce6d4 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
