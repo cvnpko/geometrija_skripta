@@ -64,7 +64,18 @@ urlcolor=blue}
 \tableofcontents
 \newpage
 
-\section{Konvencija}
+\section{Konvencije}
+\textit{Sve konvencije važe dok se ne naglasi drugačije.}
+\par
+\vspace*{1cm}
+
+\textbf{Množenje i skalarni proizvod:} Množenje se neće označavati posebnom
+oznakom, dok će se za skalarni proizvod koristiti oznaka $\cdot$.
+\par
+
+\textbf{Mase tačaka:} Za tačku $A$, oznaka $A(m_A)$ znači da tačka $A$ ima
+dodeljenu masu $m_A$. Podrazumevaće se i da se oznaka $m_A$ odnosi na tačku
+$A$. Umesto $A$ može da stoji proizvoljna oznaka tačke.
 
 \newpage
 
@@ -364,20 +375,28 @@ koji obrazuju $0$. Dakle $\frac{1}{2}\cdot |\vek{BC}\times\vek{BC}|=0$.
 
 \textbf{Da li tačka pripada trouglu:} Tačka $P$ pripada trouglu $ABC$ ako su
 trouglovi $ABP$, $BCP$ i $CAP$ iste orijentacije.
-\par
 
 \subsection{Mešoviti proizvod}
-Definicija, osobine, formula za mešoviti proizvod u ON+
-bazi (dokaz), zapremina paralelopipeda - T1.7 (dokaz),
-zapremina tetraedra, orijentacija baze prostora, nezavisnost
-tri vektora prostora, primeri.\\[1cm]
-Definicija: $[\vek{u},\vek{v},\vek{w}]=(\vek{u}\times\vek{v})\cdot\vek{w}$\\
-Osobine:\\
-$[\vek{u},\vek{v},\vek{w}]=-[\vek{v},\vek{u},\vek{w}]$\hspace*{1cm}(antisimetričnost)\\
-$[\vek{u},\vek{v},\vek{w}]=[\vek{v},\vek{w},\vek{u}]$\hspace*{1cm}(cikličnost)\\
-$[\alpha\cdot\vek{u}+\beta\cdot\vek{v},\vek{w},\vek{z}]=\alpha\cdot[\vek{u},\vek{w},\vek{z}]+\beta\cdot[\vek{v},\vek{w},\vek{z}]$\hspace*{1cm}(linearnost)\\
-Formula za mešoviti proizvod u ON+ bazi:\\
-$[\vek{u},\vek{v},\vek{w}]=(\vek{u}\times\vek{v})\cdot\vek{w}= \begin{vmatrix}
+\textit{Definicija, osobine, formula za mešoviti proizvod u ON+ bazi (dokaz),
+    zapremina paralelopipeda - T1.7 (dokaz), zapremina tetraedra, orijentacija baze
+    prostora, nezavisnost tri vektora prostora, primeri.}
+\par
+\vspace*{1cm}
+
+\textbf{Definicija mešovitog proizvoda:} $[\vek{u},\vek{v},\vek{w}]=
+    (\vek{u}\times\vek{v})\cdot\vek{w}$.
+\par
+
+\textbf{Osobine:}
+\begin{enumerate}[label=\textit{\arabic*)}]
+    \item $[\vek{u},\vek{v},\vek{w}]=-[\vek{v},\vek{u},\vek{w}]$\hspace*{1cm}(antisimetričnost)
+    \item $[\vek{u},\vek{v},\vek{w}]=[\vek{v},\vek{w},\vek{u}]$\hspace*{1cm}(cikličnost)
+    \item $[\alpha\cdot\vek{u}+\beta\cdot\vek{v},\vek{w},\vek{z}]=\alpha\cdot[\vek{u},\vek{w},\vek{z}]+\beta\cdot[\vek{v},\vek{w},\vek{z}]$\hspace*{1cm}(linearnost)
+\end{enumerate}
+\par
+
+\textbf{Formula za mešoviti proizvod u ON+ bazi:}
+$$[\vek{u},\vek{v},\vek{w}]=(\vek{u}\times\vek{v})\cdot\vek{w}= \begin{vmatrix}
         \vek{e_1}   & \vek{e_2}   & \vek{e_3}   \\
         x_{\vek{u}} & y_{\vek{u}} & z_{\vek{u}} \\
         x_{\vek{v}} & y_{\vek{v}} & z_{\vek{v}}
@@ -385,61 +404,111 @@ $[\vek{u},\vek{v},\vek{w}]=(\vek{u}\times\vek{v})\cdot\vek{w}= \begin{vmatrix}
         x_{\vek{u}} & y_{\vek{u}} & z_{\vek{u}} \\
         x_{\vek{v}} & y_{\vek{v}} & z_{\vek{v}} \\
         x_{\vek{w}} & y_{\vek{w}} & z_{\vek{w}}
-    \end{vmatrix}$\\[0.3cm]
-T1.7: Zapremina paralelopipeda jednaka je mešovitom proizvodu tri vektora.\\
-Dokaz:\\
-Neka je dat paralelopiped $ABCDA_1B_1C_1D_1$ i neka su $\vek{AB}=\vek{u}$, $\vek{AD}=\vek{v}$ i $\vek{AA_1}=\vek{w}$.
-Tada je zapremina $V=P_{ABCD}\cdot h=|\vek{u}\times\vek{v}|\cdot h=||\vek{u}\times\vek{v}|\cdot \vek{w}|\cos(\angle \vek{u}\times\vek{v},\vek{w})|=|\vek{u}\times\vek{v}\cdot \vek{w}|=|[\vek{u},\vek{v},\vek{w}]|$.\\
-Zapremina tetraedra je $\frac{1}{6}\cdot |[\vek{u},\vek{v},\vek{w}]|$.\\
-Dokaz:\\
-Posmatrajmo paralelopiped $ABCDA_1B_1C_1D_1$ i u njemu trostranu prizmu $ABCA_1B_1C_1$ sa zapreminom
-$\frac{1}{2}\cdot|[\vek{u},\vek{v},\vek{w}]|$. Možemo da izdvojimo tetraedre $ABCC_1$, $AA_1B_1C_1$ i $ABC_1D_1$.
-Tetraedri $ABCC_1$ i $AA_1B_1C_1$ imaju istu površinu baze $ABC$ i $A_1B_1C_1$ i istu visinu $CC_1$ i $AA_1$.
-Tetraedri $ABCC_1$ i $AB_1C_1B$ imaju istu površinu baze $BCC_1$ i $C_1B_1B$ i istu visinu $AB$ i $AB$.
-Zapremina tetraedra je dakle jedna šestina zapremine paralelopipeda.\\
-Orijentacija baze prostora:\\
-Ako je $[\vek{e_1},\vek{e_2},\vek{e_3}]>0$ onda je orijentacija pozitivna.\\
-Tri vektora su nezavisna ako je njihova zapremina veća od nule.
+    \end{vmatrix}$$
 \par
 
+\textbf{T1.7:} Zapremina paralelopipeda jednaka je mešovitom proizvodu tri
+vektora.\\
+\textbf{Dokaz:} Neka je dat paralelopiped $ABCDA_1B_1C_1D_1$ i neka su
+$\vek{AB}=\vek{u}$, $\vek{AD}=\vek{v}$ i $\vek{AA_1}=\vek{w}$. Tada je
+zapremina $V=P_{ABCD}\cdot h=|\vek{u}\times\vek{v}|\cdot h=
+    ||\vek{u}\times\vek{v}|\cdot \vek{w}|\cos(\angle \vek{u}\times
+    \vek{v},\vek{w})|=|(\vek{u}\times\vek{v}) \cdot \vek{w}|=|[\vek{u},\vek{v},
+    \vek{w}]|$.
+\par
+
+\textbf{Zapremina tetraedra:} $\frac{1}{6}|[\vek{u},\vek{v},\vek{w}]|$.\\
+\textbf{Dokaz:} Tražimo zapreminu tetraedra $ABDA_1$. Dopunimo tetraedar do
+paralelopipeda $ABCDA_1B_1C_1D_1$. On je izgrađen od dve trostrane prizme
+$ABDA_1B_1D_1$ i $BCDB_1C_1D_1$ koje su jednakih jednakih zapremina.
+Posmatrajmo trostranu prizmu $ABDA_1B_1D_1$. Iz nje možemo da izdvojimo
+tetraedre $ABDA_1$, $BDA_1B_1$ i $DA_1B_1D_1$. Tetraedri $ABDA_1$ i $BDA_1B_1$
+imaju iste površine baza $ABA_1$ i $BA_1B_1$ i iste visine iz tačke $D$ pa su
+im i zapremine iste. Tetraedri $ABDA_1$ i $DA_1B_1D_1$ imaju iste površine baza
+$AA_1D$ i $DA_1D_1$ i iste visine iz tačke $B$ pa su im i zapremine iste.
+Dakle, trostrana prizma $ADCA_1B_1D_1$ se sastoji od tri tetraedra jednakih
+zapremina. Zapremina tetraedra $ABDA_1$ je jedna šestina zapremine
+što se i tražilo paralelopipeda.
+\par
+
+\textbf{Orijentacija baze prostora:} Ako je $[\vek{e_1},\vek{e_2},\vek{e_3}]>0$
+onda je orijentacija pozitivna.
+\par
+
+\textbf{Nezavisnost tri vektora prostora:} Tri vektora su nezavisna ako je
+zapremina paralelopipeda koji obrazuju veća od nule.
+
 \subsection{Težište, centar mase i baricentričke koordinate}
-Zakon poluge, rešavanje zakona poluge centrom mase dve tačke, centar
-mase tri tačke, ”rešavanje trougla” centrom mase tri tačke, centar
-mase n tačaka, težište n tačaka, dokaz da definicija težišta trougla
-ne zavisi od tačke $O$ - vežbe, primeri, baricentričke koordinate.
-\\[1cm]
-Zakon poluge: $|\vek{AT}|:|\vek{TB}|=m_B:m_A$.\\
-Centar mase tačaka $A(m_A)$ i $B(m_B)$: $\vek{TA}\cdot m_A+\vek{TB}\cdot m_B=\vek{0}$.\\
-Centar mase tri tačke: $\vek{TA}\cdot m_A+\vek{TB}\cdot m_B+\vek{TC}\cdot m_C=\vek{0}$.\\
-Centar mase n tačaka: $\vek{TA_1}\cdot m_{A_1}+...+\vek{TA_n}\cdot m_{A_n}=\vek{0}$.\\
-Težište $n$ tačaka: $\frac{1}{m_{A_1}+...+m_{A_n}}\cdot(\vek{OA_1}\cdot m_{A_1}+...+\vek{OA_n}\cdot m_{A_n})=\vek{OT}$\\
-Težište $n$ tačaka odgovara centru masa.\\
-Dokaz da definicija težišta trougla ne zavisi od tačke $O$:\\
-Neka je $m_{A}+m_{B}+m_{C}=M$. Tada:
-\begin{align*}
-    \vek{OT}          & =\frac{1}{M}\cdot(\vek{OA}\cdot m_{A}+\vek{OB}\cdot m_{B}+\vek{OC}\cdot m_{C})                                  \\
-    \vek{OS}+\vek{ST} & =\frac{1}{M}\cdot((\vek{OS}+\vek{SA})\cdot m_{A}+(\vek{OS}+\vek{SB})\cdot m_{B}+(\vek{OS}+\vek{SC})\cdot m_{C}) \\
-    \vek{OS}+\vek{ST} & =\frac{1}{M}\cdot(\vek{SA}\cdot m_{A}+\vek{SB}\cdot m_{B}+\vek{SC}\cdot m_{C})+\vek{OS}                         \\
-    \vek{ST}          & =\frac{1}{M}\cdot(\vek{SA}\cdot m_{A}+\vek{SB}\cdot m_{B}+\vek{SC}\cdot m_{C})
-\end{align*}\\
-U opštem slučaju za $n$ tačaka $A_1,...,A_n$ čije su mase redom $m(A_1),...,m(A_n)$, baricentričke koordinate će biti
-$(\frac{m(A_1)}{m(A_1)+...+m(A_n)},...,\frac{m(A_n)}{m(A_1)+...+m(A_n)})$. Primetimo da važi da je zbir svih baricentričkih
-koordinata jednak $1$.
-
-
-\subsection{Transformacije koordinata vektora i tačaka}
-Matrica prelaska, veza koordinata vektora u različitim bazama,
-primer, transformacija koordinata tačaka - formule (1.23, 1.24)
-izvodjenje, primer.\par
-
+\textit{Zakon poluge, rešavanje zakona poluge centrom mase dve tačke, centar
+    mase tri tačke, ”rešavanje trougla” centrom mase tri tačke, centar mase $n$
+    tačaka, težište $n$ tačaka, dokaz da definicija težišta trougla ne zavisi od
+    tačke $O$ - vežbe, primeri, baricentričke koordinate.}
+\par
 \vspace*{1cm}
 
-Matrica prelaska: matrica čije su kolone koordinata vektora nove baze u staroj.\\
-Transformacije koordinata tačaka:\\
-Pretpostavimo da iz repera $Oe$ prelazimo u reper $Qf$. Dodatno, neka je
-$C$ matrica prelaska iz repera $Oe$ u reper $Qf$. Tada:
-$$[X]_{Qf}  =[\vek{QX}]_f =[\vek{QO}]_f+[\vek{OX}]_e =[O]_{Qf}+C\cdot[\vek{OX}]_e =[O]_{Qf}+C\cdot[\vek{X}]_{Oe}$$
-Ako je $[X]_{Oe}=x'$, $[X]_{Qf}=x$ i $[O]_{Qf}=q$, tada dobijamo $x=q+C\cdot x'$.
+\textbf{Zakon poluge:} Iz jednakosti momenta sila se izvodi zakon poluge
+$|AT|:|TB|=m_B:m_A$ ili vektorski $m_A\vek{TA}+m_B\vek{TB}=\vek{0}$.
+\par
+
+\textbf{Centar mase tačaka $A(m_A)$ i $B(m_B)$:}
+$\vek{OT}=\frac{1}{m_A+m_B}(m_A\vek{OA}+m_B\vek{OB})$.
+\par
+
+\textbf{Centar mase tri tačke:}
+$\vek{OT}=\frac{1}{m_A+m_B+m_C}(m_A\vek{OA}+m_B\vek{OB}+m_C\vek{OC})$.
+\par
+
+\textbf{Centar mase $n$ tačaka:}
+$\frac{1}{m_{A_1}+\dotsc+m_{A_n}}(m_{A_1}\vek{OA_1}+\dotsc+m_{A_n}\vek{OA_n})=\vek{OT}$.
+\par
+
+\textbf{Težište $n$ tačaka:} Težište $n$ tačaka se dobija kada su sve mase
+jednake. Neka važi $m_{A_1}=\dotsc=m_{A_n}=m$. Tada je:
+\begin{align*}
+    \vek{OT} & =\frac{1}{m_{A_1}+\dotsc+m_{A_n}}(m_{A_1}\vek{OA_1}+\dotsc+m_{A_n}\vek{OA_n}) \\
+             & =\frac{1}{nm}(m\vek{OA_1}+\dotsc+m\vek{OA_n})                                 \\
+             & =\frac{1}{n}(\vek{OA_1}+\dotsc+\vek{OA_n})
+\end{align*}
+\par
+
+\textbf{Dokaz da definicija težišta trougla ne zavisi od tačke $O$:} Neka su
+date tačke $A$, $B$, $C$ i njihove mase i neka važi $m_{A}+m_{B}+m_{C}=M$.
+Tada:
+\begin{align*}
+    \vek{OT}          & =\frac{1}{M}(m_{A}\vek{OA} +m_{B}\vek{OB} +m_{C}\vek{OC} )                                  \\
+    \vek{OS}+\vek{ST} & =\frac{1}{M}(m_{A}(\vek{OS}+\vek{SA}) +m_{B}(\vek{OS}+\vek{SB}) +m_{C}(\vek{OS}+\vek{SC}) ) \\
+    \vek{OS}+\vek{ST} & =\frac{1}{M}(m_{A}\vek{SA} +m_{B}\vek{SB} + m_{C}\vek{SC})+\vek{OS}                         \\
+    \vek{ST}          & =\frac{1}{M}(m_{A}\vek{SA} +m_{B}\vek{SB} +m_{C}\vek{SC} )
+\end{align*}
+\par
+
+\textbf{Baricentričke koordinate:} Baricentričke koordinate tačke $M$ su mase
+koje je potrebno dodeliti tačkama $A_1,\dotsc,A_n$ tako da tačka $M$ postane
+njihov centar mase. Baricentričke koordinate se dele na homogene i nehomogene.
+U slučaju $n$ tačaka $A_1(m_{A_1}),\dotsc,A_n(m_{A_n})$, homogene
+baricentričke koordinate će biti $(m_{A_1}:\dotsc:m_{A_n})$. Homogene
+baricentričke koordinate su određene do na proporcionalnost. Za normalizovane
+ili nehomogene baricentričke koordinate važi da je $m_{A_1}+...+m_{A_n}=1$. Za
+proizvoljne mase $m_{A_1},\dotsc,m_{A_n}$ nehomogene baricentričke koordinate
+dobijamo sa:
+$(\frac{m(A_1)}{m(A_1)+\dotsc+m(A_n)},\dotsc,\frac{m(A_n)}{m(A_1)+\dotsc+m(A_n)})$.
+
+\subsection{Transformacije koordinata vektora i tačaka}
+\textit{Matrica prelaska, veza koordinata vektora u različitim bazama,
+    primer, transformacija koordinata tačaka - formule (1.23, 1.24)
+    izvođenje, primer.}
+\par
+\vspace*{1cm}
+
+\textbf{Matrica prelaska:} Matrica u kojoj se u $i$-toj koloni nalaze
+koordinate $i$-tog vektora nove baze u staroj bazi.
+\par
+
+\textbf{Transformacije koordinata tačaka:} Pretpostavimo da iz repera $Oe$
+prelazimo u reper $Qf$. Dodatno, neka je $C$ matrica prelaska iz baze $e$ u
+bazu $f$. Tada:
+$$[X]_{Qf} =[\vek{QX}]_f =[\vek{QO}]_f+[\vek{OX}]_e =[O]_{Qf}+C[\vek{OX}]_e =[O]_{Qf}+C[\vek{X}]_{Oe} \hspace*{0.1cm}\text{(1.23)}$$
+Ako je $[X]_{Oe}=x'$, $[X]_{Qf}=x$ i $[O]_{Qf}=q$, tada dobijamo $x=q+Cx'$ (1.24).
 \par
 
 \subsection{Transformacije koordinata u ON bazama ravni}
