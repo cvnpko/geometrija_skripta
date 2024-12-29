@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1735480165.21084 "/home/cwpko/Desktop/MATF/3_semestar/G/Odgovori na pitanja/main.tex" "main.pdf" "main" 1735480165.72464 0
+["pdflatex"] 1735492745.54298 "/home/cwpko/Desktop/MATF/3_semestar/G/geometrija_skripta/main.tex" "main.pdf" "main" 1735492746.17679 0
   "/etc/texmf/web2c/texmf.cnf" 1729275013.35261 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/cwpko/Desktop/MATF/3_semestar/G/Odgovori na pitanja/main.tex" 1735480165.0541 48146 b5aedbb5b440d1d942bf8563947d0907 ""
+  "/home/cwpko/Desktop/MATF/3_semestar/G/geometrija_skripta/main.tex" 1735492745.36863 49856 3d11a8d75409612f40400d9357511db7 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1136768653 3584 13049b61b922a28b158a38aeff75ee9b ""
@@ -118,10 +118,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1729275652.72073 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1729275753 6831175 b276a6fdbec604d4e839afc30b8e3deb ""
-  "main.aux" 1735480165.65008 3220 904c5fdc43a41d050473b50b14f8a00b "pdflatex"
-  "main.out" 1735480165.65008 3859 55f11606922a689e619641b2da5fa192 "pdflatex"
-  "main.tex" 1735480165.0541 48146 b5aedbb5b440d1d942bf8563947d0907 ""
-  "main.toc" 1735480165.65008 1905 05f106f9bb627ee6b709838209ce35c8 "pdflatex"
+  "main.aux" 1735492746.08761 3220 904c5fdc43a41d050473b50b14f8a00b "pdflatex"
+  "main.out" 1735492746.08861 3859 55f11606922a689e619641b2da5fa192 "pdflatex"
+  "main.tex" 1735492745.36863 49856 3d11a8d75409612f40400d9357511db7 ""
+  "main.toc" 1735492746.08861 1905 05f106f9bb627ee6b709838209ce35c8 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

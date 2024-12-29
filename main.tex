@@ -89,6 +89,11 @@ $A$. Umesto $A$ može da stoji proizvoljna oznaka tačke.
 
 \par
 
+\textbf{Baza vektorskog prostora:} Vektori baze $e$ su
+$\vek{e_1},\dotsc,\vek{e_n}$, gde je $n$ dimenzija vektorskog prostora.
+
+\par
+
 \textbf{Ortonormirana baza:} U nastavku će se "ortonormirane baze" skraćeno
 nazivati "ON baze".
 
@@ -146,25 +151,23 @@ i smer kao početni vektor, a intenzitet mu je $1$.
 \par
 
 \textbf{T1.1:} Neka su $\vek{u}, \vek{v}, \vek{w}\in\mathbb{V}$. Tada važe
-sledeća tvrđenja:\\
-\textbf{(S1)}
-$(\vek{u}+\vek{v})+\vek{w}=\vek{u}+(\vek{v}+\vek{w})$\\
-\textbf{Dokaz:}
-$(\vek{AB}+\vek{BC})+\vek{CD}=\vek{AC}+\vek{CD}=\vek{AD}=\vek{AB}+\vek{BD}
-    =\vek{AB}+(\vek{BC}+\vek{CD})$\\
-\textbf{(S2)}
-$\vek{u}+\vek{0}=\vek{u}=\vek{0}+\vek{u}$\\
-\textbf{Dokaz:}
-$\vek{AB}+\vek{BB}=\vek{AB}=\vek{AA}+\vek{AB}$\\
-\textbf{(S3)}
-$\vek{u}+(-\vek{u})=\vek{0}$\\
-\textbf{Dokaz:}
-$\vek{AB}+\vek{BA}=\vek{AA}$\\
-\textbf{(S4)}
-$\vek{u}+\vek{v}=\vek{v}+\vek{u}$\\
-\textbf{Dokaz:}
-$\vek{AB}+\vek{BC}=\vek{AC}=-\vek{CA}=-\vek{CB}-\vek{BA}=\vek{BC}+\vek{AB}$
-
+sledeća tvrđenja:
+\begin{enumerate}[label=\textbf{(S\arabic*)}]
+    \item $(\vek{u}+\vek{v})+\vek{w}=\vek{u}+(\vek{v}+\vek{w})$\\
+          \textbf{Dokaz:}
+          $(\vek{AB}+\vek{BC})+\vek{CD}=\vek{AC}+\vek{CD}=\vek{AD}=\vek{AB}+\vek{BD}
+              =\vek{AB}+(\vek{BC}+\vek{CD})$
+    \item
+          $\vek{u}+\vek{0}=\vek{u}=\vek{0}+\vek{u}$\\
+          \textbf{Dokaz:}
+          $\vek{AB}+\vek{BB}=\vek{AB}=\vek{AA}+\vek{AB}$
+    \item $\vek{u}+(-\vek{u})=\vek{0}$\\
+          \textbf{Dokaz:}
+          $\vek{AB}+\vek{BA}=\vek{AA}$
+    \item $\vek{u}+\vek{v}=\vek{v}+\vek{u}$\\
+          \textbf{Dokaz:}
+          $\vek{AB}+\vek{BC}=\vek{AC}=-\vek{CA}=-\vek{CB}-\vek{BA}=\vek{BC}+\vek{AB}$
+\end{enumerate}
 
 \subsection{Linearna zavisnost i nezavisnost vektora}
 \textit{Definicija, primeri, T1.3 (dokaz), T1.4.}
@@ -244,7 +247,7 @@ $\vek{u},\vek{v}\in\mathbb{V}$ je definisan kao $\vek{u}\cdot\vek{v}=|\vek{u}|
 \par
 
 \textbf{Osobine:}
-\begin{enumerate}[label=\textit{\arabic*)}]
+\begin{enumerate}[label=\textbf{(\arabic*)}]
     \item $\vek{u}\cdot\vek{v}=\vek{v}\cdot\vek{u}$\hspace*{1cm}(simetričnost)
     \item $\vek{u}\cdot(\alpha\vek{v}+\beta\vek{w})=\alpha(\vek{u}\cdot\vek{v})
           +\beta(\vek{u}\cdot\vek{w}$)\hspace*{1cm}(linearnost)
@@ -308,7 +311,7 @@ $(\vek{u},\vek{v},\vek{u}\times\vek{v})$ pozitivno orijentisana.
 \par
 
 \textbf{Osobine:}
-\begin{enumerate}[label=\textit{\arabic*)}]
+\begin{enumerate}[label=\textbf{(\arabic*)}]
     \item $\vek{u}\times\vek{v}=-\vek{v}\times\vek{u}$\hspace*{1cm}(antisimetričnost)
     \item $(\alpha\cdot\vek{u}+\beta\cdot\vek{v})\times\vek{w}=\alpha\cdot(\vek{u}\times\vek{w})+\beta\cdot(\vek{v}\times\vek{w})$\hspace*{1cm}(linearnost)
 \end{enumerate}
@@ -408,7 +411,7 @@ trouglovi $ABP$, $BCP$ i $CAP$ iste orijentacije.
 \par
 
 \textbf{Osobine:}
-\begin{enumerate}[label=\textit{\arabic*)}]
+\begin{enumerate}[label=\textbf{(\arabic*)}]
     \item $[\vek{u},\vek{v},\vek{w}]=-[\vek{v},\vek{u},\vek{w}]$\hspace*{1cm}(antisimetričnost)
     \item $[\vek{u},\vek{v},\vek{w}]=[\vek{v},\vek{w},\vek{u}]$\hspace*{1cm}(cikličnost)
     \item $[\alpha\cdot\vek{u}+\beta\cdot\vek{v},\vek{w},\vek{z}]=\alpha\cdot[\vek{u},\vek{w},\vek{z}]+\beta\cdot[\vek{v},\vek{w},\vek{z}]$\hspace*{1cm}(linearnost)
@@ -527,7 +530,7 @@ koordinate $i$-tog vektora nove baze u staroj bazi.
 \textbf{Transformacije koordinata tačaka:} Pretpostavimo da iz repera $Oe$
 prelazimo u reper $Qf$. Dodatno, neka je $C$ matrica prelaska iz baze $e$ u
 bazu $f$. Tada:
-$$[X]_{Qf} =[\vek{QX}]_f =[\vek{QO}]_f+[\vek{OX}]_e =[O]_{Qf}+C[\vek{OX}]_e =[O]_{Qf}+C[\vek{X}]_{Oe} \hspace*{0.1cm}\text{(1.23)}$$
+$$[X]_{Qf}=[\vek{QX}]_f=[\vek{QO}]_f+[\vek{OX}]_e=[O]_{Qf}+C[\vek{OX}]_e=[O]_{Qf}+C[X]_{Oe}\hspace*{0.1cm}\text{(1.23)}$$
 Ako je $[X]_{Oe}=x'$, $[X]_{Qf}=x$ i $[O]_{Qf}=q$, tada dobijamo $x=q+Cx'$ (1.24).
 
 \subsection{Transformacije koordinata u ON bazama ravni}
@@ -539,12 +542,13 @@ Ako je $[X]_{Oe}=x'$, $[X]_{Qf}=x$ i $[O]_{Qf}=q$, tada dobijamo $x=q+Cx'$ (1.24
 
 \vspace*{1cm}
 
-\textbf{Slučaj baza iste orijentacije:} Neka su baze $Oe$ i $Qf$ ON i iste
-orijentacije. Neka je $e=(\vek{e_1},\vek{e_2})$ i $f=(\vek{f_1},\vek{f_2})$ i
-neka je $\angle{\vek{e_1}\vek{f_1}}=\phi$, $\phi\in[0,2\pi)$.
-Tada važe jednakosti $\vek{f_1}=\cos(\phi)\vek{e_1}+\sin(\phi)\vek{e_2}$ i
-$\vek{f_2}=-\sin(\phi)\vek{e_1}+\cos(\phi)\vek{e_2}$. Odavde dobijamo formulu
-za istu orijentaciju: $x=q+\begin{bmatrix}
+\textbf{Slučaj baza iste orijentacije:} Neka su dati ON reperi ravni $Oe$ i $Qf$
+koji su iste orijentacije. Želimo da pređemo iz $Oe$ u $Qf$. Označimo sa $\phi$
+ugao $\angle{\vek{e_1}\vek{f_1}}$. Tada važe jednakosti
+$\vek{f_1}=\cos(\phi)\vek{e_1}+\sin(\phi)\vek{e_2}$ i
+$\vek{f_2}=-\sin(\phi)\vek{e_1}+\cos(\phi)\vek{e_2}$. Dakle
+$[\vek{f_1}]_e=(\cos(\phi),\sin(\phi))^T$ i $[\vek{f_2}]_e=(-\sin(\phi),\cos(\phi))^T$.
+Odavde dobijamo formulu za ON repere iste orijentacije: $x=q+\begin{bmatrix}
         \cos(\phi) & -\sin(\phi) \\
         \sin(\phi) & \cos(\phi)
     \end{bmatrix} x'$.
@@ -558,20 +562,20 @@ pozitivnom smeru.
 \par
 
 \textbf{Osobine matrica rotacije:}
-\begin{enumerate}[label=\textit{\arabic*)}]
+\begin{enumerate}[label=\textbf{(\arabic*)}]
     \item $(R_\phi)^{-1}=R_{-\phi}=(R_\phi)^T$
     \item $det(R_\phi)=1$
     \item $R_\phi\cdot R_\psi=R_{\phi+\psi}=R_\psi\cdot R_\phi$
 \end{enumerate}
 \par
 
-\textbf{Slučaj baza različite orijentacije:} Neka su baze $Oe$ i $Qf$ ON i
-različite orijentacije. Neka je $e=(\vek{e_1},\vek{e_2})$ i
-$f=(\vek{f_1},\vek{f_2})$ i neka je $\angle{\vek{e_1}\vek{f_1}}=\phi$,
-$\phi\in[0,2\pi)$. Tada važe jednakosti
+\textbf{Slučaj baza različite orijentacije:} Neka su dati ON reperi ravni $Oe$ i
+$Qf$ koji su različite orijentacije. Želimo da pređemo iz $Oe$ u $Qf$. Označimo
+sa $\phi$ ugao $\angle{\vek{e_1}\vek{f_1}}$. Tada važe jednakosti
 $\vek{f_1}=\cos(\phi)\vek{e_1}+\sin(\phi)\vek{e_2}$ i
-$\vek{f_2}=\sin(\phi)\vek{e_1}-\cos(\phi)\vek{e_2}$. Odavde dobijamo formulu za
-različitu orijentaciju: $x=q+\begin{bmatrix}
+$\vek{f_2}=\sin(\phi)\vek{e_1}-\cos(\phi)\vek{e_2}$. Dakle
+$[\vek{f_1}]_e=(\cos(\phi),\sin(\phi))^T$ i $[\vek{f_2}]_e=(\sin(\phi),-\cos(\phi))^T$.
+Odavde dobijamo formulu za ON repere različite orijentacije: $x=q+\begin{bmatrix}
         \cos(\phi) & \sin(\phi)  \\
         \sin(\phi) & -\cos(\phi)
     \end{bmatrix} x'$.
@@ -581,11 +585,12 @@ različitu orijentaciju: $x=q+\begin{bmatrix}
         \cos(\phi) & \sin(\phi)  \\
         \sin(\phi) & -\cos(\phi)
     \end{bmatrix}$ je matrica refleksije u odnosu na vektor $\vek{p}$.
-Vektor koji se transformiše gradi sa vektorom $\vek{p}$ ugao $\frac{\phi}{2}$.
+Prvi vektor baze koja se transformiše gradi sa vektorom $\vek{p}$ ugao
+$\frac{\phi}{2}$.
 \par
 
 \textbf{Osobine matrica refleksije:}
-\begin{enumerate}[label=\textit{\arabic*)}]
+\begin{enumerate}[label=\textbf{(\arabic*)}]
     \item $(S_\phi)^{-1}=(S_\phi)^T$
     \item $(S_\phi)^{2}=E$
     \item $det(S_\phi)=-1$
@@ -593,16 +598,17 @@ Vektor koji se transformiše gradi sa vektorom $\vek{p}$ ugao $\frac{\phi}{2}$.
 \end{enumerate}
 \par
 
-\textbf{SO(2):} $SO(2)=\{R_\phi\mid\phi\in\mathbb{R}\}$ je specijalna
-ortogonalna grupa reda 2.
+\textbf{Grupa SO(2):} $SO(2)=\{R_\phi\mid\phi\in\mathbb{R}\}$ je specijalna
+ortogonalna grupa reda 2. Broj 2 označava da se posmatra ravan.
 \par
 
-\textbf{O(2):} $O(2)=SO(2)\cup\{S_\phi\mid\phi\in\mathbb{R}\}=\{A\in Gl_2(\mathbb{R})\mid A^{-1}=A^T\}$
-je ortogonalna grupa reda 2.
+\textbf{Grupa O(2):}
+$O(2)=SO(2)\cup\{S_\phi\mid\phi\in\mathbb{R}\}=\{A\in Gl_2(\mathbb{R})\mid A^{-1}=A^T\}$
+je ortogonalna grupa reda 2. Broj 2 označava da se posmatra ravan.
 
 \subsection{Afina preslikavanja}
 \textit{Definicija, pasivna i aktivna tačka gledišta, osobine afinih preslikavanja
-    (T5.2) (dokaz), odredjenost afinog preslikavanja sa tri para odgovarajućih
+    (T5.2) (dokaz), određenost afinog preslikavanja sa tri para odgovarajućih
     tačaka, predstavljanje afinih preslikavanja ravni 3 x 3 matricama, translacija,
     rotacija (oko O i oko proizvoljne tačke), refleksija u odnosu na pravu,
     skaliranje, smicanje, primeri.}
@@ -610,97 +616,136 @@ je ortogonalna grupa reda 2.
 
 \vspace*{1cm}
 
-Definicija afinih preslikavanja: Neka je $\overline{f}: \mathbb{V}\rightarrow\mathbb{V}$
-linearno preslikavanje vektorskog prostora koji je pridružen prostoru
-tačaka $\mathbb{E}$. Afino preslikavanje $f: \mathbb{E}\rightarrow\mathbb{E}$
-je preslikavanje tačaka koje je indukovano sa $\overline{f}$ u smislu
-da važi $f(M)=M'\land f(N)=N' \iff \overline{f}(\vek{MN})=\vek{M'N'}$.\\
-Pasivna tačka gledišta je kada fiksiramo tačku i posmatramo je iz više repera.\\
-Aktivna tačka gledišta je kada fiksiramo reper i posmatramo neku tačku pre i posle afinog preslikavanja.\\
-Teorema: Svako afino preslikavanje $f$, u fiksiranom reperu $Oe$, ima oblik:\\
-$[f(M)]_{Oe}=[\overline{f}]_{e}\cdot[M]_{Oe}+[f(O)]_{Oe}$.\\
-Dokaz:
+\textbf{Definicija afinih preslikavanja:} Neka je
+$\overline{f}: \mathbb{V}\rightarrow\mathbb{V}$ linearno preslikavanje
+vektorskog prostora koji je pridružen prostoru tačaka $\mathbb{E}$. Afino
+preslikavanje $f: \mathbb{E}\rightarrow\mathbb{E}$ je preslikavanje tačaka koje
+je indukovano sa $\overline{f}$ u smislu da važi sledeća ekvivalencija za svake
+dve tačke $M$ i $N$:
+$$f(M)=M'\land f(N)=N' \iff \overline{f}(\vek{MN})=\vek{M'N'}$$
+\par
+
+\textbf{Pasivna tačka gledišta:} Posmatramo istu tačku iz više repera. Tada se
+njene različite koordinate odnose na koordinate u različitim reperima.
+\par
+
+\textbf{Aktivna tačka gledišta:} Posmatramo istu tačku u istom reperu pre i
+posle nekog afinog preslikavanja. Tada se njene različite koordinate odnose na
+koordinate pre i posle preslikavanja.
+
+\textbf{Teorema:} Svako afino preslikavanje
+$f:\mathbb{E}\rightarrow\mathbb{E}$ indukovano linearnim preslikavanjem
+$\overline{f}:\mathbb{V}\rightarrow\mathbb{V}$ u fiksiranom reperu $Oe$, ima oblik:
+$[f(M)]_{Oe}=[\overline{f}]_{e}[M]_{Oe}+[f(O)]_{Oe}$.\\
+\textbf{Dokaz:}
 \begin{align*}
-    [f(M)]_{Oe}-[f(O)]_{Oe} & =[\vek{Of(M)}]_e-[\vek{Of(O)}]_e =[\vek{Of(M)}]_e+[\vek{f(O)O}]_e                 \\
-                            & =[\vek{f(O)f(M)}]_e=[\overline{f}(\vek{OM})]_e =[\overline{f}]_e\cdot[\vek{OM}]_e \\
-                            & =[\overline{f}]_e\cdot[M]_{Oe}
+    [f(M)]_{Oe}-[f(O)]_{Oe} & =[\vek{Of(M)}]_e-[\vek{Of(O)}]_e =[\vek{Of(M)}]_e+[\vek{f(O)O}]_e            \\
+                            & =[\vek{f(O)f(M)}]_e=[\overline{f}(\vek{OM})]_e =[\overline{f}]_e[\vek{OM}]_e \\
+                            & =[\overline{f}]_e[M]_{Oe}                                                    \\
+    [f(M)]_{Oe}             & =[\overline{f}]_{e}[M]_{Oe}+[f(O)]_{Oe}
 \end{align*}
-Napomena: Kolone matrice $[\overline{f}]_e$ su zapravo slike baznih vektora baze $e$ ($\overline{f}(\vek{e_i})$).\\
-Osobine afinih preslikavanja ravni (\textit{T5.2}):\\
-Preslikaju prave u prave:\\
-S obzirom da je svako afino preslikavanje indukovano linearnim preslikavanjem
-vektorskog prostora, a linearno preslikavanje vektorskog prostora
-čuva kolinearnost, tada i afino preslikavanje čuva kolinearnost, odnosno slika prave u prave.\\
-Čuvaju razmeru kolinearnih duži:\\
-Analogno prošloj osobini.\\
-Čuvaju paralelnost pravih:\\
-Ako se posmatraju po dve tačke na dve paralelne prave,
-dobijamo 2 kolinearna vektora. Odavde se analogno završava dokaz.\\
-Odnos površina slike i originala jednak je $|det(a_{ij})|$:\\
-Napomenimo da je $a_{ij}$ zapravo matrica $[\overline{f}]_e$.
-Zbog jednostavnijeg zapisa i jer je reper fiksiran ćemo izostaviti reper iz zapisa.\\
-Neka je $f(O)=O'$, $f(A)=A'$ i $f(B)=B'$. Površina trougla
-$OAB$ je $\frac{1}{2}\cdot |det(\vek{OA}\vek{OB})|$,
-a površina trougla $O'A'B'$ je $\frac{1}{2}\cdot |det(\vek{O'A'}\vek{O'B'})|$.
-Takođe su $\vek{O'A'}=a_{ij}\cdot \vek{OA}$ i $\vek{O'B'}=a_{ij}\cdot \vek{OB}$.
-Za kraj, koristimo svojstvo $det(A\cdot B)=det(A)\cdot det(B)$.
-\begin{align*}
-    1           & =\frac{det(\vek{OA}\ \vek{OB})}{det(\vek{OA}\ \vek{OB})}                       \\
-    det(a_{ij}) & =\frac{det(a_{ij}\cdot\vek{OA}\ a_{ij}\cdot\vek{OB})}{det(\vek{OA}\ \vek{OB})} \\
-    det(a_{ij}) & =\frac{det(\vek{O'A'}\ \vek{O'B'})}{det(\vek{OA}\ \vek{OB})}                   \\
-\end{align*}
-Čuvaju centar mase i baricentričke koordinate:\\
-Ovo sledi direktno iz čuvanja razmere.\\
-Preslikavanja za koje važi $det(a_{ij})>0$ čuvaju orijentaciju,
-inače menjaju:\\
-Po algebarskoj definiciji, dve baze su iste orijentacije ako
-je determinanta matrice prelaska iz jedne u drugu veća od
-nule. Ovo je aktivna varijanta ove definicije.\\
-Ako su date tri nekolinearne tačke i njihove slike
-može se odrediti jedinstveno afino preslikavanje ravni.\\
-Matrica translacije:
+\textbf{Napomena:} Kolone matrice $[\overline{f}]_e$ su zapravo slike baznih
+vektora baze $e$ ($i$-ta kolona će biti $\overline{f}(\vek{e_i})$).
+\par
+
+\textbf{Osobine afinih preslikavanja ravni (T5.2):}
+\begin{enumerate}[label=\textbf{(\arabic*)}]
+    \item Preslikaju prave u prave.\\
+          \textbf{Dokaz:} S obzirom da je svako afino preslikavanje indukovano linearnim preslikavanjem
+          vektorskog prostora, a linearno preslikavanje vektorskog prostora
+          čuva kolinearnost, tada i afino preslikavanje čuva kolinearnost, odnosno slika prave u prave.
+
+    \item Čuvaju razmeru kolinearnih duži.\\
+          \textbf{Dokaz:} Analogno prošloj osobini.
+
+    \item Čuvaju paralelnost pravih.\\
+          \textbf{Dokaz:} Ako se posmatraju po dve tačke na dve paralelne prave,
+          dobijamo 2 kolinearna vektora. Odavde se analogno završava dokaz.
+
+    \item Odnos površina slike i originala jednak je $|det(a_{ij})|$.\\
+          \textbf{Dokaz:} Napomenimo da je $a_{ij}$ zapravo matrica $[\overline{f}]_e$.
+          Zbog jednostavnijeg zapisa i jer je reper fiksiran ćemo izostaviti reper iz zapisa.
+          Neka je $f(O)=O'$, $f(A)=A'$ i $f(B)=B'$. Površina trougla
+          $OAB$ je $\frac{1}{2}\cdot |det(\vek{OA}\vek{OB})|$,
+          a površina trougla $O'A'B'$ je $\frac{1}{2}\cdot |det(\vek{O'A'}\vek{O'B'})|$.
+          Takođe su $\vek{O'A'}=a_{ij}\cdot \vek{OA}$ i $\vek{O'B'}=a_{ij}\cdot \vek{OB}$.
+          Za kraj, koristimo svojstvo $det(A\cdot B)=det(A)\cdot det(B)$.
+          \begin{align*}
+              1           & =\frac{det(\vek{OA}\ \vek{OB})}{det(\vek{OA}\ \vek{OB})}                       \\
+              det(a_{ij}) & =\frac{det(a_{ij}\cdot\vek{OA}\ a_{ij}\cdot\vek{OB})}{det(\vek{OA}\ \vek{OB})} \\
+              det(a_{ij}) & =\frac{det(\vek{O'A'}\ \vek{O'B'})}{det(\vek{OA}\ \vek{OB})}                   \\
+          \end{align*}
+
+    \item Čuvaju centar mase i baricentričke koordinate.\\
+          \textbf{Dokaz:} Sledi direktno iz čuvanja razmere.
+
+    \item Preslikavanja za koje važi $det(a_{ij})>0$ čuvaju orijentaciju,
+          inače menjaju.\\
+          \textbf{Dokaz:} Po algebarskoj definiciji, dve baze su iste
+          orijentacije ako je determinanta matrice prelaska iz jedne u drugu
+          veća od nule. Ovo je aktivna varijanta ove definicije.
+\end{enumerate}
+\par
+
+\textbf{Određenost afinog preslikavanja sa tri para odgovarajućih tačaka:}
+Ako su date tri nekolinearne tačke i njihove slike može se odrediti jedinstveno
+afino preslikavanje ravni.
+\par
+
+\textbf{Translacija:}
 $\mathcal{T}_{\vek{t}}=\begin{bmatrix}
         1 & 0 & x_t \\
         0 & 1 & y_t \\
         0 & 0 & 1
-    \end{bmatrix}$, gde je $\vek{t}=(x_t,y_t)$.\\
-Matrica rotacije oko $O$:
+    \end{bmatrix}$, gde je $\vek{t}=(x_t,y_t)$ vektor za koji se translira.
+\par
+
+\textbf{Rotacija oko $O$:}
 $\mathcal{R}_\phi=\begin{bmatrix}
         \cos(\phi) & -\sin(\phi) & 0 \\
         \sin(\phi) & \cos(\phi)  & 0 \\
         0          & 0           & 1
-    \end{bmatrix}$, gde je $\phi$ ugao za koji se rotira.\\
-Rotacija oko proizvoljne tačke $M$:
-$\mathcal{T}_{\vek{OM}}\circ\mathcal{R}_\phi\circ\mathcal{T}_{\vek{MO}}$.\\
-Matrica refleksija u odnosu na pravu koja prolazi kroz $O$:
+    \end{bmatrix}$, gde je $\phi$ ugao za koji se rotira.
+\par
+
+\textbf{Rotacija oko proizvoljne tačke:}
+$\mathcal{T}_{\vek{OM}}\circ\mathcal{R}_\phi\circ\mathcal{T}_{\vek{MO}}$, gde
+je $M$ tačka oko koje rotiramo, a $\phi$ ugao za koji rotiramo.
+\par
+
+\textbf{Refleksija u odnosu na pravu koja prolazi kroz $O$:}
 $\mathcal{S}_{p_0}=\begin{bmatrix}
         cos(\phi) & sin(\phi)  & 0 \\
         sin(\phi) & -cos(\phi) & 0 \\
         0         & 0          & 1
-    \end{bmatrix}$, gde je $\frac{\phi}{2}$ ugao između $x$ ose i $p_0$.\\
-Refleksija u odnosu na pravu koja prolazi kroz tačku $M$ se dobija analogno kao rotacija.\\
-Matrica skaliranja sa centrom u tački $O$:
+    \end{bmatrix}$, gde je $\frac{\phi}{2}$ ugao između $x$ ose i $p_0$.
+Refleksija u odnosu na pravu koja prolazi kroz proizvoljnu tačku se dobija
+analogno kao rotacija.
+\par
+
+\textbf{Skaliranja sa centrom u tački $O$}:
 $\mathcal{H}_{\lambda_1,\lambda_2}=\begin{bmatrix}
         \lambda_1 & 0         & 0 \\
         0         & \lambda_2 & 0 \\
         0         & 0         & 1
     \end{bmatrix}$, gde je $\lambda_1$ koeficijent skaliranja u pravcu
 prvog baznog vektora, a $\lambda_2$ koeficijent skaliranja u pravcu
-drugog baznog vektora.\\
-Skaliranje sa centrom u proizvoljnoj tački analogno rotaciji.\\
-Smicanje preslikava kvadrat u pravougaonik iste površine.\\
-Matrice smicanja:\\
+drugog baznog vektora. Skaliranje sa centrom u proizvoljnoj tački analogno
+rotaciji.
+\par
+
+\textbf{Smicanje:} Smicanje preslikava kvadrat u pravougaonik iste površine.
+Matrice smicanja:
 $\mathcal{S}_x(\lambda)=\begin{bmatrix}
         x & \lambda & 0 \\
         0 & y       & 0 \\
         0 & 0       & 1
     \end{bmatrix}$, gde je $\lambda$ koeficijent smicanja u pravcu $x$ ose.\\
 $\mathcal{S}_y(\lambda)=\begin{bmatrix}
-        x & \lambda & 0 \\
-        0 & y       & 0 \\
-        0 & 0       & 1
+        x       & 0 & 0 \\
+        \lambda & y & 0 \\
+        0       & 0 & 1
     \end{bmatrix}$, gde je $\lambda$ koeficijent smicanja u pravcu $y$ ose.
-
 
 \subsection{Izometrije ravni i prostora}
 Defincija, direktne i indirekne izometrije, ortogonalne
