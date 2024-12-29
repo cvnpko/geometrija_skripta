@@ -284,7 +284,7 @@ $\vek{u}=y_1\vek{e_1}+y_2\vek{e_2}$. Tada je:
 \par
 
 Skalarni proizvod $\vek{u}\cdot\vek{v}$ možemo da zapišemo i kao $u^Tv$ gde su
-$u$ i $v$ redom kolone vektora $\vek{u}$ i $\vek{v}$.
+$u$ i $v$ redom kolone koordinata vektora $\vek{u}$ i $\vek{v}$.
 \par
 
 \subsection{Vektorski proizvod}
@@ -748,365 +748,401 @@ $\mathcal{S}_y(\lambda)=\begin{bmatrix}
     \end{bmatrix}$, gde je $\lambda$ koeficijent smicanja u pravcu $y$ ose.
 
 \subsection{Izometrije ravni i prostora}
-Defincija, direktne i indirekne izometrije, ortogonalne
-matrice i njihova determinanta, opis afinih transformacija
-ravni (pitanje 9), rotacija oko prave u prostoru, rotacije
-oko koordinatnih osa, Rodrigezova formula, refleksija u
-odnosu na ravan (računanje), Prva Ojlerova teorema,
-Ojlerovi uglovi, Druga Ojlerova teorema, veza sopstvenih i
-svetskih rotacija - smisao, slučaj zaključanog žiroskopa.\par
+\textit{Defincija, direktne i indirekne izometrije, ortogonalne matrice i
+    njihova determinanta, opis afinih transformacija ravni (pitanje 9), rotacija
+    oko prave u prostoru, rotacije oko koordinatnih osa, Rodrigezova formula,
+    refleksija u odnosu na ravan (računanje), Prva Ojlerova teorema, Ojlerovi
+    uglovi, Druga Ojlerova teorema, veza sopstvenih i svetskih rotacija - smisao,
+    slučaj zaključanog žiroskopa.}
+\par
 
 \vspace*{1cm}
 
-Definicija izometrije: Preslikavanje koje čuva dužine u prostoru
-$\mathbb{E}$ proizvoljne dimenzije.\\
-Direktna izometrija čuva orijentaciju, to su kretanja.\\
-Indirektna izometrija menja orijentaciju.\\
-Ortogonalna matrica je matrica $A$ za koju važi $A\cdot A^T=E$.\\
-Za determinantu ortogonalne matrice važi:\\
-$1=det(E)=det(A\cdot A^T)=det(A)\cdot det(A^T)=det(A)\cdot det(A)=det(A)^2$.\\
-\hyperref[subsec:pitanje_9]{pitanje 9}\\
-Matrica rotacje oko $x$ ose: $\mathcal{R}_x(\phi)=\begin{bmatrix}
+\textbf{Definicija izometrije:} Preslikavanje koje čuva dužine u prostoru
+$\mathbb{E}$ proizvoljne dimenzije.
+\par
+
+\textbf{Direktne izometrij:} Čuvaju orijentaciju (kretanja).
+\par
+
+\textbf{Indirektne izometrije:} Menjaju orijentaciju.
+\par
+
+\textbf{Ortogonalna matrica i njena determinanta:} Matrica $A$ za koju važi
+$AA^T=E$. Za determinantu ortogonalne matrice važi
+$1=det(E)=det(AA^T)=det(A)det(A^T)=det(A)det(A)=det(A)^2$.
+\par
+
+\textbf{Opis afinih transformacija ravni:} \hyperref[subsec:pitanje_9]{Pitanje 9}.
+\par
+
+\textbf{Matrica rotacje oko $x$ ose:} $\mathcal{R}_x(\phi)=\begin{bmatrix}
         1 & 0          & 0           \\
         0 & \cos(\phi) & -\sin{\phi} \\
         0 & \sin(\phi) & \cos(\phi)
-    \end{bmatrix}$\\[0.5cm]
-Matrica rotacje oko $y$ ose: $\mathcal{R}_y(\phi)=\begin{bmatrix}
+    \end{bmatrix}$
+\par
+\textbf{Matrica rotacje oko $y$ ose:} $\mathcal{R}_y(\phi)=\begin{bmatrix}
         \cos(\phi) & 0 & -\sin{\phi} \\
         0          & 1 & 0           \\
         \sin(\phi) & 0 & \cos(\phi)
-    \end{bmatrix}$\\[0.5cm]
-Matrica rotacje oko $z$ ose: $\mathcal{R}_z(\phi)=\begin{bmatrix}
+    \end{bmatrix}$
+\par
+\textbf{Matrica rotacje oko $z$ ose:} $\mathcal{R}_z(\phi)=\begin{bmatrix}
         \cos(\phi) & -\sin{\phi} & 0 \\
         \sin(\phi) & \cos(\phi)  & 0 \\
         0          & 0           & 1
-    \end{bmatrix}$\\[0.5cm]
-Rotacija oko proizvoljne prave koja sadrži koordinatni početak (Rodrigezova formula):\\
-Neka su date tačka $M$ i prava $p$ koja sadrži koordinatni početak $O$ i ugao $\phi$ za koji rotiramo tačku $M$ oko prave $p$.
-Neka je jedinični vektor pravca prave $p$ vektor $\vek{p}$.
-Posmatrajmo ravan $\alpha$ koja sadrži tačku $M$ i njen normalni vektor je vektor $\vek{p}$.
-Neka je $\alpha\cap p =\{O'\}$ i neka su $\vek{x}=\vek{OM}$, $\vek{x_1}=\vek{OO'}$ i $\vek{x_2}=\vek{O'M}$.
+    \end{bmatrix}$
+\par
+\textbf{Rotacija oko proizvoljne prave koja sadrži $O$ (Rodrigezova formula):}
+Neka je dat ON reper Oe i neka su date tačka $M$ i prava $p_0$ koja sadrži
+tačku $O$ i ugao $\phi$ za koji rotiramo tačku $M$ oko prave
+$p_0$. Neka je jedinični vektor pravca prave $p_0$ vektor $\vek{p}$. Posmatrajmo
+ravan $\alpha$ koja sadrži tačku $M$ i njen normalni vektor je vektor
+$\vek{p}$. Neka je $\alpha\cap p_0 =\{O'\}$ i neka su $\vek{x}=\vek{OM}$,
+$\vek{x_1}=\vek{OO'}$ i $\vek{x_2}=\vek{O'M}$. Tada:
 \begin{align*}
-    \vek{x}             & =\vek{x_1}+\vek{x_2} = \lambda\cdot\vek{p}+\vek{x_2}   \\
-    \vek{p}\cdot\vek{x} & =\lambda\cdot\vek{p}\cdot\vek{p}+\vek{x_2}\cdot\vek{p} \\
-                        & =\lambda\cdot|\vek{p}|^2                               \\
-                        & =\lambda                                               \\
+    \vek{x}             & =\vek{x_1}+\vek{x_2} = \lambda\vek{p}+\vek{x_2}                                  \\
+    \vek{p}\cdot\vek{x} & =\lambda(\vek{p}\cdot\vek{p})+\vek{p}\cdot\vek{x_2} =\lambda|\vek{p}|^2 =\lambda
 \end{align*}
-Dobijamo:\\
-$\vek{x_1}=\lambda\cdot \vek{p}=\vek{p}\cdot\lambda=\vek{p}\cdot(\vek{p}^T\cdot \vek{x})=(\vek{p}\cdot \vek{p}^T)\cdot \vek{x}$.
-Treća jednakost važi jer se skalarni proizvod može preko koordinata zapisati kao $\vek{u}^T\cdot \vek{v}$.\\
-$\vek{x_2}=\vek{x}-\vek{x_1}=E\cdot\vek{x}-(\vek{p}\cdot \vek{p}^T)\cdot \vek{x}=(E-\vek{p}\cdot \vek{p}^T)\cdot \vek{x}$.\\
-Neka je $M'$ tačka koja se dobija rotacijom tačke $M$ oko prave $p$ za ugao $\phi$.
-Možemo da posmatramo ortogonalnu bazu $(\vek{p}$,$\vek{x_2}$,$\vek{p}\times\vek{x_2})$.\\
-Tada $\vek{O'M'}=\cos(\phi)\cdot\vek{x_2}+\sin(\phi)(\vek{p}\times\vek{x_2})=\cos(\phi)\cdot\vek{x_2}+\sin(\phi)(\vek{p}\times(\vek{x_1}+\vek{x_2}))=\cos(\phi)\cdot\vek{x_2}+\sin(\phi)(\vek{p}\times\vek{x})$.
-Na kraju dobijamo:
-$$\vek{OM'}=\vek{OO'}+\vek{O'M'}=(\vek{p}\cdot \vek{p}^T)\cdot \vek{x}+\cos(\phi)\cdot(E-\vek{p}\cdot \vek{p}^T)\cdot \vek{x}+\sin(\phi)(\vek{p}_\times\cdot\vek{x})$$
-Odavde dobijamo matricu: $[R_p(\phi)]_e=p\cdot p^T+\cos(\phi)\cdot(E-p\cdot p^T)+\sin(\phi)\cdot\vek{p}_\times$ koju nazivamo Rodrigezova formula.\\
-Refleksija u odnosu na ravan koja sadrži koordinatni početak:\\
-Neka je $\alpha$ ravan koja prolazi kroz $O$ zadata jediničnim
-normalnim vektorom $\vek{p}$ i neka je data tačka $M$
-na koju hoćemo da primenimo refleksiju u odnosu na ravan i neka se
-tom refleksijom dobija tačka $M'$. Neka je $\alpha\cap MM'=\{O'\}$.\\
-$\vek{OM'}=\vek{OM}+\vek{MM'}=\vek{OM}-2\cdot \vek{O'M}$.
-Analogno sa pitanjem za Rodrigezovu formulu:\\
-$\vek{O'M}=\lambda\cdot\vek{p}$\\
-$\vek{p}\cdot\vek{O'M}=\vek{p}\cdot(\vek{O'O}+\vek{OM})=\vek{p}\cdot\vek{OM}=\lambda$\\
-$\vek{O'M}=\vek{p}\cdot (\vek{p}^T\cdot\vek{OM})$\\
-$\vek{OM'}=\vek{OM}-2\cdot(\vek{p}\cdot \vek{p}^T)\cdot\vek{OM}$\\
-Odavde dobijamo matricu: $[S_\alpha]_e=E-2\cdot p\cdot p^T$.\\
-Prva Ojlerova teorema: Svako kretanje koje ima fiksiranu tačku
-$O'$ se može predstaviti kao rotacija oko neke orijentisane
-prave koja sadrži tačku $O'$.\\
-Druga Ojlerova teorema: Svako kretanje koje fiksira koordinatni
-početak se može izraziti kao kompozicija tri sopstvene rotacije
-oko koordinatnih osa:\\
-$R_{Ox_2}(\phi)\circ R_{Oy_1}(\theta)\circ R_{Oz}(\psi)$ gde su $\phi,\psi\in[0,2\cdot\pi),\theta\in[-\frac{\pi}{2},\frac{\pi}{2}]$.\\
-            Uglovi $\phi$,$\theta$,$\psi$ se nazivaju Ojerovi uglovi. Prvom rotacijom se $Oxyz$ slika u $Ox_1y_1z_1$,
-            drugom rotacijom u $Ox_2y_2z_2$ i trećom rotacijom u $Ox_3y_3z_3$.\\
-            Veza sopstvenih i svetskih koordinata je:\\
-        $[R_{Ox_2}(\phi)\circ R_{Oy_1}(\theta)\circ R_{Oz}(\psi)]_e = R_{Oz}(\psi)\circ R_{Oy}(\theta)\circ R_{Ox}(\phi)$.\\
-            Zaključavanje žiroskopa se javlja kada se ravni $Oxy$ i $Oy_3z_3$ poklope. Tada
-            je $|Oz|=|Ox_3|$ zbog čega imamo jedan stepen slobode manje.
-        \par
+Označimo sa $p$, $x$, $x_1$, $x_2$ kolone koordinata vektora $\vek{p}$,
+$\vek{x}$, $\vek{x_1}$, $\vek{x_2}$. Tada za $x_1$ dobijamo
+$x_1=p\lambda=p(p^Tx)=(pp^T)x$, a za $x_2$ dobijamo
+$x_2=x-x_1=Ex-(pp^T)x=(E-pp^T)x$. Neka je sada $M'$ tačka koja se dobija
+rotacijom tačke $M$ oko prave $p$ za ugao $\phi$. Možemo da posmatramo
+ortogonalnu bazu $(\vek{p},\vek{x_2},\vek{p}\times\vek{x_2})$. Tada je:
+\begin{align*}
+    \vek{O'M'} & =\cos(\phi)\vek{x_2}+\sin(\phi)(\vek{p}\times\vek{x_2})             \\
+               & =\cos(\phi)\vek{x_2}+\sin(\phi)(\vek{p}\times(\vek{x_1}+\vek{x_2})) \\
+               & =\cos(\phi)\vek{x_2}+\sin(\phi)(\vek{p}\times\vek{x})
+\end{align*}
+Na kraju dobijamo koordinate tačke $M'$:
+$$[M']_{Oe}=[\vek{OM'}]_e=[\vek{OO'}]_e+[\vek{O'M'}]_e=(pp^T)x+\cos(\phi)(E-pp^T)x+\sin(\phi)\vek{p}_\times x$$
+Možemo da izdvojimo matricu
+$[R_p(\phi)]_e=p\cdot p^T+\cos(\phi)\cdot(E-p\cdot p^T)+\sin(\phi)\cdot\vek{p}_\times$
+koju nazivamo Rodrigezova formula.
+\par
 
-        \subsection{Kvaternioni}
-        Definicija, sabiranje, množenje, osobine, inverzni
-        kvaternion, primeri, konjugacija kvaternionom i izometrije.
-        \\[1cm]
-    Definicija: $\mathbb{H}=\{x\cdot i+y\cdot j+z\cdot k+w\mid x,y,z,w\in\mathbb{R}\}$\\
-    Sabiranje: normalno.\\
-    Množenje: $i\cdot j=k=-j\cdot i$ i $i^2=j^2=k^2=-1$.\\
-    Ako posmatramo kvaternion $q=x\cdot i +y\cdot j +z\cdot k+w$:\\
-    Realni deo je $\mathcal{R}(q)=w$.\\
-    Imaginarni deo je $\mathcal{I}(q)=x\cdot i +y\cdot j +z\cdot k=\vek{v}$.\\
-    Važi $q=x\cdot i +y\cdot j +z\cdot k+w=\mathcal{I}(q)+\mathcal{R}(q)=[(x,y,z),w]=[\vek{v},w]$.\\
-    Osobine:\\
+\textbf{Refleksija u odnosu na ravan koja sadrži O:} Neka je dat ON reper Oe
+$\alpha$ ravan koja prolazi kroz $O$ zadata jediničnim normalnim vektorom
+$\vek{p}$ i neka je data tačka $M$ na koju hoćemo da primenimo refleksiju u
+odnosu na ravan i neka se tom refleksijom dobija tačka $M'$. Neka je
+$\alpha\cap MM'=\{O'\}$. Dobijamo
+$\vek{OM'}=\vek{OM}+\vek{MM'}=\vek{OM}-2\vek{O'M}$. Neka su sa $p$ i $x$
+označene koordinate vektora $\vek{p}$ i $\vek{OM}$.
+
+Analogno sa pitanjem za Rodrigezovu formulu:
+\begin{align*}
+    \vek{O'M}             & =\lambda\vek{p}                                                \\
+    \vek{p}\cdot\vek{O'M} & =\vek{p}\cdot(\vek{O'O}+\vek{OM})=\vek{p}\cdot\vek{OM}=\lambda
+\end{align*}
+Odavde, u koordinatama dobijamo $[\vek{O'M}]_e=(pp^T)x$. Na kraju dobijamo
+koordinate preslikane tačke:
+$$[\vek{OM'}]_e=Ex-2(pp^T)x$$
+Možemo da izdvojimo matricu: $[S_\alpha]_e=E-2pp^T$ koju nazivamo matrica
+refleksije u odnosu na ravan.
+\par
+
+\textbf{Prva Ojlerova teorema:} Svako kretanje koje ima fiksiranu tačku
+$O'$ se može predstaviti kao rotacija oko neke orijentisane
+prave koja sadrži tačku $O'$.
+\par
+
+\textbf{Druga Ojlerova teorema:} Svako kretanje koje fiksira $O$ se može
+izraziti kao kompozicija tri sopstvene rotacije oko koordinatnih osa:
+$R_{Ox_2}(\phi)\circ R_{Oy_1}(\theta)\circ R_{Oz}(\psi)$ gde su uglovi
+$\phi,\psi\in[0,2\pi)$, $\theta\in[-\frac{\pi}{2},\frac{\pi}{2}]$. Uglovi $\phi$,
+$\theta$, $\psi$ se nazivaju Ojerovi uglovi. Prvom rotacijom se $Oxyz$ slika u
+$Ox_1y_1z_1$, drugom rotacijom u $Ox_2y_2z_2$ i trećom rotacijom u $Ox_3y_3z_3$.
+\par
+
+\textbf{Veza sopstvenih i svetskih koordinata:}
+$[R_{Ox_2}(\phi)\circ R_{Oy_1}(\theta)\circ R_{Oz}(\psi)]_e=R_{Oz}(\psi)\circ R_{Oy}(\theta)\circ R_{Ox}(\phi)$.
+\par
+
+\textbf{Slučaj zaključanog žiroskopa:} Javlja se kada se ravni
+$Oxy$ i $Oy_3z_3$ poklope. Tada je $|Oz|=|Ox_3|$ zbog čega imamo jedan stepen slobode manje.
+
+\subsection{Kvaternioni}
+\textit{Definicija, sabiranje, množenje, osobine, inverzni
+    kvaternion, primeri, konjugacija kvaternionom i izometrije.}
+\par
+\vspace*{1cm}
+
+Definicija: $\mathbb{H}=\{x\cdot i+y\cdot j+z\cdot k+w\mid x,y,z,w\in\mathbb{R}\}$\\
+Sabiranje: normalno.\\
+Množenje: $i\cdot j=k=-j\cdot i$ i $i^2=j^2=k^2=-1$.\\
+Ako posmatramo kvaternion $q=x\cdot i +y\cdot j +z\cdot k+w$:\\
+Realni deo je $\mathcal{R}(q)=w$.\\
+Imaginarni deo je $\mathcal{I}(q)=x\cdot i +y\cdot j +z\cdot k=\vek{v}$.\\
+Važi $q=x\cdot i +y\cdot j +z\cdot k+w=\mathcal{I}(q)+\mathcal{R}(q)=[(x,y,z),w]=[\vek{v},w]$.\\
+Osobine:\\
 $q+q_1=[\vek{v},w]+[\vek{v_1},w_1]=[\vek{v}+\vek{v_1},w+w_1]$\\
 $q\cdot q_1=[\vek{v},0]\cdot[\vek{v_1},0]=[\vek{v}\times\vek{v_1},-\langle\vek{v},\vek{v_1}\rangle]$\\
 $q\cdot q_1=[\vek{v},w_1]\cdot[\vek{v_1},w_1]=[\vek{v}\times\vek{v_1}+w\cdot \vek{v_1}+w_1\cdot\vek{v},w\cdot w_1-\langle\vek{v},\vek{v_1}\rangle]$\\
-    Napomena: $\langle\vek{v},\vek{u}\rangle$ je drugi zapis za skalarni proizvod.\\
-    Konjugovani kvaternion: $\overline{q}=-x\cdot i -y\cdot j -z\cdot k+w$.\\
-    Inverzni kvaternion: $q\cdot q^{-1}=1$.\\
-    Osobina: $q\cdot \overline{q}=|q|^2 \implies q^{-1}=\frac{\overline{q}}{|q|^2}$.\\
-    Konjugacije kvaternionom:\\
-    Svaki kvaternion različit od nule određuje konjugaciju: $C_q=q\cdot p \cdot q^{-1}$.
-    Dve konjugacije su iste ako i samo ako važi $q=\lambda\cdot h$, gde je $\lambda\in\mathbb{R}$.\\
-    Konjugacija $C_q$ je izometrija prostora $\mathcal{I}\mathbb{H}\cong\mathbb{R}^3$.\\
-    Konjugacija kvaternionom $q=[\vek{v}\cdot\sin(\frac{\alpha}{2}),\cos(\frac{\alpha}{2})]$
-    je rotacija oko jediničnog vektora $\vek{v}$
-    za ugao $\alpha$ u pozitivnom smeru.
-    \par
+Napomena: $\langle\vek{v},\vek{u}\rangle$ je drugi zapis za skalarni proizvod.\\
+Konjugovani kvaternion: $\overline{q}=-x\cdot i -y\cdot j -z\cdot k+w$.\\
+Inverzni kvaternion: $q\cdot q^{-1}=1$.\\
+Osobina: $q\cdot \overline{q}=|q|^2 \implies q^{-1}=\frac{\overline{q}}{|q|^2}$.\\
+Konjugacije kvaternionom:\\
+Svaki kvaternion različit od nule određuje konjugaciju: $C_q=q\cdot p \cdot q^{-1}$.
+Dve konjugacije su iste ako i samo ako važi $q=\lambda\cdot h$, gde je $\lambda\in\mathbb{R}$.\\
+Konjugacija $C_q$ je izometrija prostora $\mathcal{I}\mathbb{H}\cong\mathbb{R}^3$.\\
+Konjugacija kvaternionom $q=[\vek{v}\cdot\sin(\frac{\alpha}{2}),\cos(\frac{\alpha}{2})]$
+je rotacija oko jediničnog vektora $\vek{v}$
+za ugao $\alpha$ u pozitivnom smeru.
+\par
 
-    \subsection{Afina geometrija ravni}
-    Predstavljanje prave, razne jednačine pravih, normalni
-    vektor prave, vektor pravca prave, presek dve prave zadate
-    jednačinama, presek pravih zadatih tačkom i vektorom pravca
-    (dokaz), presek dve duži, parametarsko zadavanje trougla,
-    paralelograma.
-    \\[1cm]
-    Implicitna jednačina prave: $a\cdot x+b\cdot y + c = 0$.\\
-    Parametarska jednačina prave: $M(t)=P+t\cdot \vek{p}$.\\
-    Iz implicitnog zapisa možemo da pročitamo normalni vektor $\vek{n_p}=(a,b)$.\\
-    Iz parametarskog zapisa možemo da pročitamo vektor pravca $\vek{p}$.\\
-    Presek pravih se dobija rešavanjem dve jednačine prave sa dve nepoznate.\\
-    Duž $AB$ možemo da zadamo sa parametarski sa: $M(t)=A+t\cdot \vek{AB}, t\in[0,1]$.\\
-    Presek duži: možemo da odredimo gde se nalazi presek rešavanjem jednačina,
-    a zatim da proverimo da li je ta tačka između tačaka $A_1$, $B_1$ i $A_2$, $B_2$.\\
-    Trougao možemo da zadamo sa: $M(t_1,t_2)=A+t_1\cdot \vek{AB}+t_2\cdot \vek{AC}, t_1, t_2\in[0,1], t_1+t_2\leq1$.
-    Paralelogram možemo da zadamo sa: $M(t_1,t_2)=A+t_1\cdot \vek{AB}+t_2\cdot \vek{AC}, t_1, t_2\in[0,1]$.
-    \par
+\subsection{Afina geometrija ravni}
+Predstavljanje prave, razne jednačine pravih, normalni
+vektor prave, vektor pravca prave, presek dve prave zadate
+jednačinama, presek pravih zadatih tačkom i vektorom pravca
+(dokaz), presek dve duži, parametarsko zadavanje trougla,
+paralelograma.
+\\[1cm]
+Implicitna jednačina prave: $a\cdot x+b\cdot y + c = 0$.\\
+Parametarska jednačina prave: $M(t)=P+t\cdot \vek{p}$.\\
+Iz implicitnog zapisa možemo da pročitamo normalni vektor $\vek{n_p}=(a,b)$.\\
+Iz parametarskog zapisa možemo da pročitamo vektor pravca $\vek{p}$.\\
+Presek pravih se dobija rešavanjem dve jednačine prave sa dve nepoznate.\\
+Duž $AB$ možemo da zadamo sa parametarski sa: $M(t)=A+t\cdot \vek{AB}, t\in[0,1]$.\\
+Presek duži: možemo da odredimo gde se nalazi presek rešavanjem jednačina,
+a zatim da proverimo da li je ta tačka između tačaka $A_1$, $B_1$ i $A_2$, $B_2$.\\
+Trougao možemo da zadamo sa: $M(t_1,t_2)=A+t_1\cdot \vek{AB}+t_2\cdot \vek{AC}, t_1, t_2\in[0,1], t_1+t_2\leq1$.
+Paralelogram možemo da zadamo sa: $M(t_1,t_2)=A+t_1\cdot \vek{AB}+t_2\cdot \vek{AC}, t_1, t_2\in[0,1]$.
+\par
 
-    \subsection{Ravan u prostoru}
-    Zadavanje ravni tačkom i normalnim vektorom (dokaz),
-    skiciranje ravni, specijalni slučajevi ravni, parametarska
-    jednačina ravni, jednačina ravni kroz 3 tačke, primeri.
-    \\[1cm]
-    Zadavanje ravni tačkom i normalnim vektorom:\\
-    Neka je dat normalni vektor $\vek{n_\alpha}=(a,b,c)$
-    i tačka $P=(x_1,y_1,z_1)$ koja pripada ravni.
-    Posmatrajmo tačku sa ravni $A=(x,y,z)$. Važi da
-    je $\vek{PA}\cdot\vek{n_\alpha}=0$.
-    Odavde:
+\subsection{Ravan u prostoru}
+Zadavanje ravni tačkom i normalnim vektorom (dokaz),
+skiciranje ravni, specijalni slučajevi ravni, parametarska
+jednačina ravni, jednačina ravni kroz 3 tačke, primeri.
+\\[1cm]
+Zadavanje ravni tačkom i normalnim vektorom:\\
+Neka je dat normalni vektor $\vek{n_\alpha}=(a,b,c)$
+i tačka $P=(x_1,y_1,z_1)$ koja pripada ravni.
+Posmatrajmo tačku sa ravni $A=(x,y,z)$. Važi da
+je $\vek{PA}\cdot\vek{n_\alpha}=0$.
+Odavde:
 $\vek{PA}\circ\vek{n_\alpha}=(x-x_1,y-y_1,z-z_1)\circ(a,b,c)=a\cdot x+b\cdot y+c\cdot z-(a\cdot x_1+b\cdot y_1+c\cdot z_1)=0$.
-    Ako obeležimo $d=-(a\cdot x_1+b\cdot y_1+c\cdot z_1)$ dobijamo $a\cdot x+b\cdot y+c\cdot z+d=0$.
-    Skiciranje ravni može da se vrši tako što se prvo izračunaju i označe preseci sa osama.\\
-    Parametarska jednačina ravni: $M(t,s)=A+t\cdot\vek{v}+s\cdot\vek{u}$,
-    gde je $A$ tačka koja pripada ravni, a $\vek{v}$ i $\vek{u}$
-    su vektori paralelni sa ravni.\\
-    Jednačina ravni kroz tri tačke:\\
-    Ako su date nekolinearne tačke $A$, $B$ i $C$, tada
-    je jednačine ravni: $M(t,s)=A+t\cdot\vek{AB}+s\cdot\vek{AC}$.
-    Ako su tačke kolinearna ne može se jednoznačno odrediti ravan koja ih sadrži.
-    \par
+Ako obeležimo $d=-(a\cdot x_1+b\cdot y_1+c\cdot z_1)$ dobijamo $a\cdot x+b\cdot y+c\cdot z+d=0$.
+Skiciranje ravni može da se vrši tako što se prvo izračunaju i označe preseci sa osama.\\
+Parametarska jednačina ravni: $M(t,s)=A+t\cdot\vek{v}+s\cdot\vek{u}$,
+gde je $A$ tačka koja pripada ravni, a $\vek{v}$ i $\vek{u}$
+su vektori paralelni sa ravni.\\
+Jednačina ravni kroz tri tačke:\\
+Ako su date nekolinearne tačke $A$, $B$ i $C$, tada
+je jednačine ravni: $M(t,s)=A+t\cdot\vek{AB}+s\cdot\vek{AC}$.
+Ako su tačke kolinearna ne može se jednoznačno odrediti ravan koja ih sadrži.
+\par
 
-    \subsection{Prava u prostoru}
-    Parametarska i ”kanonska” jednačina prave, prava AB i
-    podela duži AB na jednake delove, prava kao presek dve
-    ravni, pramen ravni, primeri.
-    \\[1cm]
-    Parametarska jednačina: $M(t)=A+t\cdot\vek{p}$,
-    gde je $A$ tačka na pravoj, a $\vek{p}$ je vektor
-    pravca.\\
-    "Kanonska" jednačina je pod navodnicima jer nešto što je kanonsko bi
-    trebalo da bude jedinstveno, ali ova jednačina nije jedinstvena.\\
-    Kanonska jednačina prave: $\frac{x-x_0}{p_x}=\frac{y-y_0}{p_y}=\frac{z-z_0}{p_z}=t$.\\
-    Ako želimo da podelimo duž $AB$ na $n$ delova i
-    želimo da nađemo $m$-tu tačku podele to radimo sa:
+\subsection{Prava u prostoru}
+Parametarska i ”kanonska” jednačina prave, prava AB i
+podela duži AB na jednake delove, prava kao presek dve
+ravni, pramen ravni, primeri.
+\\[1cm]
+Parametarska jednačina: $M(t)=A+t\cdot\vek{p}$,
+gde je $A$ tačka na pravoj, a $\vek{p}$ je vektor
+pravca.\\
+"Kanonska" jednačina je pod navodnicima jer nešto što je kanonsko bi
+trebalo da bude jedinstveno, ali ova jednačina nije jedinstvena.\\
+Kanonska jednačina prave: $\frac{x-x_0}{p_x}=\frac{y-y_0}{p_y}=\frac{z-z_0}{p_z}=t$.\\
+Ako želimo da podelimo duž $AB$ na $n$ delova i
+želimo da nađemo $m$-tu tačku podele to radimo sa:
 $T_m=A+\vek{AB}\cdot\frac{m}{n}$, važi da je
 $T_0=A$ i $T_n=B$.\\
-    Prava kao presek dve ravni se dobija kao rešenje sistema
-    dve jednačine od tri nepoznate. Može da nema rešenja, ravni su paralelne,
-    ima beskonačno mnogo rešenja koje će formirati prava, ravni se seku po pravoj ili
-    ima beskonačno mnogo rešenja koje će formirati ravan, ravni se poklapaju.\\
-    Ako se dve ravni seku u pravoj, njihovom linearnom kombinacijom
-    se dobija svaka ravan koja sadrži tu pravu i ovo se naziva
-    pramen ravni. Opšti primer:\\
+Prava kao presek dve ravni se dobija kao rešenje sistema
+dve jednačine od tri nepoznate. Može da nema rešenja, ravni su paralelne,
+ima beskonačno mnogo rešenja koje će formirati prava, ravni se seku po pravoj ili
+ima beskonačno mnogo rešenja koje će formirati ravan, ravni se poklapaju.\\
+Ako se dve ravni seku u pravoj, njihovom linearnom kombinacijom
+se dobija svaka ravan koja sadrži tu pravu i ovo se naziva
+pramen ravni. Opšti primer:\\
 $\alpha: a_1\cdot x+b_1\cdot y+c_1\cdot z+d_1=0$\\
 $\beta: a_2\cdot x+b_2\cdot y+c_2\cdot z+d_2=0$\\
-    Tada je pramen ravni:\\
+Tada je pramen ravni:\\
 $\lambda_1\cdot(a_1\cdot x+b_1\cdot y+c_1\cdot z+d_1)+\lambda_2\cdot (a_2\cdot x+b_2\cdot y+c_2\cdot z+d_2)=0$.
-    \par
+\par
 
-    \subsection{Međusobni položaji pravih i ravni}
-    \label{subsec:pitanje_16}
-    Međusobni položaji dve prave (zadatih tačkom i vektorom
-    pravca) u prostoru, međusobni položaj prave i ravni,
-    međusobni položaji dve ravni, mimoilazne prave, zajednička
-    normala - T4.3 (dokaz), rastojanje mimoilaznih pravih -
-    T4.4 (dokaz).
-    \\[1cm]
-    Dve prave mogu da budu paralelne, mimoilazne,
-    da se poklapaju i da se seku. Možemo da rešavamo
-    dve jednačine sa dve nepoznate. Ako postoji
-    jedno rešenje onda se seku. Ako postoji beskonačno
-    mnogo rešenja onda se poklapaju. Ako nema rešenja
-    a vektori su kolinearni onda su prave paralelne.
-    Ako ništa od prethodnog ne važi onda su mimoilazne.\\
-    Prava i ravan mogu da budu paralelne, da se seku
-    ili da ravan sadrži pravu. Ako sistem jednačina
-    ima jedinstveno rešenje, onda se seku, ako ima
-    beskonačno mnogo rešenja onda ravan sadrži pravu,
-    inače su paralelne.
-    Dve ravni mogu da se poklapaju, budu paralelne ili da se seku.
-    Analogni su slučajevi pravoj i ravni.\\
-    Mimoilazne prave su prave preko kojih ne može da se
-    postavi ravan.\\
-    T4.3 Mimoilazne prave $p$ i $q$ imaju jedinstvenu
-    zajedničku normalu:\\
-    Dokaz:\\
-    Neka su date prave $p$ i $q$. Vektor pravca
-    prave $n$ koja je normalna na obe prave će
-    biti $\vek{p}\times\vek{q}$ gde su
+\subsection{Međusobni položaji pravih i ravni}
+\label{subsec:pitanje_16}
+Međusobni položaji dve prave (zadatih tačkom i vektorom
+pravca) u prostoru, međusobni položaj prave i ravni,
+međusobni položaji dve ravni, mimoilazne prave, zajednička
+normala - T4.3 (dokaz), rastojanje mimoilaznih pravih -
+T4.4 (dokaz).
+\\[1cm]
+Dve prave mogu da budu paralelne, mimoilazne,
+da se poklapaju i da se seku. Možemo da rešavamo
+dve jednačine sa dve nepoznate. Ako postoji
+jedno rešenje onda se seku. Ako postoji beskonačno
+mnogo rešenja onda se poklapaju. Ako nema rešenja
+a vektori su kolinearni onda su prave paralelne.
+Ako ništa od prethodnog ne važi onda su mimoilazne.\\
+Prava i ravan mogu da budu paralelne, da se seku
+ili da ravan sadrži pravu. Ako sistem jednačina
+ima jedinstveno rešenje, onda se seku, ako ima
+beskonačno mnogo rešenja onda ravan sadrži pravu,
+inače su paralelne.
+Dve ravni mogu da se poklapaju, budu paralelne ili da se seku.
+Analogni su slučajevi pravoj i ravni.\\
+Mimoilazne prave su prave preko kojih ne može da se
+postavi ravan.\\
+T4.3 Mimoilazne prave $p$ i $q$ imaju jedinstvenu
+zajedničku normalu:\\
+Dokaz:\\
+Neka su date prave $p$ i $q$. Vektor pravca
+prave $n$ koja je normalna na obe prave će
+biti $\vek{p}\times\vek{q}$ gde su
 $\vek{p}$ i $\vek{q}$ vektori
-    pravca pravih $p$ i $q$. Sve prave čiji su
-    vektori pravca ortogonalni
-    i sa $\vek{p}$ i sa $\vek{q}$
-    i koje seku pravu $p$ će
-    pripadati ravni $\alpha$ koja se konstruiše
-    jednom tačkom sa prave $p$ i vektorima $\vek{p}$
-    i $\vek{p}\times\vek{q}$.
-    Analogno možemo da konstruišemo ravan $\beta$
-    koja će sadržati sve prave čiji su
-    vektori pravca ortogonalni
-    i sa $\vek{p}$ i sa $\vek{q}$
-    i koje seku pravu $q$. Presek ove dve ravni
-    će biti prava $n$ koja je jedinstvena jer
-    su $p$ i $q$ mimoilazne. Prava $n$ je normalna
-    na prave $p$ i $q$ jer je njen koeficijent pravca
+pravca pravih $p$ i $q$. Sve prave čiji su
+vektori pravca ortogonalni
+i sa $\vek{p}$ i sa $\vek{q}$
+i koje seku pravu $p$ će
+pripadati ravni $\alpha$ koja se konstruiše
+jednom tačkom sa prave $p$ i vektorima $\vek{p}$
+i $\vek{p}\times\vek{q}$.
+Analogno možemo da konstruišemo ravan $\beta$
+koja će sadržati sve prave čiji su
+vektori pravca ortogonalni
+i sa $\vek{p}$ i sa $\vek{q}$
+i koje seku pravu $q$. Presek ove dve ravni
+će biti prava $n$ koja je jedinstvena jer
+su $p$ i $q$ mimoilazne. Prava $n$ je normalna
+na prave $p$ i $q$ jer je njen koeficijent pravca
 $\vek{p}\times \vek{q}$ i seče
-    ih po konstrukciji.\\
-    T4.4 Rastojanje između mimoilaznih pravih je:
+ih po konstrukciji.\\
+T4.4 Rastojanje između mimoilaznih pravih je:
 $\frac{|[\vek{p},\vek{q},\vek{PQ}]|}{|p\times q|}$ gde su
 $P$ i $\vek{p}$ tačka i vektor pravca prave $p$,
-    a $Q$ i $\vek{q}$ tačka i vektor pravca prave $q$.\\
-    Dokaz:\\
-    U brojiocu je zapravo zapremina paralelopipeda, a u
-    imeniocu je površina baze pa se deljenjem tačno dobija
-    visina koju tražimo.
+a $Q$ i $\vek{q}$ tačka i vektor pravca prave $q$.\\
+Dokaz:\\
+U brojiocu je zapravo zapremina paralelopipeda, a u
+imeniocu je površina baze pa se deljenjem tačno dobija
+visina koju tražimo.
 
 
-    \subsection{Projekcije}
-    Normalna projekcija na ravan $Oxy$ (je linearno preslikavanje),
-    normalna projekcija na \\proizvoljnu ravan (dokaz),
-    centralna projekcija, formule centralne projekcije iz
+\subsection{Projekcije}
+Normalna projekcija na ravan $Oxy$ (je linearno preslikavanje),
+normalna projekcija na \\proizvoljnu ravan (dokaz),
+centralna projekcija, formule centralne projekcije iz
 $C(0,0,0)$ na ravan $z=f$, kartografske projekcije,
-    definicija i formule stereografska projekcija.\par
+definicija i formule stereografska projekcija.\par
 
-    \vspace*{1cm}
+\vspace*{1cm}
 
-    Matrica normalne projekcije na $Oxy$ ravan:
+Matrica normalne projekcije na $Oxy$ ravan:
 $\begin{bmatrix}
-    x' \\
-    y' \\
-    z' \\
-    1
-\end{bmatrix}=\begin{bmatrix}
-    1 & 0 & 0 & 0 \\
-    0 & 1 & 0 & 0 \\
-    0 & 0 & 1 & 0 \\
-    0 & 0 & 0 & 1
-\end{bmatrix}=\begin{bmatrix}
-    x \\
-    y \\
-    z \\
-    1
-\end{bmatrix}$.\\
-    Matrica normalne projekcije na proizvoljnu ravan koja sadrži koordinatni početak:
-    Neka je $\alpha$ ravan koja prolazi kroz $O$ zadata jediničnim
-    normalnim vektorom $\vek{p}$ i neka je data tačka $M$
-    koju hoćemo da projektujemo na ravan i neka se
-    tom projekcijom dobija tačka $M'$.\\
+        x' \\
+        y' \\
+        z' \\
+        1
+    \end{bmatrix}=\begin{bmatrix}
+        1 & 0 & 0 & 0 \\
+        0 & 1 & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1
+    \end{bmatrix}=\begin{bmatrix}
+        x \\
+        y \\
+        z \\
+        1
+    \end{bmatrix}$.\\
+Matrica normalne projekcije na proizvoljnu ravan koja sadrži koordinatni početak:
+Neka je $\alpha$ ravan koja prolazi kroz $O$ zadata jediničnim
+normalnim vektorom $\vek{p}$ i neka je data tačka $M$
+koju hoćemo da projektujemo na ravan i neka se
+tom projekcijom dobija tačka $M'$.\\
 $\vek{OM'}=\vek{OM}-\vek{M'M}$.
 $\vek{M'M}=\lambda\cdot\vek{p}$\\
 $\vek{p}\cdot\vek{M'M}=\vek{p}\cdot(\vek{M'O}+\vek{OM})=\vek{p}\cdot\vek{OM}=\lambda$\\
 $\vek{M'M}=\vek{p}\cdot (\vek{p}^T\cdot\vek{OM})$\\
 $\vek{OM'}=\vek{OM}-(\vek{p}\cdot \vek{p}^T)\cdot\vek{OM}$\\
-    Odavde dobijamo matricu: $x'=(E-p\cdot p^T)\cdot x$.\\
-    Centralna projekcija: Za centralnu projekciju je potrebno
-    da fiksiramo ravan na koju projektujemo i tačku u odnosu
-    na koju projektujemo (iz koje posmatramo).\\
-    Centralna projekcija u odnosu na tačku $C(0,0,0)$ na ravan $z=d$:
-    Posmatrajmo proizvoljnu tačku $M(x,y,z)$. Neka je njena projekcija tačka $M'(x',y',z')$.
-    Tada je $x'=\frac{d}{z}\cdot x$, $y'=\frac{d}{z}\cdot y$ i $z'=\frac{d}{z}\cdot z=d$.
-    Ovo možemo izraziti matrično preko homogenih koordinata:\\
-    Neka je $x'=\frac{x_1'}{x_4'}$, $y'=\frac{x_2'}{x_4'}$ i $z'=\frac{x_3'}{x_4'}$.
-    Tada se centralna projekcija može predstaviti matricom:
+Odavde dobijamo matricu: $x'=(E-p\cdot p^T)\cdot x$.\\
+Centralna projekcija: Za centralnu projekciju je potrebno
+da fiksiramo ravan na koju projektujemo i tačku u odnosu
+na koju projektujemo (iz koje posmatramo).\\
+Centralna projekcija u odnosu na tačku $C(0,0,0)$ na ravan $z=d$:
+Posmatrajmo proizvoljnu tačku $M(x,y,z)$. Neka je njena projekcija tačka $M'(x',y',z')$.
+Tada je $x'=\frac{d}{z}\cdot x$, $y'=\frac{d}{z}\cdot y$ i $z'=\frac{d}{z}\cdot z=d$.
+Ovo možemo izraziti matrično preko homogenih koordinata:\\
+Neka je $x'=\frac{x_1'}{x_4'}$, $y'=\frac{x_2'}{x_4'}$ i $z'=\frac{x_3'}{x_4'}$.
+Tada se centralna projekcija može predstaviti matricom:
 $\begin{bmatrix}
-    x_1' \\
-    x_2' \\
-    x_3' \\
-    x_4'
-\end{bmatrix}=\begin{bmatrix}
-    d & 0 & 0 & 0 \\
-    0 & d & 0 & 0 \\
-    0 & 0 & d & 0 \\
-    0 & 0 & 1 & 0
-\end{bmatrix}=\begin{bmatrix}
-    x \\
-    y \\
-    z \\
-    1
-\end{bmatrix}$.\\
-    Kartografske projekcije projektuju zakrivljene površine na
-    ravan.\\
-    Stereografska projekcija je specijalan slučaj centralne
-    projekcije kojom se jedinična sfera projektuje na ravan.
-    centar projekcije je neka tačka sfere, a ravan na koju se
-    projektuje tangira sferu.\\
-    Izvođenje formula:\\
-    Neka je $C=(0,0,1)$ i $z=-1$. Posmatrajmo tačku na lopti
+        x_1' \\
+        x_2' \\
+        x_3' \\
+        x_4'
+    \end{bmatrix}=\begin{bmatrix}
+        d & 0 & 0 & 0 \\
+        0 & d & 0 & 0 \\
+        0 & 0 & d & 0 \\
+        0 & 0 & 1 & 0
+    \end{bmatrix}=\begin{bmatrix}
+        x \\
+        y \\
+        z \\
+        1
+    \end{bmatrix}$.\\
+Kartografske projekcije projektuju zakrivljene površine na
+ravan.\\
+Stereografska projekcija je specijalan slučaj centralne
+projekcije kojom se jedinična sfera projektuje na ravan.
+centar projekcije je neka tačka sfere, a ravan na koju se
+projektuje tangira sferu.\\
+Izvođenje formula:\\
+Neka je $C=(0,0,1)$ i $z=-1$. Posmatrajmo tačku na lopti
 $M=(x,y,z)$ i pravu $p(\lambda)=C+\lambda\cdot\vek{CM}$.
-    Važi $x'=\lambda\cdot x$, $y'=\lambda\cdot y$ i $z'=\lambda\cdot z+\lambda=-1$.
-    Odavde dobijamo $\lambda=\frac{1}{1-z}$. Na kraju dobijamo formule stereografske
-    projekcije:
+Važi $x'=\lambda\cdot x$, $y'=\lambda\cdot y$ i $z'=\lambda\cdot z+\lambda=-1$.
+Odavde dobijamo $\lambda=\frac{1}{1-z}$. Na kraju dobijamo formule stereografske
+projekcije:
 $x'=\frac{x}{1-z}$, $y'=\frac{y}{1-z}$ i $z'=-1$.
 
 
-    \subsection{Uglovi između pravih i ravni}
-    Merenje uglova (stepeni, radijani, nagib u procentima),
-    ugao između 2 prave, ugao između prave i ravni,
-    ugao između dve ravni, ugao između pljosni tetraedra
-    (na dva načina), računski primeri.\par
+\subsection{Uglovi između pravih i ravni}
+Merenje uglova (stepeni, radijani, nagib u procentima),
+ugao između 2 prave, ugao između prave i ravni,
+ugao između dve ravni, ugao između pljosni tetraedra
+(na dva načina), računski primeri.\par
 
-    \vspace*{1cm}
+\vspace*{1cm}
 
-    Veza stepena i radijana: $180^\circ=\pi$.\\
-    Radijan predstavlja odnos dužine luka i dužine poluprečnika.\\
-    Merenje nagiba u procentima: Ako merimo ugao između hipotenuze
-    i jedne katete i dužina te katete je $a$, a dužina druge
-    katete je $b$, tada će nagib biti $\frac{b}{a}\cdot 100\%$. Dakle,
-    ako je dužina jedne hipotenuze $1$ metar, a dužina druge
-    hipotenuze $5$ centimetara, tada će nagib hipotenuze biti $5\%$.
-    Ugao između dve prave se određuje kao ugao između vektora pravca
-    tih pravi.\\
-    Ugao između prave i ravni se određuje kao $\frac{\pi}{2}-\angle{\vek{n_\alpha}\vek{p}}$
-    gde je $\vek{n_\alpha}$ normalni vektor ravni, a $\vek{p}$ vektor pravca prave.\\
-    Ugao između dve ravni je ugao između njihovih normalnih vektora.
-    Ugao između pljosni tetraedra:\\
-    Prvi način:\\
-    Posmatrajmo jediničnu kocku $ABCDA'B'C'D'$.
-    Tačke $ACB'D'$ formiraju pravilni tetraedar. Lako možemo
-    da odredimo koordinate ovih tačaka.\\
-    Drugi način:\\
-    Posmatrajmo pravilni jedinični tetraedar $ABCD$. Označimo sredinu
-    stranice $AB$ sa $M$. Izdvojimo trougao $MDC$. Zanima nas
-    ugao $CMD$. Neka je $|MD|=\frac{\sqrt{3}}{2}$, $|DC|=1$ i $|MC|=\frac{\sqrt{3}}{2}$.
-    Preko kosinusne teoreme dobijamo:\\
+Veza stepena i radijana: $180^\circ=\pi$.\\
+Radijan predstavlja odnos dužine luka i dužine poluprečnika.\\
+Merenje nagiba u procentima: Ako merimo ugao između hipotenuze
+i jedne katete i dužina te katete je $a$, a dužina druge
+katete je $b$, tada će nagib biti $\frac{b}{a}\cdot 100\%$. Dakle,
+ako je dužina jedne hipotenuze $1$ metar, a dužina druge
+hipotenuze $5$ centimetara, tada će nagib hipotenuze biti $5\%$.
+Ugao između dve prave se određuje kao ugao između vektora pravca
+tih pravi.\\
+Ugao između prave i ravni se određuje kao $\frac{\pi}{2}-\angle{\vek{n_\alpha}\vek{p}}$
+gde je $\vek{n_\alpha}$ normalni vektor ravni, a $\vek{p}$ vektor pravca prave.\\
+Ugao između dve ravni je ugao između njihovih normalnih vektora.
+Ugao između pljosni tetraedra:\\
+Prvi način:\\
+Posmatrajmo jediničnu kocku $ABCDA'B'C'D'$.
+Tačke $ACB'D'$ formiraju pravilni tetraedar. Lako možemo
+da odredimo koordinate ovih tačaka.\\
+Drugi način:\\
+Posmatrajmo pravilni jedinični tetraedar $ABCD$. Označimo sredinu
+stranice $AB$ sa $M$. Izdvojimo trougao $MDC$. Zanima nas
+ugao $CMD$. Neka je $|MD|=\frac{\sqrt{3}}{2}$, $|DC|=1$ i $|MC|=\frac{\sqrt{3}}{2}$.
+Preko kosinusne teoreme dobijamo:\\
 $|DC|^2=|MD|^2+|MC|^2-2\cdot|MD|\cdot|MC|\cos(\gamma)$.
-    Odavde je $\gamma=\arccos(\frac{\frac{1}{2}}{2\cdot\frac{3}{4}})=\arccos(\frac{1}{3})$.
+Odavde je $\gamma=\arccos(\frac{\frac{1}{2}}{2\cdot\frac{3}{4}})=\arccos(\frac{1}{3})$.
 
-    \subsection{Rastojanja}
-    Rastojanje između tačke i prave (sa izvodjenjem),
-    rastojanje između tačke i ravni (dokaz), rastojanje između
-    mimoilaznih pravih (pitanje 16).\par
+\subsection{Rastojanja}
+Rastojanje između tačke i prave (sa izvodjenjem),
+rastojanje između tačke i ravni (dokaz), rastojanje između
+mimoilaznih pravih (pitanje 16).\par
 
-    \vspace*{1cm}
+\vspace*{1cm}
 
-    Rastojanje između tačke i prave:\\
-    Neka je data prava $p$ i tačka $A$ čije rastojanje se traži.
-    Možemo da izaberemo neku tačku $P$ na pravi i da izračunamo
-    površinu paralelograma zadatog vektorima: $\vek{AB}$ i $\vek{p}$.
-    Tada se tražena visina dobija formulom: $d(A,p)=\frac{|\vek{AB}\times\vek{p}|}{|\vek{p}|}$.\\
+Rastojanje između tačke i prave:\\
+Neka je data prava $p$ i tačka $A$ čije rastojanje se traži.
+Možemo da izaberemo neku tačku $P$ na pravi i da izračunamo
+površinu paralelograma zadatog vektorima: $\vek{AB}$ i $\vek{p}$.
+Tada se tražena visina dobija formulom: $d(A,p)=\frac{|\vek{AB}\times\vek{p}|}{|\vek{p}|}$.\\
 Rastojanje između tačke i ravni: potpuno analogno osim što
 se umesto površine i dužine koristi zapreina i površina.\\
 \hyperlink{subsec:pitanje_16}{pitanje 16}.
