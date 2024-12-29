@@ -69,13 +69,33 @@ urlcolor=blue}
 \par
 \vspace*{1cm}
 
+\textbf{Primeri:} U skripti neće biti navedeni primeri.
+
 \textbf{Množenje i skalarni proizvod:} Množenje se neće označavati posebnom
 oznakom, dok će se za skalarni proizvod koristiti oznaka $\cdot$.
 \par
 
-\textbf{Mase tačaka:} Za tačku $A$, oznaka $A(m_A)$ znači da tačka $A$ ima
+\textbf{Uglovi:} Uglovi između vektora će se označavati sa
+$\angle{\vek{v}\vek{u}}$, a uglovi formirani od tri tačke sa $\angle{ABC}$ gde
+će se posmatrati ugao kod tačke $B$. Podrazumeva se da se posmatra ugao u
+pozitivnom smeru od $\vek{v}$ do $\vek{u}$, odnosno od $AB$ do $BC$. Ugao je iz
+intervala $[0,2\pi)$.
+
+\par
+
+\textbf{Mase tačaka:} Za tačku $A$ oznaka $A(m_A)$ znači da tačka $A$ ima
 dodeljenu masu $m_A$. Podrazumevaće se i da se oznaka $m_A$ odnosi na tačku
 $A$. Umesto $A$ može da stoji proizvoljna oznaka tačke.
+
+\par
+
+\textbf{Ortonormirana baza:} U nastavku će se "ortonormirane baze" skraćeno
+nazivati "ON baze".
+
+\par
+
+\textbf{Ortonormirana baza pozitivne orijentacije:} U nastavku će se
+"ortonormirane baze pozitivne orijentacije" skraćeno nazivati "ON+ baze".
 
 \newpage
 
@@ -256,7 +276,7 @@ $\vek{u}=y_1\vek{e_1}+y_2\vek{e_2}$. Tada je:
     \sqrt{\vek{v}\cdot\vek{v}}$.
 \par
 
-\textbf{Računanje ugla skalarnim proizvodom:} $\angle\vek{u}\vek{v}=
+\textbf{Računanje ugla skalarnim proizvodom:} $\angle{\vek{u}\vek{v}}=
     \arccos(\frac{\vek{u}\cdot\vek{v}}{|\vek{u}|\cdot|\vek{v}|})$
 \par
 
@@ -283,7 +303,7 @@ satu, inače negativna.
 \textbf{Definicija vektorskog proizvoda:} Pravac vektorskog proizvoda je
 normalan na ravan koju obrazuju vektori $\vek{u}$ i $\vek{v}$. Intenzitet
 vektorskog proizvoda $|\vek{u}\times\vek{v}|=|\vek{u}||\vek{v}|
-    \sin(\angle\vek{u}\vek{v})$. Smer je takav da je baza
+    \sin(\angle{\vek{u}\vek{v}})$. Smer je takav da je baza
 $(\vek{u},\vek{v},\vek{u}\times\vek{v})$ pozitivno orijentisana.
 \par
 
@@ -358,7 +378,7 @@ Tada  $\vek{v}_\times=
     \end{bmatrix}$.
 \par
 \textbf{Površina trougla $ABC$:}
-$$P_{ABC}=\frac{1}{2}ah_a=\frac{1}{2} |\vek{BC}||\vek{BA}|\sin(\angle\vek{BA}\vek{BC})=\frac{1}{2} |\vek{BC}\times\vek{BC}|$$
+$$P_{ABC}=\frac{1}{2}ah_a=\frac{1}{2} |\vek{BC}||\vek{BA}|\sin(\angle{\vek{BA}\vek{BC}})=\frac{1}{2} |\vek{BC}\times\vek{BC}|$$
 \par
 
 \textbf{Orijentacija trougla $ABC$:} Trougao $ABC$ u reperu $Oe$ je zadat sa
@@ -412,8 +432,8 @@ vektora.\\
 \textbf{Dokaz:} Neka je dat paralelopiped $ABCDA_1B_1C_1D_1$ i neka su
 $\vek{AB}=\vek{u}$, $\vek{AD}=\vek{v}$ i $\vek{AA_1}=\vek{w}$. Tada je
 zapremina $V=P_{ABCD}\cdot h=|\vek{u}\times\vek{v}|\cdot h=
-    ||\vek{u}\times\vek{v}|\cdot \vek{w}|\cos(\angle \vek{u}\times
-    \vek{v},\vek{w})|=|(\vek{u}\times\vek{v}) \cdot \vek{w}|=|[\vek{u},\vek{v},
+    ||\vek{u}\times\vek{v}|\cdot \vek{w}|\cos(\angle{(\vek{u}\times
+            \vek{v})\vek{w}})|=|(\vek{u}\times\vek{v}) \cdot \vek{w}|=|[\vek{u},\vek{v},
     \vek{w}]|$.
 \par
 
@@ -509,57 +529,83 @@ prelazimo u reper $Qf$. Dodatno, neka je $C$ matrica prelaska iz baze $e$ u
 bazu $f$. Tada:
 $$[X]_{Qf} =[\vek{QX}]_f =[\vek{QO}]_f+[\vek{OX}]_e =[O]_{Qf}+C[\vek{OX}]_e =[O]_{Qf}+C[\vek{X}]_{Oe} \hspace*{0.1cm}\text{(1.23)}$$
 Ako je $[X]_{Oe}=x'$, $[X]_{Qf}=x$ i $[O]_{Qf}=q$, tada dobijamo $x=q+Cx'$ (1.24).
-\par
 
 \subsection{Transformacije koordinata u ON bazama ravni}
 \label{subsec:pitanje_9}
-Slučaj baza iste orijentacije, matrica rotacije, osobine matrice
-rotacije, slučaj baza različite orijentacije, matrica refleksije,
-osobine matrica refleksije, grupe $SO(2)$ i $O(2)$.\par
+\textit{Slučaj baza iste orijentacije, matrica rotacije, osobine matrice
+    rotacije, slučaj baza različite orijentacije, matrica refleksije,
+    osobine matrica refleksije, grupe $SO(2)$ i $O(2)$.}
+\par
 
 \vspace*{1cm}
 
-\textit{I slučaj:} Neka su baze $Oe$ i $Qf$ ON i iste orijentacije. Neka je $e=(\vek{e_1},\vek{e_2})$
-i $f=(\vek{f_1},\vek{f_2})$ i neka je $\angle(\vek{e_1}\vek{f_1})=\phi$, $\phi\in[0,2\cdot\pi)$.
-Tada je:\\
-$\vek{f_1}=\vek{e_1}\cdot\cos(\phi)+\vek{e_2}\cdot\sin(\phi)$\\
-$\vek{f_2}=\vek{e_1}\cdot\cos(\phi+\frac{\pi}{2})+\vek{e_2}\cdot\sin(\phi+\frac{\pi}{2})=\vek{e_1}\cdot(-\sin(\phi))+\vek{e_2}\cdot\cos(\phi)$.\\
-Odavde dobijamo formulu za istu orijentaciju: $x=q+\begin{bmatrix}
+\textbf{Slučaj baza iste orijentacije:} Neka su baze $Oe$ i $Qf$ ON i iste
+orijentacije. Neka je $e=(\vek{e_1},\vek{e_2})$ i $f=(\vek{f_1},\vek{f_2})$ i
+neka je $\angle{\vek{e_1}\vek{f_1}}=\phi$, $\phi\in[0,2\pi)$.
+Tada važe jednakosti $\vek{f_1}=\cos(\phi)\vek{e_1}+\sin(\phi)\vek{e_2}$ i
+$\vek{f_2}=-\sin(\phi)\vek{e_1}+\cos(\phi)\vek{e_2}$. Odavde dobijamo formulu
+za istu orijentaciju: $x=q+\begin{bmatrix}
         \cos(\phi) & -\sin(\phi) \\
         \sin(\phi) & \cos(\phi)
-    \end{bmatrix}\cdot x'$.\\
-Matrica koju smo dobili je matrica rotacije oko $O$ za ugao $\phi$.\\
-Osobine matrice rotacije:\\
-$(R_\phi)^{-1}=R_{-\phi}=(R_\phi)^T$\\
-$det(R_\phi)=1$\\
-$R_\phi\cdot R_\psi=R_{\phi+\psi}=R_\psi\cdot R_\phi$\\
-\textit{II slučaj:} Neka su baze $Oe$ i $Qf$ ON i različite orijentacije. Neka je $e=(\vek{e_1},\vek{e_2})$
-i $f=(\vek{f_1},\vek{f_2})$ i neka je $\angle(\vek{e_1}\vek{f_1})=\phi$, $\phi\in[0,2\cdot\pi)$.
-Tada je:\\
-$\vek{f_1}=\vek{e_1}\cdot\cos(\phi)+\vek{e_2}\cdot\sin(\phi)$\\
-$\vek{f_2}=\vek{e_1}\cdot\cos(\phi-\frac{\pi}{2})+\vek{e_2}\cdot\sin(\phi-\frac{\pi}{2})=\vek{e_1}\cdot\sin(\phi)+\vek{e_2}\cdot(-\cos(\phi))$.\\
-Odavde dobijamo formulu za istu orijentaciju: $x=q+\begin{bmatrix}
+    \end{bmatrix} x'$.
+\par
+
+\textbf{Matrica rotacije:} $R_\phi=\begin{bmatrix}
+        \cos(\phi) & -\sin(\phi) \\
+        \sin(\phi) & \cos(\phi)
+    \end{bmatrix}$ je matrica rotacije vektora za ugao $\phi$. Rotira se u
+pozitivnom smeru.
+\par
+
+\textbf{Osobine matrica rotacije:}
+\begin{enumerate}[label=\textit{\arabic*)}]
+    \item $(R_\phi)^{-1}=R_{-\phi}=(R_\phi)^T$
+    \item $det(R_\phi)=1$
+    \item $R_\phi\cdot R_\psi=R_{\phi+\psi}=R_\psi\cdot R_\phi$
+\end{enumerate}
+\par
+
+\textbf{Slučaj baza različite orijentacije:} Neka su baze $Oe$ i $Qf$ ON i
+različite orijentacije. Neka je $e=(\vek{e_1},\vek{e_2})$ i
+$f=(\vek{f_1},\vek{f_2})$ i neka je $\angle{\vek{e_1}\vek{f_1}}=\phi$,
+$\phi\in[0,2\pi)$. Tada važe jednakosti
+$\vek{f_1}=\cos(\phi)\vek{e_1}+\sin(\phi)\vek{e_2}$ i
+$\vek{f_2}=\sin(\phi)\vek{e_1}-\cos(\phi)\vek{e_2}$. Odavde dobijamo formulu za
+različitu orijentaciju: $x=q+\begin{bmatrix}
         \cos(\phi) & \sin(\phi)  \\
         \sin(\phi) & -\cos(\phi)
-    \end{bmatrix}\cdot x'$.\\
-Matrica koju smo dobili je matrica refleksije u odnosu na pravu $p_0$ koja
-prolazi kroz $O$ i gradi sa $\vek{e_1}$ ugao $\frac{\phi}{2}$.\\
-Osobine matrice refleksije:\\
-$(S_\phi)^{-1}=(S_\phi)^T$\\
-$(S_\phi)^{2}=E$\\
-$det(S_\phi)=-1$\\
-$S_\phi\cdot S_\psi=R_{\phi-\psi}$\\
-Specijalna ortogonalna grupa reda 2: $SO(2)=\{R_\phi\mid\phi\in\mathbb{R}\}$.\\
-Ortogonalna grupa reda 2: $O(2)=SO(2)\cup\{S_\phi\mid\phi\in\mathbb{R}\}=\{A\in Gl_2(\mathbb{R})\mid A^{-1}=A^T\}$.
+    \end{bmatrix} x'$.
+\par
 
+\textbf{Matrica refleksije:} $S_\phi=\begin{bmatrix}
+        \cos(\phi) & \sin(\phi)  \\
+        \sin(\phi) & -\cos(\phi)
+    \end{bmatrix}$ je matrica refleksije u odnosu na vektor $\vek{p}$.
+Vektor koji se transformiše gradi sa vektorom $\vek{p}$ ugao $\frac{\phi}{2}$.
+\par
+
+\textbf{Osobine matrica refleksije:}
+\begin{enumerate}[label=\textit{\arabic*)}]
+    \item $(S_\phi)^{-1}=(S_\phi)^T$
+    \item $(S_\phi)^{2}=E$
+    \item $det(S_\phi)=-1$
+    \item $S_\phi S_\psi=R_{\phi-\psi}$
+\end{enumerate}
+\par
+
+\textbf{SO(2):} $SO(2)=\{R_\phi\mid\phi\in\mathbb{R}\}$ je specijalna
+ortogonalna grupa reda 2.
+\par
+
+\textbf{O(2):} $O(2)=SO(2)\cup\{S_\phi\mid\phi\in\mathbb{R}\}=\{A\in Gl_2(\mathbb{R})\mid A^{-1}=A^T\}$
+je ortogonalna grupa reda 2.
 
 \subsection{Afina preslikavanja}
-Definicija, pasivna i aktivna tačka gledišta, osobine afinih
-preslikavanja (T5.2) (dokaz), odredjenost afinog
-preslikavanja sa tri para odgovarajućih tačaka,
-predstavljanje afinih preslikavanja ravni 3 x 3 matricama,
-translacija, rotacija (oko O i oko proizvoljne tačke), refleksija
-u odnosu na pravu, skaliranje, smicanje, primeri.
+\textit{Definicija, pasivna i aktivna tačka gledišta, osobine afinih preslikavanja
+    (T5.2) (dokaz), odredjenost afinog preslikavanja sa tri para odgovarajućih
+    tačaka, predstavljanje afinih preslikavanja ravni 3 x 3 matricama, translacija,
+    rotacija (oko O i oko proizvoljne tačke), refleksija u odnosu na pravu,
+    skaliranje, smicanje, primeri.}
 \par
 
 \vspace*{1cm}
@@ -988,7 +1034,7 @@ $x'=\frac{x}{1-z}$, $y'=\frac{y}{1-z}$ i $z'=-1$.
     hipotenuze $5$ centimetara, tada će nagib hipotenuze biti $5\%$.
     Ugao između dve prave se određuje kao ugao između vektora pravca
     tih pravi.\\
-    Ugao između prave i ravni se određuje kao $\frac{\pi}{2}-\angle(\vek{n_\alpha}\vek{p})$
+    Ugao između prave i ravni se određuje kao $\frac{\pi}{2}-\angle{\vek{n_\alpha}\vek{p}}$
     gde je $\vek{n_\alpha}$ normalni vektor ravni, a $\vek{p}$ vektor pravca prave.\\
     Ugao između dve ravni je ugao između njihovih normalnih vektora.
     Ugao između pljosni tetraedra:\\
