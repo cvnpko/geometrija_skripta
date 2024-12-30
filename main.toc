@@ -19,3 +19,17 @@
 \contentsline {subsection}{\numberline {2.17}Projekcije}{17}{subsection.2.17}%
 \contentsline {subsection}{\numberline {2.18}Uglovi između pravih i ravni}{18}{subsection.2.18}%
 \contentsline {subsection}{\numberline {2.19}Rastojanja}{18}{subsection.2.19}%
+\contentsline {subsection}{\numberline {2.20}Prodor prave kroz trougao}{19}{subsection.2.20}%
+\contentsline {subsection}{\numberline {2.21}Konusni preseci}{19}{subsection.2.21}%
+\contentsline {subsection}{\numberline {2.22}Elipsa}{19}{subsection.2.22}%
+\contentsline {subsection}{\numberline {2.23}Hiperbola}{19}{subsection.2.23}%
+\contentsline {subsection}{\numberline {2.24}Parabola}{19}{subsection.2.24}%
+\contentsline {subsection}{\numberline {2.25}Optičke osobine krivih drugog reda}{20}{subsection.2.25}%
+\contentsline {subsection}{\numberline {2.26}Krive drugog reda}{20}{subsection.2.26}%
+\contentsline {subsection}{\numberline {2.27}Bezijeove krive}{20}{subsection.2.27}%
+\contentsline {subsection}{\numberline {2.28}Poligoni}{20}{subsection.2.28}%
+\contentsline {subsection}{\numberline {2.29}Konveksni omotač}{20}{subsection.2.29}%
+\contentsline {subsection}{\numberline {2.30}Triangulacija poligona}{20}{subsection.2.30}%
+\contentsline {subsection}{\numberline {2.31}Poliedarske površi}{21}{subsection.2.31}%
+\contentsline {subsection}{\numberline {2.32}Orijentacija poliedarske površi}{21}{subsection.2.32}%
+\contentsline {subsection}{\numberline {2.33}Platonova tela}{21}{subsection.2.33}%
