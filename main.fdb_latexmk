@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1735515533.53657 "/home/cwpko/Desktop/MATF/3_semestar/G/geometrija_skripta/main.tex" "main.pdf" "main" 1735515533.9971 0
+["pdflatex"] 1735583039.24809 "/home/cwpko/Desktop/MATF/3_semestar/G/geometrija_skripta/main.tex" "main.pdf" "main" 1735583039.79513 0
   "/etc/texmf/web2c/texmf.cnf" 1729275013.35261 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/cwpko/Desktop/MATF/3_semestar/G/geometrija_skripta/main.tex" 1735515533.38565 49269 5efb105882e6ec2af1a4b8de4b779beb ""
+  "/home/cwpko/Desktop/MATF/3_semestar/G/geometrija_skripta/main.tex" 1735583039.02281 50116 2855b3aec6275ff1a5d798fef4b16d50 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1136768653 3584 13049b61b922a28b158a38aeff75ee9b ""
@@ -118,10 +118,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1729275652.72073 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1729275753 6831175 b276a6fdbec604d4e839afc30b8e3deb ""
-  "main.aux" 1735515533.93365 3220 b9b0e9ee7a8564ddef9609823df14bf2 "pdflatex"
-  "main.out" 1735515533.93365 3859 55f11606922a689e619641b2da5fa192 "pdflatex"
-  "main.tex" 1735515533.38565 49269 5efb105882e6ec2af1a4b8de4b779beb ""
-  "main.toc" 1735515533.93465 1905 153d799787f2f866a1cd9d19defcb97c "pdflatex"
+  "main.aux" 1735583039.70581 3220 25f9112452161b8be5849b3a820f3090 "pdflatex"
+  "main.out" 1735583039.70681 3859 55f11606922a689e619641b2da5fa192 "pdflatex"
+  "main.tex" 1735583039.02281 50116 2855b3aec6275ff1a5d798fef4b16d50 ""
+  "main.toc" 1735583039.70681 1905 2f53582e59a7d15f0edf0a8fb3180392 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

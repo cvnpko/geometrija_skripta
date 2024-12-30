@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {2.12}Kvaternioni}{14}{subsection.2.12}%
 \contentsline {subsection}{\numberline {2.13}Afina geometrija ravni}{15}{subsection.2.13}%
 \contentsline {subsection}{\numberline {2.14}Ravan u prostoru}{15}{subsection.2.14}%
-\contentsline {subsection}{\numberline {2.15}Prava u prostoru}{15}{subsection.2.15}%
+\contentsline {subsection}{\numberline {2.15}Prava u prostoru}{16}{subsection.2.15}%
 \contentsline {subsection}{\numberline {2.16}Međusobni položaji pravih i ravni}{16}{subsection.2.16}%
 \contentsline {subsection}{\numberline {2.17}Projekcije}{17}{subsection.2.17}%
 \contentsline {subsection}{\numberline {2.18}Uglovi između pravih i ravni}{18}{subsection.2.18}%
