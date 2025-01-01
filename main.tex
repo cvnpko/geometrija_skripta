@@ -1,30 +1,34 @@
 \documentclass[12pt]{article}
+
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{color}
-\usepackage{url}
+\usepackage[hyphens]{url}
 \usepackage{enumitem}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{geometry}
 \usepackage{graphicx}
-\usepackage[unicode]{hyperref}
+\usepackage{cite}
+\usepackage[unicode,hidelinks]{hyperref}
 \usepackage{tocloft}
 \usepackage{array}
 \usepackage{titlesec}
+\usepackage{caption}
+
 \newcommand{\vek}[1]{\overrightarrow{#1}}
-
-\geometry{top=1in, bottom=1in, left=1in, right=1in}
-\hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,
-urlcolor=blue}
-\setlength{\parskip}{0.1cm}
-
+\renewcommand{\refname}{Literatura}
 \renewcommand{\contentsname}{Sadržaj}
 \renewcommand{\cftsecfont}{\bfseries}
 \renewcommand{\cftsecpagefont}{\bfseries}
 \setlength{\cftbeforesecskip}{0.5cm}
 \setlength{\cftsecindent}{0pt}
 \setlength{\cftsubsecindent}{1.5cm}
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
+\hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,
+urlcolor=blue}
+\setlength{\parskip}{0.1cm}
+
 
 \begin{document}
 
@@ -35,7 +39,8 @@ urlcolor=blue}
     \textsc{\LARGE Matematički fakultet}\\[5cm]
 
     \HRule\\[0.4cm]
-    {\LARGE\bfseries Odgovori na teorijska ispitna pitanja iz geometrije}\\[0.2cm]
+    {\LARGE\bfseries Odgovori na teorijska ispitna pitanja iz geometrije}
+    \\[0.2cm]
     \HRule\\[2cm]
 
     \vspace{17\baselineskip}
@@ -69,7 +74,7 @@ urlcolor=blue}
 \par
 \vspace*{1cm}
 
-\textbf{Primeri:} U skripti neće biti navedeni primeri.
+\textbf{Primeri:} Većina primera neće biti navedena.
 
 \textbf{Množenje i skalarni proizvod:} Množenje se neće označavati posebnom
 oznakom, dok će se za skalarni proizvod koristiti oznaka $\cdot$.
@@ -78,33 +83,30 @@ oznakom, dok će se za skalarni proizvod koristiti oznaka $\cdot$.
 \textbf{Uglovi:} Uglovi između vektora će se označavati sa
 $\angle{\vek{v}\vek{u}}$, a uglovi formirani od tri tačke sa $\angle{ABC}$ gde
 će se posmatrati ugao kod tačke $B$. Podrazumeva se da se posmatra ugao u
-pozitivnom smeru od $\vek{v}$ do $\vek{u}$, odnosno od $AB$ do $BC$. Ugao je iz
-intervala $[0,2\pi)$.
-
+pozitivnom smeru od $\vek{v}$ do $\vek{u}$, odnosno, od $AB$ do $BC$. Ugao je
+iz intervala $[0,2\pi)$.
 \par
 
 \textbf{Mase tačaka:} Za tačku $A$ oznaka $A(m_A)$ znači da tačka $A$ ima
-dodeljenu masu $m_A$. Podrazumevaće se i da se oznaka $m_A$ odnosi na tačku
-$A$. Umesto $A$ može da stoji proizvoljna oznaka tačke.
-
+dodeljenu masu $m_A$. Podrazumevaće se da se i bez navedene oznake oznaka
+$m_{A}$ odnosi na tačku $A$. Umesto $A$ može da stoji proizvoljna oznaka
+tačke.
 \par
 
-\textbf{Baza vektorskog prostora:} Vektori baze $e$ su
-$\vek{e_1},\dotsc,\vek{e_n}$, gde je $n$ dimenzija vektorskog prostora.
-
+\textbf{Baza vektorskog prostora:} Označavamo $i$-ti vektori baze $e$ sa
+$\vek{e_i}$.
 \par
 
-\textbf{Ortonormirana baza:} U nastavku će se "ortonormirane baze" skraćeno
-nazivati "ON baze".
-
+\textbf{Ortonormirana baza:} U nastavku će se ,,ortonormirane baze`` skraćeno
+nazivati ,,ON baze``.
 \par
 
 \textbf{Ortonormirana baza pozitivne orijentacije:} U nastavku će se
-"ortonormirane baze pozitivne orijentacije" skraćeno nazivati "ON+ baze".
-
+,,ortonormirane baze pozitivne orijentacije`` skraćeno nazivati ,,ON+ baze``.
 \par
 
-\textbf{Kvaternioni:} Za kvaternion $q$ važi $q=xi+yj+zk+w$.
+\textbf{Označavanje duži:} Dužina duži koju formiraju tačke $A$ i $B$
+se označava sa AB.
 
 \newpage
 
@@ -157,20 +159,21 @@ i smer kao početni vektor, a intenzitet mu je $1$.
 \textbf{T1.1:} Neka su $\vek{u}, \vek{v}, \vek{w}\in\mathbb{V}$. Tada važe
 sledeća tvrđenja:
 \begin{enumerate}[label=\textbf{(S\arabic*)}]
-    \item $(\vek{u}+\vek{v})+\vek{w}=\vek{u}+(\vek{v}+\vek{w})$\\
+    \item $(\vek{u}+\vek{v})+\vek{w}=\vek{u}+(\vek{v}+\vek{w})$\par
           \textbf{Dokaz:}
-          $(\vek{AB}+\vek{BC})+\vek{CD}=\vek{AC}+\vek{CD}=\vek{AD}=\vek{AB}+\vek{BD}
-              =\vek{AB}+(\vek{BC}+\vek{CD})$
+          $(\vek{AB}+\vek{BC})+\vek{CD}=\vek{AC}+\vek{CD}=\vek{AD}
+              =\vek{AB}+\vek{BD}=\vek{AB}+(\vek{BC}+\vek{CD})$
     \item
-          $\vek{u}+\vek{0}=\vek{u}=\vek{0}+\vek{u}$\\
+          $\vek{u}+\vek{0}=\vek{u}=\vek{0}+\vek{u}$\par
           \textbf{Dokaz:}
           $\vek{AB}+\vek{BB}=\vek{AB}=\vek{AA}+\vek{AB}$
-    \item $\vek{u}+(-\vek{u})=\vek{0}$\\
+    \item $\vek{u}+(-\vek{u})=\vek{0}$\par
           \textbf{Dokaz:}
           $\vek{AB}+\vek{BA}=\vek{AA}$
-    \item $\vek{u}+\vek{v}=\vek{v}+\vek{u}$\\
+    \item $\vek{u}+\vek{v}=\vek{v}+\vek{u}$\par
           \textbf{Dokaz:}
-          $\vek{AB}+\vek{BC}=\vek{AC}=-\vek{CA}=-\vek{CB}-\vek{BA}=\vek{BC}+\vek{AB}$
+          $\vek{AB}+\vek{BC}=\vek{AC}=-\vek{CA}=-\vek{CB}-\vek{BA}
+              =\vek{BC}+\vek{AB}$
 \end{enumerate}
 
 \subsection{Linearna zavisnost i nezavisnost vektora}
@@ -185,25 +188,26 @@ $$\alpha_1\vek{v_1}+\dotsc+\alpha_n\vek{v_n}=\vek{0} \iff \alpha_1=
 \par
 
 \textbf{T1.3:}\label{theorem:1.3} U ravni postoje dva linearno nezavisna
-vektora, a svaka tri su zavisna.\\
+vektora, a svaka tri su zavisna.
+\par
 \textbf{Dokaz:} U ravni postoje 3 nekolinearne tačke $O, A, B$. Tada su vektori
-$\vek{OA}$ i $\vek{OB}$ linearno nezavisni.\\
-Posmatrajmo $\vek{u}$, $\vek{v}$ i $\vek{w}$ koji pripadaju istoj ravni. Ako su
-$\vek{u}$ i $\vek{v}$ linearno zavisni tada važi $\vek{u}=\alpha\vek{v}
-    \implies 1\vek{u}-\alpha\vek{v}+0\vek{w}=\vek{0}$. Dakle i
-$\vek{u}$, $\vek{v}$ i $\vek{w}$ su linearno zavisni.\\
-Pretpostavimo da su $\vek{u}$ i $\vek{v}$ linearno nezavisni. Posmatrajmo tačke
-u ravni $O$, $A$, $B$, $C$ takve da $\vek{OA}=\vek{u}$, $\vek{OB}=\vek{v}$,
-$\vek{OC}=\vek{w}$. Obeležimo tačke $X$ i $Y$ na pravim $OA$ i $OB$ tako da je
-$OXCY$ paralelogram. Važi $\vek{OX}=\alpha\vek{OA}$ i $\vek{OY}=\beta
-    \vek{OB}$. Tada:
+$\vek{OA}$ i $\vek{OB}$ linearno nezavisni. Posmatrajmo $\vek{u}$, $\vek{v}$ i
+$\vek{w}$ koji pripadaju istoj ravni. Ako su $\vek{u}$ i $\vek{v}$ linearno
+zavisni tada važi $\vek{u}=\alpha\vek{v}\implies 1\vek{u}-\alpha\vek{v}+
+    0\vek{w}=\vek{0}$. Dakle i $\vek{u}$, $\vek{v}$ i $\vek{w}$ su linearno
+zavisni. Pretpostavimo da su $\vek{u}$ i $\vek{v}$ linearno nezavisni.
+Posmatrajmo tačke u ravni $O$, $A$, $B$, $C$ takve da $\vek{OA}=\vek{u}$,
+$\vek{OB}=\vek{v}$, $\vek{OC}=\vek{w}$. Obeležimo tačke $X$ i $Y$ na pravim
+$OA$ i $OB$ tako da je $OXCY$ paralelogram. Važi $\vek{OX}=\alpha\vek{OA}$ i
+$\vek{OY}=\beta\vek{OB}$. Tada:
 $$\vek{OX}+\vek{OY}=\vek{OC}=\alpha\vek{OA}+\beta\vek{OB} \implies
     \alpha\vek{OA}+\beta\vek{OB}-\vek{OC}=\vek{0}$$
 što je kraj dokaza.
 \par
 
-\textbf{T1.4:} U prostoru postoje tri linearno nezavisna vektora, a svaka četiri su
-linearno zavisni. Dokaz je potpuno analogan dokazu \hyperref[theorem:1.3]{T1.3}.
+\textbf{T1.4:} U prostoru postoje tri linearno nezavisna vektora, a svaka
+četiri su linearno zavisni. Dokaz je potpuno analogan dokazu
+\hyperref[theorem:1.3]{T1.3}.
 
 
 \subsection{Koordinate vektora i tačaka}
@@ -273,8 +277,11 @@ međusobno ortogonalna. Važi: $\vek{e_i}\cdot\vek{e_j} =
     \vek{u}\in\mathbb{V}$ važi $\vek{v}=x_1\vek{e_1}+x_2\vek{e_2}$ i
 $\vek{u}=y_1\vek{e_1}+y_2\vek{e_2}$. Tada je:
 \begin{align*}
-    \vek{v}\cdot\vek{u} & = (x_1\vek{v}+x_2\vek{v})\cdot(y_1\vek{u}+y_2\vek{u})                                                                             \\
-                        & = x_1y_1(\vek{e_1}\cdot\vek{e_1})+x_2y_1(\vek{e_1}\cdot\vek{e_2})+x_1y_2(\vek{e_1}\cdot\vek{e_2})+x_2y_2(\vek{e_2}\cdot\vek{e_2}) \\
+    \vek{v}\cdot\vek{u} & = (x_1\vek{v}+x_2\vek{v})\cdot(y_1\vek{u}
+    +y_2\vek{u})                                                             \\
+                        & = x_1y_1(\vek{e_1}\cdot\vek{e_1})+x_2y_1(\vek{e_1}
+    \cdot\vek{e_2})+x_1y_2(\vek{e_1}\cdot\vek{e_2})+x_2y_2(\vek{e_2}
+    \cdot\vek{e_2})                                                          \\
                         & = x_1y_1+x_2y_2
 \end{align*}
 \par
@@ -284,7 +291,7 @@ $\vek{u}=y_1\vek{e_1}+y_2\vek{e_2}$. Tada je:
 \par
 
 \textbf{Računanje ugla skalarnim proizvodom:} $\angle{\vek{u}\vek{v}}=
-    \arccos(\frac{\vek{u}\cdot\vek{v}}{|\vek{u}|\cdot|\vek{v}|})$
+    \arccos(\frac{\vek{u}\cdot\vek{v}}{|\vek{u}||\vek{v}|})$
 \par
 
 Skalarni proizvod $\vek{u}\cdot\vek{v}$ možemo da zapišemo i kao $u^Tv$ gde su
@@ -316,53 +323,53 @@ $(\vek{u},\vek{v},\vek{u}\times\vek{v})$ pozitivno orijentisana.
 
 \textbf{Osobine:}
 \begin{enumerate}[label=\textbf{(\arabic*)}]
-    \item $\vek{u}\times\vek{v}=-\vek{v}\times\vek{u}$\hspace*{1cm}(antisimetričnost)
-    \item $(\alpha\cdot\vek{u}+\beta\cdot\vek{v})\times\vek{w}=\alpha\cdot(\vek{u}\times\vek{w})+\beta\cdot(\vek{v}\times\vek{w})$\hspace*{1cm}(linearnost)
+    \item $\vek{u}\times\vek{v}=-\vek{v}\times\vek{u}$\hspace*{1cm}
+          (antisimetričnost)
+    \item $(\alpha\vek{u}+\beta\vek{v})\times\vek{w}=\alpha(\vek{u}
+              \times\vek{w})+\beta(\vek{v}\times\vek{w})$\hspace*{1cm}(linearnost)
 \end{enumerate}
 \par
 
-\textbf{Vektorski proizvod baznih vektora u ON+ bazi:}\\[0.1cm]
-\noindent
-\begin{minipage}{0.65\textwidth}
-    \begin{flushleft}
-        Vektorski proizvod baznih vektora u ON+ bazi vidimo iz tabele desno.
-        Takođe, na osnovu tabele možemo da napravimo krug sa kog čitamo
-        rezultate. Vektore $\vek{e_1}$, $\vek{e_2}$ i $\vek{e_3}$ postavimo u
-        krug i strelicama povežemo $\vek{e_1}$ sa $\vek{e_2}$, $\vek{e_2}$ sa
-        $\vek{e_3}$ i $\vek{e_3}$ sa $\vek{e_1}$. Tada, na primer, ako tražimo
-        $\vek{e_2}\times\vek{e_1}$ vidimo da strelica pokazuje sa $\vek{e_1}$
-        na $\vek{e_2}$ pa je znak negativan, a jedini neiskorišćen vektor je
-        $\vek{e_3}$ pa je rešenje $-\vek{e_3}$.
-    \end{flushleft}
-\end{minipage}
-\hfill
-\begin{minipage}{0.3\textwidth}
-    \centering
-    \begin{tabular}{|c|c|c|c|}
-        \hline
-        $\times$    & $\vek{e_1}$  & $\vek{e_2}$  & $\vek{e_3}$  \\
-        \hline
-        $\vek{e_1}$ & $\vek{0}$    & $-\vek{e_3}$ & $\vek{e_2}$  \\
-        \hline
-        $\vek{e_2}$ & $\vek{e_3}$  & $\vek{0}$    & $-\vek{e_1}$ \\
-        \hline
-        $\vek{e_3}$ & $-\vek{e_2}$ & $\vek{e_1}$  & $\vek{0}$    \\
-        \hline
-    \end{tabular}
-\end{minipage}
+\textbf{Vektorski proizvod baznih vektora u ON+ bazi:}
+\begin{figure}[h]
+    \begin{minipage}{0.55\textwidth}
+        Vektorski proizvod baznih vektora u ON+ bazi vidimo sa
+        \hyperref[pic::vektorski_krug]{kruga desno}. Na primer, ako tražimo
+        $\vek{e_2}\times\vek{e_1}$ vidimo da strelica pokazuje sa
+        $\vek{e_1}$ na $\vek{e_2}$ pa je znak negativan, a jedini
+        neiskorišćen vektor je $\vek{e_3}$ pa je rešenje $-\vek{e_3}$. Ako
+        tražimo $\vek{e_3}\times\vek{e_1}$ vidimo da strelica pokazuje sa
+        $\vek{e_3}$ na $\vek{e_1}$ pa je znak pozitivan. Preostali vektor
+        je $\vek{e_2}$ pa je rešenje $+\vek{e_3}$. Ako tražimo
+        $\vek{e_3}\times\vek{e_3}$ vidimo da nema strelice koja pokazuje sa
+        $\vek{e_3}$ na $\vek{e_3}$ pa je rešenje $\vek{0}$.
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \includegraphics[width=0.5\textwidth]{vektorski_proizvod_krug.png}
+        \caption*{Vektorski proizvod baznih vektora\cite{book::first}}
+        \label{pic::vektorski_krug}
+    \end{minipage}
+\end{figure}
+
 \par
 
 \textbf{Formula za vektorski proizvod u ON+ bazi:} Neka su $\vek{v},\vek{u}\in
     \mathbb{V}$ i $\vek{v}=x_1\vek{e_1}+x_2\vek{e_2}+x_3\vek{e_3}$, $\vek{u}=
     y_1\vek{e_1}+y_2\vek{e_2}+y_3\vek{e_3}$. Tada:
 \begin{align*}
-    \vek{v}\times\vek{u} & = (x_1\vek{e_1}+x_2\vek{e_2}+x_3\vek{e_3})\times(y_1\vek{e_1}+y_2\vek{e_2}+y_3\vek{e_3})            \\
-                         & =x_1y_1(\vek{e_1}\times\vek{e_1})+x_1y_2(\vek{e_1}\times\vek{e_2})+x_1y_3(\vek{e_1}\times\vek{e_3}) \\
-                         & +x_2y_1(\vek{e_2}\times\vek{e_1})+x_2y_2(\vek{e_2}\times\vek{e_2})+x_2y_3(\vek{e_2}\times\vek{e_3}) \\
-                         & +x_3y_1(\vek{e_3}\times\vek{e_1})+x_3y_2(\vek{e_3}\times\vek{e_2})+x_3y_3(\vek{e_3}\times\vek{e_3}) \\
-                         & =x_1y_1\vek{0}+x_1y_2\vek{e_3}-x_1y_3\vek{e_2}                                                      \\
-                         & -x_2y_1\vek{e_3}+x_2y_2\vek{0}+x_2y_3\vek{e_1}                                                      \\
-                         & +x_3y_1\vek{e_2}-x_3y_2\vek{e_1}+x_3y_3\vek{0}                                                      \\
+    \vek{v}\times\vek{u} & = (x_1\vek{e_1}+x_2\vek{e_2}+x_3\vek{e_3})
+    \times(y_1\vek{e_1}+y_2\vek{e_2}+y_3\vek{e_3})                        \\
+                         & =x_1y_1(\vek{e_1}\times\vek{e_1})+x_1y_2
+    (\vek{e_1}\times\vek{e_2})+x_1y_3(\vek{e_1}\times\vek{e_3})           \\
+                         & +x_2y_1(\vek{e_2}\times\vek{e_1})+x_2y_2
+    (\vek{e_2}\times\vek{e_2})+x_2y_3(\vek{e_2}\times\vek{e_3})           \\
+                         & +x_3y_1(\vek{e_3}\times\vek{e_1})+x_3y_2
+    (\vek{e_3}\times\vek{e_2})+x_3y_3(\vek{e_3}\times\vek{e_3})           \\
+                         & =x_1y_1\vek{0}+x_1y_2\vek{e_3}-x_1y_3\vek{e_2} \\
+                         & -x_2y_1\vek{e_3}+x_2y_2\vek{0}+x_2y_3\vek{e_1} \\
+                         & +x_3y_1\vek{e_2}-x_3y_2\vek{e_1}+x_3y_3\vek{0} \\
                          & = \begin{vmatrix}
                                  \vek{e_1} & \vek{e_2} & \vek{e_3} \\
                                  x_1       & x_2       & x_3       \\
@@ -385,7 +392,8 @@ Tada  $\vek{v}_\times=
     \end{bmatrix}$.
 \par
 \textbf{Površina trougla $ABC$:}
-$$P_{ABC}=\frac{1}{2}ah_a=\frac{1}{2} |\vek{BC}||\vek{BA}|\sin(\angle{\vek{BA}\vek{BC}})=\frac{1}{2} |\vek{BC}\times\vek{BC}|$$
+$$P_{ABC}=\frac{1}{2}ah_a=\frac{1}{2} |\vek{BC}||\vek{BA}|
+    \sin(\angle{\vek{BA}\vek{BC}})=\frac{1}{2} |\vek{BC}\times\vek{BC}|$$
 \par
 
 \textbf{Orijentacija trougla $ABC$:} Trougao $ABC$ u reperu $Oe$ je zadat sa
@@ -396,8 +404,9 @@ Kažemo da je trougao $ABC$ pozitivno orijentisan ako je
 $\vek{AB}\times\vek{AC}$ istog pravca i smera kao $\vek{e_3}$.
 \par
 
-\textbf{Kolinearnost tačaka:} Tri tačke su kolinearne ako je "površina trougla"
-koji obrazuju $0$. Dakle $\frac{1}{2}\cdot |\vek{BC}\times\vek{BC}|=0$.
+\textbf{Kolinearnost tačaka:} Tri tačke su kolinearne ako je ,,površina
+trougla`` koji obrazuju $0$. Dakle
+$\frac{1}{2}\cdot|\vek{BC}\times\vek{BC}|=0$.
 \par
 
 \textbf{Da li tačka pripada trouglu:} Tačka $P$ pripada trouglu $ABC$ ako su
@@ -405,8 +414,8 @@ trouglovi $ABP$, $BCP$ i $CAP$ iste orijentacije.
 
 \subsection{Mešoviti proizvod}
 \textit{Definicija, osobine, formula za mešoviti proizvod u ON+ bazi (dokaz),
-    zapremina paralelopipeda - T1.7 (dokaz), zapremina tetraedra, orijentacija baze
-    prostora, nezavisnost tri vektora prostora, primeri.}
+    zapremina paralelopipeda - T1.7 (dokaz), zapremina tetraedra, orijentacija
+    baze prostora, nezavisnost tri vektora prostora, primeri.}
 \par
 \vspace*{1cm}
 
@@ -416,9 +425,13 @@ trouglovi $ABP$, $BCP$ i $CAP$ iste orijentacije.
 
 \textbf{Osobine:}
 \begin{enumerate}[label=\textbf{(\arabic*)}]
-    \item $[\vek{u},\vek{v},\vek{w}]=-[\vek{v},\vek{u},\vek{w}]$\hspace*{1cm}(antisimetričnost)
-    \item $[\vek{u},\vek{v},\vek{w}]=[\vek{v},\vek{w},\vek{u}]$\hspace*{1cm}(cikličnost)
-    \item $[\alpha\cdot\vek{u}+\beta\cdot\vek{v},\vek{w},\vek{z}]=\alpha\cdot[\vek{u},\vek{w},\vek{z}]+\beta\cdot[\vek{v},\vek{w},\vek{z}]$\hspace*{1cm}(linearnost)
+    \item $[\vek{u},\vek{v},\vek{w}]=-[\vek{v},\vek{u},\vek{w}]$\hspace*{1cm}
+          (antisimetričnost)
+    \item $[\vek{u},\vek{v},\vek{w}]=[\vek{v},\vek{w},\vek{u}]$\hspace*{1cm}
+          (cikličnost)
+    \item $[\alpha\cdot\vek{u}+\beta\cdot\vek{v},\vek{w},\vek{z}]=\alpha\cdot
+              [\vek{u},\vek{w},\vek{z}]+\beta\cdot[\vek{v},\vek{w},\vek{z}]$
+          \hspace*{1cm}(linearnost)
 \end{enumerate}
 \par
 
@@ -435,16 +448,21 @@ $$[\vek{u},\vek{v},\vek{w}]=(\vek{u}\times\vek{v})\cdot\vek{w}= \begin{vmatrix}
 \par
 
 \textbf{T1.7:} Zapremina paralelopipeda jednaka je mešovitom proizvodu tri
-vektora.\\
+vektora.
+\par
 \textbf{Dokaz:} Neka je dat paralelopiped $ABCDA_1B_1C_1D_1$ i neka su
 $\vek{AB}=\vek{u}$, $\vek{AD}=\vek{v}$ i $\vek{AA_1}=\vek{w}$. Tada je
-zapremina $V=P_{ABCD}\cdot h=|\vek{u}\times\vek{v}|\cdot h=
-    ||\vek{u}\times\vek{v}|\cdot \vek{w}|\cos(\angle{(\vek{u}\times
-            \vek{v})\vek{w}})|=|(\vek{u}\times\vek{v}) \cdot \vek{w}|=|[\vek{u},\vek{v},
-    \vek{w}]|$.
+zapremina paralelopipeda:
+\begin{align*}
+    V & =P_{ABCD}h=|\vek{u}\times\vek{v}|\cdot h=||\vek{u}\times\vek{v}|
+    \cdot\vek{w}|\cos(\angle{(\vek{u}\times\vek{v})\vek{w}})|            \\
+      & =|(\vek{u}\times\vek{v}) \cdot \vek{w}|=
+    |[\vek{u},\vek{v},\vek{w}]|
+\end{align*}
 \par
 
-\textbf{Zapremina tetraedra:} $\frac{1}{6}|[\vek{u},\vek{v},\vek{w}]|$.\\
+\textbf{Zapremina tetraedra:} $\frac{1}{6}|[\vek{u},\vek{v},\vek{w}]|$.
+\par
 \textbf{Dokaz:} Tražimo zapreminu tetraedra $ABDA_1$. Dopunimo tetraedar do
 paralelopipeda $ABCDA_1B_1C_1D_1$. On je izgrađen od dve trostrane prizme
 $ABDA_1B_1D_1$ i $BCDB_1C_1D_1$ koje su jednakih jednakih zapremina.
@@ -455,7 +473,7 @@ im i zapremine iste. Tetraedri $ABDA_1$ i $DA_1B_1D_1$ imaju iste površine baza
 $AA_1D$ i $DA_1D_1$ i iste visine iz tačke $B$ pa su im i zapremine iste.
 Dakle, trostrana prizma $ADCA_1B_1D_1$ se sastoji od tri tetraedra jednakih
 zapremina. Zapremina tetraedra $ABDA_1$ je jedna šestina zapremine
-što se i tražilo paralelopipeda.
+paralelopipeda, što se i tražilo.
 \par
 
 \textbf{Orijentacija baze prostora:} Ako je $[\vek{e_1},\vek{e_2},\vek{e_3}]>0$
@@ -468,8 +486,8 @@ zapremina paralelopipeda koji obrazuju veća od nule.
 \subsection{Težište, centar mase i baricentričke koordinate}
 \textit{Zakon poluge, rešavanje zakona poluge centrom mase dve tačke, centar
     mase tri tačke, ”rešavanje trougla” centrom mase tri tačke, centar mase $n$
-    tačaka, težište $n$ tačaka, dokaz da definicija težišta trougla ne zavisi od
-    tačke $O$ - vežbe, primeri, baricentričke koordinate.}
+    tačaka, težište $n$ tačaka, dokaz da definicija težišta trougla ne zavisi
+    od tačke $O$ - vežbe, primeri, baricentričke koordinate.}
 \par
 \vspace*{1cm}
 
@@ -481,19 +499,20 @@ $|AT|:|TB|=m_B:m_A$ ili vektorski $m_A\vek{TA}+m_B\vek{TB}=\vek{0}$.
 $\vek{OT}=\frac{1}{m_A+m_B}(m_A\vek{OA}+m_B\vek{OB})$.
 \par
 
-\textbf{Centar mase tri tačke:}
-$\vek{OT}=\frac{1}{m_A+m_B+m_C}(m_A\vek{OA}+m_B\vek{OB}+m_C\vek{OC})$.
+\textbf{Centar mase tri tačke:} $\vek{OT}=\frac{1}{m_A+m_B+m_C}
+    (m_A\vek{OA}+m_B\vek{OB}+m_C\vek{OC})$.
 \par
 
-\textbf{Centar mase $n$ tačaka:}
-$\frac{1}{m_{A_1}+\dotsc+m_{A_n}}(m_{A_1}\vek{OA_1}+\dotsc+m_{A_n}\vek{OA_n})=\vek{OT}$.
+\textbf{Centar mase $n$ tačaka:} $\frac{1}{m_{A_1}+\dotsc+m_{A_n}}
+    (m_{A_1}\vek{OA_1}+\dotsc+m_{A_n}\vek{OA_n})=\vek{OT}$.
 \par
 
 \textbf{Težište $n$ tačaka:} Težište $n$ tačaka se dobija kada su sve mase
 jednake. Neka važi $m_{A_1}=\dotsc=m_{A_n}=m$. Tada je:
 \begin{align*}
-    \vek{OT} & =\frac{1}{m_{A_1}+\dotsc+m_{A_n}}(m_{A_1}\vek{OA_1}+\dotsc+m_{A_n}\vek{OA_n}) \\
-             & =\frac{1}{nm}(m\vek{OA_1}+\dotsc+m\vek{OA_n})                                 \\
+    \vek{OT} & =\frac{1}{m_{A_1}+\dotsc+m_{A_n}}(m_{A_1}\vek{OA_1}+
+    \dotsc+m_{A_n}\vek{OA_n})                                       \\
+             & =\frac{1}{nm}(m\vek{OA_1}+\dotsc+m\vek{OA_n})        \\
              & =\frac{1}{n}(\vek{OA_1}+\dotsc+\vek{OA_n})
 \end{align*}
 \par
@@ -502,10 +521,14 @@ jednake. Neka važi $m_{A_1}=\dotsc=m_{A_n}=m$. Tada je:
 date tačke $A$, $B$, $C$ i njihove mase i neka važi $m_{A}+m_{B}+m_{C}=M$.
 Tada:
 \begin{align*}
-    \vek{OT}          & =\frac{1}{M}(m_{A}\vek{OA} +m_{B}\vek{OB} +m_{C}\vek{OC} )                                  \\
-    \vek{OS}+\vek{ST} & =\frac{1}{M}(m_{A}(\vek{OS}+\vek{SA}) +m_{B}(\vek{OS}+\vek{SB}) +m_{C}(\vek{OS}+\vek{SC}) ) \\
-    \vek{OS}+\vek{ST} & =\frac{1}{M}(m_{A}\vek{SA} +m_{B}\vek{SB} + m_{C}\vek{SC})+\vek{OS}                         \\
-    \vek{ST}          & =\frac{1}{M}(m_{A}\vek{SA} +m_{B}\vek{SB} +m_{C}\vek{SC} )
+    \vek{OT}          & =\frac{1}{M}(m_{A}\vek{OA}+m_{B}\vek{OB}
+    +m_{C}\vek{OC})                                              \\
+    \vek{OS}+\vek{ST} & =\frac{1}{M}(m_{A}(\vek{OS}+\vek{SA})
+    +m_{B}(\vek{OS}+\vek{SB})+m_{C}(\vek{OS}+\vek{SC}))          \\
+    \vek{OS}+\vek{ST} & =\frac{1}{M}(m_{A}\vek{SA}+m_{B}\vek{SB}
+    +m_{C}\vek{SC})+\vek{OS}                                     \\
+    \vek{ST}          & =\frac{1}{M}(m_{A}\vek{SA}+m_{B}\vek{SB}
+    +m_{C}\vek{SC})
 \end{align*}
 \par
 
@@ -515,10 +538,10 @@ njihov centar mase. Baricentričke koordinate se dele na homogene i nehomogene.
 U slučaju $n$ tačaka $A_1(m_{A_1}),\dotsc,A_n(m_{A_n})$, homogene
 baricentričke koordinate će biti $(m_{A_1}:\dotsc:m_{A_n})$. Homogene
 baricentričke koordinate su određene do na proporcionalnost. Za normalizovane
-ili nehomogene baricentričke koordinate važi da je $m_{A_1}+...+m_{A_n}=1$. Za
-proizvoljne mase $m_{A_1},\dotsc,m_{A_n}$ nehomogene baricentričke koordinate
-dobijamo sa:
-$(\frac{m(A_1)}{m(A_1)+\dotsc+m(A_n)},\dotsc,\frac{m(A_n)}{m(A_1)+\dotsc+m(A_n)})$.
+ili nehomogene baricentričke koordinate važi da je $m_{A_1}+\dotsc+m_{A_n}=1$.
+Za proizvoljne mase $m_{A_1},\dotsc,m_{A_n}$ nehomogene baricentričke
+koordinate dobijamo sa: $(\frac{m(A_1)}{m(A_1)+\dotsc+m(A_n)},\dotsc,
+    \frac{m(A_n)}{m(A_1)+\dotsc+m(A_n)})$.
 
 \subsection{Transformacije koordinata vektora i tačaka}
 \textit{Matrica prelaska, veza koordinata vektora u različitim bazama,
@@ -534,8 +557,10 @@ koordinate $i$-tog vektora nove baze u staroj bazi.
 \textbf{Transformacije koordinata tačaka:} Pretpostavimo da iz repera $Oe$
 prelazimo u reper $Qf$. Dodatno, neka je $C$ matrica prelaska iz baze $e$ u
 bazu $f$. Tada:
-$$[X]_{Qf}=[\vek{QX}]_f=[\vek{QO}]_f+[\vek{OX}]_e=[O]_{Qf}+C[\vek{OX}]_e=[O]_{Qf}+C[X]_{Oe}\hspace*{0.1cm}\text{(1.23)}$$
-Ako je $[X]_{Oe}=x'$, $[X]_{Qf}=x$ i $[O]_{Qf}=q$, tada dobijamo $x=q+Cx'$ (1.24).
+$$[X]_{Qf}=[\vek{QX}]_f=[\vek{QO}]_f+[\vek{OX}]_e=[O]_{Qf}+C[\vek{OX}]_e
+    =[O]_{Qf}+C[X]_{Oe}\hspace*{0.1cm}\text{(1.23)}$$
+Ako je $[X]_{Oe}=x'$, $[X]_{Qf}=x$ i $[O]_{Qf}=q$, tada dobijamo $x=q+Cx'$
+(1.24).
 
 \subsection{Transformacije koordinata u ON bazama ravni}
 \label{subsec:pitanje_9}
@@ -545,13 +570,14 @@ Ako je $[X]_{Oe}=x'$, $[X]_{Qf}=x$ i $[O]_{Qf}=q$, tada dobijamo $x=q+Cx'$ (1.24
 \par
 \vspace*{1cm}
 
-\textbf{Slučaj baza iste orijentacije:} Neka su dati ON reperi ravni $Oe$ i $Qf$
-koji su iste orijentacije. Želimo da pređemo iz $Oe$ u $Qf$. Označimo sa $\phi$
-ugao $\angle{\vek{e_1}\vek{f_1}}$. Tada važe jednakosti
+\textbf{Slučaj baza iste orijentacije:} Neka su dati ON reperi ravni $Oe$ i
+$Qf$ koji su iste orijentacije. Želimo da pređemo iz $Oe$ u $Qf$. Označimo sa
+$\phi$ ugao $\angle{\vek{e_1}\vek{f_1}}$. Tada važe jednakosti
 $\vek{f_1}=\cos(\phi)\vek{e_1}+\sin(\phi)\vek{e_2}$ i
 $\vek{f_2}=-\sin(\phi)\vek{e_1}+\cos(\phi)\vek{e_2}$. Dakle
-$[\vek{f_1}]_e=(\cos(\phi),\sin(\phi))^T$ i $[\vek{f_2}]_e=(-\sin(\phi),\cos(\phi))^T$.
-Odavde dobijamo formulu za ON repere iste orijentacije: $x=q+\begin{bmatrix}
+$[\vek{f_1}]_e=(\cos(\phi),\sin(\phi))^T$ i $[\vek{f_2}]_e
+    =(-\sin(\phi),\cos(\phi))^T$. Odavde dobijamo formulu za ON repere iste
+orijentacije: $x=q+\begin{bmatrix}
         \cos(\phi) & -\sin(\phi) \\
         \sin(\phi) & \cos(\phi)
     \end{bmatrix} x'$.
@@ -572,13 +598,15 @@ pozitivnom smeru.
 \end{enumerate}
 \par
 
-\textbf{Slučaj baza različite orijentacije:} Neka su dati ON reperi ravni $Oe$ i
-$Qf$ koji su različite orijentacije. Želimo da pređemo iz $Oe$ u $Qf$. Označimo
-sa $\phi$ ugao $\angle{\vek{e_1}\vek{f_1}}$. Tada važe jednakosti
+\textbf{Slučaj baza različite orijentacije:} Neka su dati ON reperi ravni $Oe$
+i $Qf$ koji su različite orijentacije. Želimo da pređemo iz $Oe$ u $Qf$.
+Označimo sa $\phi$ ugao $\angle{\vek{e_1}\vek{f_1}}$. Tada važe jednakosti
 $\vek{f_1}=\cos(\phi)\vek{e_1}+\sin(\phi)\vek{e_2}$ i
 $\vek{f_2}=\sin(\phi)\vek{e_1}-\cos(\phi)\vek{e_2}$. Dakle
-$[\vek{f_1}]_e=(\cos(\phi),\sin(\phi))^T$ i $[\vek{f_2}]_e=(\sin(\phi),-\cos(\phi))^T$.
-Odavde dobijamo formulu za ON repere različite orijentacije: $x=q+\begin{bmatrix}
+$[\vek{f_1}]_e=(\cos(\phi),\sin(\phi))^T$ i
+$[\vek{f_2}]_e=(\sin(\phi),-\cos(\phi))^T$.
+Odavde dobijamo formulu za ON repere različite orijentacije:
+$x=q+\begin{bmatrix}
         \cos(\phi) & \sin(\phi)  \\
         \sin(\phi) & -\cos(\phi)
     \end{bmatrix} x'$.
@@ -606,15 +634,16 @@ ortogonalna grupa reda 2. Broj 2 označava da se posmatra ravan.
 \par
 
 \textbf{Grupa O(2):}
-$O(2)=SO(2)\cup\{S_\phi\mid\phi\in\mathbb{R}\}=\{A\in Gl_2(\mathbb{R})\mid A^{-1}=A^T\}$
+$O(2)=SO(2)\cup\{S_\phi\mid\phi\in\mathbb{R}\}=\{A\in
+    Gl_2(\mathbb{R})\mid A^{-1}=A^T\}$
 je ortogonalna grupa reda 2. Broj 2 označava da se posmatra ravan.
 
 \subsection{Afina preslikavanja}
-\textit{Definicija, pasivna i aktivna tačka gledišta, osobine afinih preslikavanja
-    (T5.2) (dokaz), određenost afinog preslikavanja sa tri para odgovarajućih
-    tačaka, predstavljanje afinih preslikavanja ravni 3 x 3 matricama, translacija,
-    rotacija (oko O i oko proizvoljne tačke), refleksija u odnosu na pravu,
-    skaliranje, smicanje, primeri.}
+\textit{Definicija, pasivna i aktivna tačka gledišta, osobine afinih
+    preslikavanja (T5.2) (dokaz), određenost afinog preslikavanja sa tri para
+    odgovarajućih tačaka, predstavljanje afinih preslikavanja ravni 3 x 3
+    matricama, translacija, rotacija (oko O i oko proizvoljne tačke),
+    refleksija u odnosu na pravu, skaliranje, smicanje, primeri.}
 \par
 \vspace*{1cm}
 
@@ -637,13 +666,16 @@ koordinate pre i posle preslikavanja.
 
 \textbf{Teorema:} Svako afino preslikavanje
 $f:\mathbb{E}\rightarrow\mathbb{E}$ indukovano linearnim preslikavanjem
-$\overline{f}:\mathbb{V}\rightarrow\mathbb{V}$ u fiksiranom reperu $Oe$, ima oblik:
-$[f(M)]_{Oe}=[\overline{f}]_{e}[M]_{Oe}+[f(O)]_{Oe}$.\\
+$\overline{f}:\mathbb{V}\rightarrow\mathbb{V}$ u fiksiranom reperu $Oe$, ima
+oblik: $[f(M)]_{Oe}=[\overline{f}]_{e}[M]_{Oe}+[f(O)]_{Oe}$.
+\par
 \textbf{Dokaz:}
 \begin{align*}
-    [f(M)]_{Oe}-[f(O)]_{Oe} & =[\vek{Of(M)}]_e-[\vek{Of(O)}]_e =[\vek{Of(M)}]_e+[\vek{f(O)O}]_e            \\
-                            & =[\vek{f(O)f(M)}]_e=[\overline{f}(\vek{OM})]_e =[\overline{f}]_e[\vek{OM}]_e \\
-                            & =[\overline{f}]_e[M]_{Oe}                                                    \\
+    [f(M)]_{Oe}-[f(O)]_{Oe} & =[\vek{Of(M)}]_e-[\vek{Of(O)}]_e
+    =[\vek{Of(M)}]_e+[\vek{f(O)O}]_e                                         \\
+                            & =[\vek{f(O)f(M)}]_e=[\overline{f}(\vek{OM})]_e
+    =[\overline{f}]_e[\vek{OM}]_e                                            \\
+                            & =[\overline{f}]_e[M]_{Oe}                      \\
     [f(M)]_{Oe}             & =[\overline{f}]_{e}[M]_{Oe}+[f(O)]_{Oe}
 \end{align*}
 \textbf{Napomena:} Kolone matrice $[\overline{f}]_e$ su zapravo slike baznih
@@ -652,37 +684,46 @@ vektora baze $e$ ($i$-ta kolona će biti $\overline{f}(\vek{e_i})$).
 
 \textbf{Osobine afinih preslikavanja ravni (T5.2):}
 \begin{enumerate}[label=\textbf{(\arabic*)}]
-    \item Preslikaju prave u prave.\\
-          \textbf{Dokaz:} S obzirom da je svako afino preslikavanje indukovano linearnim preslikavanjem
-          vektorskog prostora, a linearno preslikavanje vektorskog prostora
-          čuva kolinearnost, tada i afino preslikavanje čuva kolinearnost, odnosno slika prave u prave.
+    \item Preslikaju prave u prave.
+          \par
+          \textbf{Dokaz:} S obzirom da je svako afino preslikavanje indukovano
+          linearnim preslikavanjem vektorskog prostora, a linearno
+          preslikavanje vektorskog prostora čuva kolinearnost, tada i afino
+          preslikavanje čuva kolinearnost, odnosno, slika prave u prave.
 
-    \item Čuvaju razmeru kolinearnih duži.\\
+    \item Čuvaju razmeru kolinearnih duži.
+          \par
           \textbf{Dokaz:} Analogno prošloj osobini.
 
-    \item Čuvaju paralelnost pravih.\\
-          \textbf{Dokaz:} Ako se posmatraju po dve tačke na dve paralelne prave,
-          dobijamo 2 kolinearna vektora. Odavde se analogno završava dokaz.
+    \item Čuvaju paralelnost pravih.
+          \par
+          \textbf{Dokaz:} Ako se posmatraju po dve tačke na dve paralelne
+          prave, dobijamo 2 kolinearna vektora. Odavde se analogno završava
+          dokaz.
 
-    \item Odnos površina slike i originala jednak je $|det(a_{ij})|$.\\
-          \textbf{Dokaz:} Napomenimo da je $a_{ij}$ zapravo matrica $[\overline{f}]_e$.
-          Zbog jednostavnijeg zapisa i jer je reper fiksiran ćemo izostaviti reper iz zapisa.
-          Neka je $f(O)=O'$, $f(A)=A'$ i $f(B)=B'$. Površina trougla
-          $OAB$ je $\frac{1}{2}\cdot |det(\vek{OA}\vek{OB})|$,
-          a površina trougla $O'A'B'$ je $\frac{1}{2}\cdot |det(\vek{O'A'}\vek{O'B'})|$.
-          Takođe su $\vek{O'A'}=a_{ij}\cdot \vek{OA}$ i $\vek{O'B'}=a_{ij}\cdot \vek{OB}$.
-          Za kraj, koristimo svojstvo $det(A\cdot B)=det(A)\cdot det(B)$.
+    \item Odnos površina slike i originala jednak je $|det(a_{ij})|$.
+          \par
+          \textbf{Dokaz:} Napomenimo da je $a_{ij}$ zapravo matrica
+          $[\overline{f}]_e$. Zbog jednostavnijeg zapisa i jer je reper
+          fiksiran ćemo izostaviti reper iz zapisa. Neka je $f(O)=O'$,
+          $f(A)=A'$ i $f(B)=B'$. Površina trougla $OAB$ je
+          $\frac{1}{2}|det(\vek{OA}\vek{OB})|$, a površina trougla $O'A'B'$ je
+          $\frac{1}{2}|det(\vek{O'A'}\vek{O'B'})|$. Takođe su
+          $\vek{O'A'}=a_{ij}\vek{OA}$ i $\vek{O'B'}=a_{ij}\vek{OB}$. Za kraj,
+          koristimo svojstvo $det(AB)=det(A)det(B)$.
           \begin{align*}
-              1           & =\frac{det(\vek{OA}\ \vek{OB})}{det(\vek{OA}\ \vek{OB})}                       \\
-              det(a_{ij}) & =\frac{det(a_{ij}\cdot\vek{OA}\ a_{ij}\cdot\vek{OB})}{det(\vek{OA}\ \vek{OB})} \\
-              det(a_{ij}) & =\frac{det(\vek{O'A'}\ \vek{O'B'})}{det(\vek{OA}\ \vek{OB})}                   \\
+              1           & =\frac{det(\vek{OA}\vek{OB})}{det(\vek{OA}\vek{OB})}                       \\
+              det(a_{ij}) & =\frac{det(a_{ij}\cdot\vek{OA}a_{ij}\cdot\vek{OB})}{det(\vek{OA}\vek{OB})} \\
+              det(a_{ij}) & =\frac{det(\vek{O'A'}\vek{O'B'})}{det(\vek{OA}\vek{OB})}                   \\
           \end{align*}
 
-    \item Čuvaju centar mase i baricentričke koordinate.\\
+    \item Čuvaju centar mase i baricentričke koordinate.
+          \par
           \textbf{Dokaz:} Sledi direktno iz čuvanja razmere.
 
     \item Preslikavanja za koje važi $det(a_{ij})>0$ čuvaju orijentaciju,
-          inače menjaju.\\
+          inače menjaju.
+          \par
           \textbf{Dokaz:} Po algebarskoj definiciji, dve baze su iste
           orijentacije ako je determinanta matrice prelaska iz jedne u drugu
           veća od nule. Ovo je aktivna varijanta ove definicije.
@@ -738,16 +779,18 @@ rotaciji.
 
 \textbf{Smicanje:} Smicanje preslikava kvadrat u pravougaonik iste površine.
 Matrice smicanja:
-$\mathcal{S}_x(\lambda)=\begin{bmatrix}
-        x & \lambda & 0 \\
-        0 & y       & 0 \\
-        0 & 0       & 1
-    \end{bmatrix}$, gde je $\lambda$ koeficijent smicanja u pravcu $x$ ose.\\
-$\mathcal{S}_y(\lambda)=\begin{bmatrix}
-        x       & 0 & 0 \\
-        \lambda & y & 0 \\
-        0       & 0 & 1
-    \end{bmatrix}$, gde je $\lambda$ koeficijent smicanja u pravcu $y$ ose.
+\begin{enumerate}[label=]
+    \item $\mathcal{S}_x(\lambda)=\begin{bmatrix}
+                  x & \lambda & 0 \\
+                  0 & y       & 0 \\
+                  0 & 0       & 1
+              \end{bmatrix}$, gde je $\lambda$ koeficijent smicanja u pravcu $x$ ose.
+    \item $\mathcal{S}_y(\lambda)=\begin{bmatrix}
+                  x       & 0 & 0 \\
+                  \lambda & y & 0 \\
+                  0       & 0 & 1
+              \end{bmatrix}$, gde je $\lambda$ koeficijent smicanja u pravcu $y$ ose.
+\end{enumerate}
 
 \subsection{Izometrije ravni i prostora}
 \textit{Defincija, direktne i indirekne izometrije, ortogonalne matrice i
@@ -984,7 +1027,7 @@ Ako su tačke kolinearna ne može se jednoznačno odrediti ravan koja ih sadrži
 a $\vek{p}$ je vektor pravca.
 \par
 
-\textbf{"Kanonska" jednačina:} "Kanonska" je pod navodnicima jer nešto što je
+\textbf{,,Kanonska`` jednačina:} ,,Kanonska`` je pod navodnicima jer nešto što je
 kanonsko bi trebalo da bude jedinstveno, ali ova jednačina nije jedinstvena.
 Kanonska jednačina prave:
 $\frac{x-x_0}{p_x}=\frac{y-y_0}{p_y}=\frac{z-z_0}{p_z}=t$.
@@ -1043,7 +1086,7 @@ prave i ravni.
 \par
 
 \textbf{T4.3:} Mimoilazne prave $p$ i $q$ imaju jedinstvenu zajedničku normalu.
-\\
+\par
 \textbf{Dokaz:} Neka su date prave $p$ i $q$. Vektor pravca prave $n$ koja je
 normalna na obe prave će biti $\vek{p}\times\vek{q}$ gde su $\vek{p}$ i
 $\vek{q}$ vektori pravca pravih $p$ i $q$. Sve prave čiji su vektori pravca
@@ -1059,7 +1102,8 @@ $\vek{p}\times\vek{q}$ i seče ih po konstrukciji.
 
 \textbf{T4.4} Rastojanje između mimoilaznih pravih je:
 $\frac{|[\vek{p},\vek{q},\vek{PQ}]|}{|p\times q|}$ gde su $P$ i $\vek{p}$ tačka
-i vektor pravca prave $p$, a $Q$ i $\vek{q}$ tačka i vektor pravca prave $q$.\\
+i vektor pravca prave $p$, a $Q$ i $\vek{q}$ tačka i vektor pravca prave $q$.
+\par
 \textbf{Dokaz:} U brojiocu je zapravo zapremina paralelopipeda, a u imeniocu je
 površina baze pa se deljenjem tačno dobija visina koju tražimo.
 \par
@@ -1188,7 +1232,7 @@ Tada se tražena visina dobija formulom
 $d(A,p)=\frac{|\vek{AB}\times\vek{p}|}{|\vek{p}|}$.
 \par
 \textbf{Rastojanje između tačke i ravni:} Potpuno analogno osim što se umesto
-površine i dužine koristi zapreina i površina.
+površine i dužine koristi zapremina i površina.
 \par
 
 \textbf{Rastojanje između mimoilaznih pravih:}
@@ -1291,7 +1335,7 @@ srazmerni su kubu veće poluose elipse.
 \par
 
 \textbf{Senke kruga:} Senka kružnog predmeta na ravnom zidu je konika. Zid
-će zapravo biti ravan koja seče "konus" formiran od svetlosti koju emituje
+će zapravo biti ravan koja seče ,,konus`` formiran od svetlosti koju emituje
 kružni predmet.
 
 \subsection{Elipsa}
@@ -1317,7 +1361,8 @@ $d_2: x=-\frac{a}{\sqrt{a^2-b^2}}$.
 \par
 
 \textbf{Fokusne osobine elipse:} Za proizvoljnu tačku $M$ važi
-$|MF_1|+|MF_2|=2a$.\\
+$|MF_1|+|MF_2|=2a$.
+\par
 \textbf{Dokaz:} Neka za tačku $M(x,y)$ važi $|MF_1|+|MF_2|=p$. Za $|MF_1|$
 i $|MF_2|$ važe jednakosti $|MF_1|=\sqrt{y^2+(x-\sqrt{a^2-b^2})^2}$ i
 $|MF_2|=\sqrt{y^2+(x+\sqrt{a^2-b^2})^2}$. Iz jednačine elipse dobijamo
@@ -1482,7 +1527,7 @@ formula elipse ($\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$), hiperbole
 ($\frac{x^2}{a^2}+\frac{y^2}{b^2}=-1$), tačke
 ($\frac{x^2}{a^2}+\frac{y^2}{b^2}=0$), dve prave koje se seku
 ($\frac{x^2}{a^2}-\frac{y^2}{b^2}=0$), dve paralelne prave ($x^2=a^2$),
-"dvostruke" prave ($x^2=0$), prazan skup ($x^2=-a^2$). Nekim kretanjem se
+,,dvostruke`` prave ($x^2=0$), prazan skup ($x^2=-a^2$). Nekim kretanjem se
 bilo koja jednačina može svesti na tačno jedan od ovih oblika.
 \par
 
@@ -1505,13 +1550,14 @@ $a(x^2+\frac{b}{a}x+\frac{c}{a})=a(x^2+2\frac{b}{2a}x+\frac{b^2}{4a^2}-\frac{b^2
 
 \textbf{Definicija Bezijeove krive:} Neka su tačke $P_0,\dotsc,P_n$, $n\geq2$
 tačke ravni. Bezijeova kriva stepena $n$ je:
-$$\alpha_n(t)=\sum_{i=0}^{n}\binom{n}{i}t^i(1-t)^{n-i}P_i=\sum_{i=0}^{n}B^n_i(t)P_i,\ t\in[0,1]$$
+$$\alpha_n(t)=\sum_{i=0}^{n}\binom{n}{i}t^i(1-t)^{n-i}P_i=\sum_{i=0}^{n}
+    B^n_i(t)P_i,\text{\ }t\in[0,1]$$
 $B_i$ je Bernštajnov polinom.
 \par
 
-\textbf{Bezijeova kriva stepena jedan je duž:} Neka su date tačke $P_0$ i $P_1$.
-Za Bezijeovu krivu dobijamo $\alpha_n(t)=(1-t)P_0+tP_1=P_0+t\vek{P_0P_1}$. Ovo
-je duž po definiciji.
+\textbf{Bezijeova kriva stepena jedan je duž:} Neka su date tačke $P_0$ i
+$P_1$. Za Bezijeovu krivu dobijamo
+$\alpha_n(t)=(1-t)P_0+tP_1=P_0+t\vek{P_0P_1}$. Ovo je duž po definiciji.
 \par
 
 \textbf{Bezijeove krive stepena dva i tri (skica):} Za $n=2$ se dobija
@@ -1630,12 +1676,12 @@ zavisnosti od orijentacije trougla.
 liku.
 \par
 
-\textbf{Konveksni omotač:} Najmanjik konveksan skup tačaka koji sadrži sve
+\textbf{Konveksni omotač:} Najmanji konveksan skup tačaka koji sadrži sve
 tačke poligona.
 \par
 
 \textbf{Jednostavni algoritam:} Uzimamo dve tačke i proveravamo da li su sve
-ostale tačke sa iste strane. Ako jesu onda duž koju dve tačke formiraju
+ostale tačke sa iste strane. Ako jesu onda duž, koju dve tačke formiraju,
 pripada konveksnom omotaču. Ovo radimo za svake dve tačke. Na kraju sortiramo
 duži. Složenost algoritma je $O(n^3)$.
 
@@ -1749,7 +1795,7 @@ karakteristika.
 \par
 
 \textbf{Rod poliedra:} Rod poliedra je broj $r$ koji se intuitivno definiše kao
-"broj rupa" poliedra. Važi $\chi(\mathcal{M})=2-r$
+,,broj rupa`` poliedra. Važi $\chi(\mathcal{M})=2-r$
 \par
 
 \subsection{Platonova tela}
@@ -1770,5 +1816,12 @@ ikosaedru.
 
 \textbf{Ojlerova karakteristika:} Za Platonova tela važi da je
 $\chi(\mathcal{M})=2$.
+
+\newpage
+\nocite{*}
+\addcontentsline{toc}{section}{Literatura}
+\raggedright
+\bibliography{main.bib}
+\bibliographystyle{plain}
 
 \end{document}
