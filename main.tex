@@ -1590,11 +1590,54 @@ $y=\frac{2t}{1+t^2}$, $t\in[0,1]$.
 \par
 \vspace*{1cm}
 
+\textbf{Definicija poligonske linije:} Ako su date tačke $A_0,\dotsc,A_n$, tada
+je poligonska linija unije duži $A_0A_1,\dotsc,A_{n-1}A_n$.
+\par
+
+\textbf{Definicija poligona:} Poligonska linija za koju važi $A_0=A_n$.
+\par
+
+\textbf{Definicija temena:} Temena su tačke $A_0,\dotsc,A_n$.
+\par
+
+\textbf{Definicija ivice:} Ivice su duži $A_0A_1,\dotsc,A_{n-1}A_n$.
+\par
+
+\textbf{Definicija dijagonale:} Povezuje nesusedna temena poligona.
+\par
+
+\textbf{Definicija prostog poligona:} Nikoje dve ivice se ne seku, osim
+susednih ivica koje imaju zajedničko teme.
+\par
+
+\textbf{Unutrašnjost prostog poligona:} Skup svih tačaka za koje važi da
+bilo koja poluprava iz tačke seče poligon neparan broj puta.
+\par
+
+\textbf{Površina poligona:} Ako je dat prost poligon površinu možemo da
+izračunamo formulom:
+$$P(A_0,\dotsc,A_(n-1))=P(A,A_0,A_1)+\dotsc+P(A,A_{n-1},A_0)$$
+gde će $A$ biti proizvoljna tačka, a površine mogu da budu negativne u
+zavisnosti od orijentacije trougla.
+
 \subsection{Konveksni omotač}
 \textit{Pojam konveksnog skupa, konveksni omotač skupa tačaka, jednostavni
     algoritam, primer.}
 \par
 \vspace*{1cm}
+
+\textbf{Konveksni lik:} Za svake dve tačke u liku važi da i njihova duž pripada
+liku.
+\par
+
+\textbf{Konveksni omotač:} Najmanjik konveksan skup tačaka koji sadrži sve
+tačke poligona.
+\par
+
+\textbf{Jednostavni algoritam:} Uzimamo dve tačke i proveravamo da li su sve
+ostale tačke sa iste strane. Ako jesu onda duž koju dve tačke formiraju
+pripada konveksnom omotaču. Ovo radimo za svake dve tačke. Na kraju sortiramo
+duži. Složenost algoritma je $O(n^3)$.
 
 \subsection{Triangulacija poligona}
 \textit{Definicija triangulacije, primeri, svaki poligon ima unutrašnju
@@ -1603,11 +1646,69 @@ $y=\frac{2t}{1+t^2}$, $t\in[0,1]$.
 \par
 \vspace*{1cm}
 
+\textbf{Definicija triangulacije:} Razlaganje poligona na trouglove
+unutrašnjim dijagonalama tako da se dijagonale ne seku.
+\par
+
+\textbf{Svaki poligon ima unutrašnju dijagonalu:} Svaki prost poligon koji ima
+više od tri temena ima unutrašnju dijagonalu.
+\par
+\textbf{Dokaz:} Neka je dat prost poligon $A_0,\dotsc,A_{n-1}$. Izaberimo tačku
+sa najmanjom $x$ koordinatom, neka je to tačka $A_i$. Posmatrajmo trougao
+$A_{i-1}A_iA_{i+1}$. Ako se u njemu ne nalazi nijedno teme onda je
+$A_{i-1}A_{i+1}$ unutrašnja dijagonala. Ako se u njemu nalaze neka temena, tada
+od njih uzimamo teme $A_j$ koje ima najmanju $x$ koordinatu. Tada posmatramo
+$A_iA_j$. Ona ne seče nijednu ivicu trougla jer bi onda postojala tačka koja
+ima manju $x$ koordinatu od $A_j$. Dakle $A_iA_j$ je unutrašnja dijagonala.
+
+\textbf{Teorema o tringulaciji prostog poligona:} Svaki prost poligon dopušta
+triangulaciju i svaka triangulacija poligona od $n$ temena ima tačno $n-2$
+trougla.
+\par
+
+\textbf{Dokaz:} Dokaz je principom potpune indukcije. Baza indukcije je za
+$n=3$. Ovo je već sastavljeno od jednog trougla pa tvrđenje važi. Sada
+pretpostavimo da tvrđenje važi za svako $k<n$. Neka je dat poligon od $n$
+tačaka. Dokazali smo da postoji unutrašnja dijagonala svakog poligona.
+Unutrašnjom dijagonalom delimo poligon na dva poligona. Ova dva poligona imaju
+manje od $n$ temena pa ih možemo triangulisati, čime smo triangulisali i
+traženi poligon. Sa jedne strane će biti $l_1$ temena, a sa druge $l_2$ temena.
+Važi da je $l_1+l_2=n+2$ i važi da je broj trouglova $l_1-2+l_2-2=n-2$ što je
+i traženo.
+
 \subsection{Poliedarske površi}
 \textit{Definicija, poliedar, primeri, tabela povezanosti, rub (primeri
     odredjivanja).}
 \par
 \vspace*{1cm}
+
+\textbf{Definiija pljosni:} Konveksni poligoni.
+\par
+
+\textbf{Definiija poliedarske površi:} Objekat koji je unija konačno mnogo
+pljosni, pri čemu svaka ivica pripada najviše dvema pljosnima, a najmanje
+jednoj i presek dve pljosni može biti samo po ivici.
+\par
+
+\textbf{Definicija poliedra:} Poliedarska površ pri čemu važi da svaka ivica
+pripada tačno dvema pljosnima.
+\par
+
+\textbf{Definicija povezane površi:} Povezana površ je površ za koju su svake
+dve pljosni povezivne, a dve pljosni su povezivne ako ih možemo povezati nizom
+pljosni.
+\par
+
+\textbf{Tabela povezanosti:} Neka je dat poliedar skupom temena i skupom
+pljosni. Tabela povezanosti pokazuje koja temena pripadaju kojim pljosnima.
+Napomenimo da se temena često označavaju samo brojevima. Na primer, ako imamo
+temena $T_0$, $T_1$ i $T_2$ koja pripadaju pljosni $p_0$, tada ćemo to zapisati
+kao $p_0=\langle0,1,2\rangle$ i ovo će biti deo tabele povezanosti.
+\par
+
+\textbf{Rub:} Ivica koja pripada tačno jednoj pljosni. Nju možemo da odredimo
+tako što iz tabele povezanosti izdvojimo multiskup ivica i proverimo koje ivice
+se pojavljuju tačno jednom.
 
 \subsection{Orijentacija poliedarske površi}
 \textit{Definicija orijentacije, primer orijentisanja tetraedra, veza
@@ -1616,7 +1717,58 @@ $y=\frac{2t}{1+t^2}$, $t\in[0,1]$.
 \par
 \vspace*{1cm}
 
+\textbf{Deficinija orijentacije:} Kažemo da je povezana poliedarska površ
+orijentabilna ako je moguće da svake dve susedne pljosni imaju istu
+orijentaciju. Dve pljosni imaju istu orijentaciju ako obilaze zajedničku ivicu
+u različitim smerovima.
+\par
+
+\textbf{Veza orijentacije i normale:} Poliedar ima unutrašnjost i spoljašnjost.
+Poliedar je orijentabilan ako sve normale pokazuju ka spolja ili ka unutra.
+Normale određujemo pravilom desne ruke.
+\par
+
+\textbf{Mebijusova traka:} Kada Mebijusovu traku presečemo po dužini na pola
+dobijamo jedan komad koji je dva puta uvrnut (cilindar) jer je Mobijusova traka
+neorijentabilna. Ako taj komad presečemo još jednom na pola po družini dobićemo
+dva komada koji su ulančani i uvrnuti. Kada Mebijusovu traku presečemo po
+dužini na pola dobijamo ulančane cilindar i Mebijusovu traku.
+\par
+
+\textbf{Dokaz da Mebijusova traka nije orijentabilna:} Koristimo teoremu da su
+svi modeli neke glatke površi ili orijentabilni ili neorijentabilni. Mebijusovu
+traku možemo da predstavimo preko tri četvorougla. Jednostavno pokazujemo da je
+on neorijentabilan, zbog čega je i Mebijusova traka neorijentabilna.
+\par
+
+\textbf{Ojlerova karakteristika poliedarske površi:} Broj
+$\chi(\mathcal{M})=T-I+P$ je Ojlerova karakteristika za poliedarsku površ
+$\mathcal{M}$, gde je $T$ broj temena, $I$ broj ivica, a $P$ broj pljosni. Važi
+da je za dva poliedarska modela iste glatke površi jednaka Ojlerova
+karakteristika.
+\par
+
+\textbf{Rod poliedra:} Rod poliedra je broj $r$ koji se intuitivno definiše kao
+"broj rupa" poliedra. Važi $\chi(\mathcal{M})=2-r$
+\par
+
 \subsection{Platonova tela}
 \textit{Definicija, skiciranje tetraedra, heksaedra, oktaedra, dualno Platonovo
     telo, Ojlerova karakteristika.}
+
+\textbf{Definicija Platonovog tela:} Platonovo telo ili pravilni poliedar je
+poliedar čije su pljosni pravilni poligoni sa $p$ ivica, a svako teme je
+zajedničko za $q$ ivica. Platonova tela su tetraedar, heksaedar, oktaedar,
+dodekaedar i ikosaedar.
+\par
+
+\textbf{Dualnost Platonovih tela:} Ako uzmemo sredine pljosni tetraedra i
+spojimo ih dobijamo još jedan tetraedar. Ovo znači da je tetraedar dualan sam
+sebi. Heksaedar je uzajamno dualan oktaedru, dodekaedar je uzajamno dualan
+ikosaedru.
+\par
+
+\textbf{Ojlerova karakteristika:} Za Platonova tela važi da je
+$\chi(\mathcal{M})=2$.
+
 \end{document}
