@@ -1201,6 +1201,52 @@ površine i dužine koristi zapreina i površina.
 \par
 \vspace*{1cm}
 
+\textbf{Uslov da prava prodire trougao (objašnjenje):} Neka je dat trougao
+$ABC$ i prava $p$ određena tačkom $P$ i vektorom $\vek{p}$. Označimo sa
+$\vek{u}$, $\vek{v}$ i $\vek{w}$ vektore $\vek{PA}$, $\vek{PB}$ i $\vek{PC}$.
+Možemo da odredimo orijentaciju vektora $(\vek{u},\vek{v},\vek{p})$,
+$(\vek{v},\vek{w},\vek{p})$ i $(\vek{w},\vek{u},\vek{p})$. Ako su sve iste
+orijentacije, onda će presek pripadati trouglu. Orijentacije određujemo
+mešovitim proizvodom. Specijalno, ako je tačno jedan od mešovitih proizvoda
+jednak nula, tada će presek biti na nekoj od stranica. Ako je mešoviti proizvod
+neka dva jednak nula tada će tačka preseka biti podudarna sa jednim od temena.
+\par
+
+\textbf{Određivanje prodorne tačke:} Označimo sa $M$ presek ravni koja sadrži
+trougao sa pravom $p$. Tada će važiti $0=[\vek{AB},\vek{AC},\vek{AM}]$ jer su
+ovi vektori komplanarni i neka je $\vek{AB}=\vek{v}-\vek{u}$,
+$\vek{AC}=\vek{w}-\vek{u}$ i $\vek{AM}=t\vek{p}-\vek{u}$. Iz jednakosti
+dobijamo:
+\begin{align*}
+    0                         & = [\vek{v}-\vek{u},\vek{w}-\vek{u},t\vek{p}-\vek{u}]                              \\
+                              & = [\vek{v},-\vek{u},-\vek{u}]+[\vek{v},-\vek{u},t\vek{p}]+
+    [\vek{v},\vek{w},-\vek{u}]+[\vek{v},\vek{w},t\vek{p}]                                                         \\
+                              & + [-\vek{u},-\vek{u},-\vek{u}]+[-\vek{u},-\vek{u},t\vek{p}]+
+    [-\vek{u},\vek{w},-\vek{u}]+[-\vek{u},\vek{w},t\vek{p}]                                                       \\
+                              & =[\vek{v},-\vek{u},t\vek{p}]+[\vek{v},\vek{w},-\vek{u}]+
+    [\vek{v},\vek{w},t\vek{p}]+[-\vek{u},\vek{w},t\vek{p}]                                                        \\
+                              & =-[\vek{v},\vek{w},\vek{u}]-t[\vek{v},\vek{u},\vek{p}]+
+    t[\vek{v},\vek{w},\vek{p}]-t[\vek{u},\vek{w},\vek{p}]                                                         \\
+    [\vek{v},\vek{w},\vek{u}] & =t([\vek{v},\vek{w},\vek{p}]-[\vek{v},\vek{u},\vek{p}]-[\vek{u},\vek{w},\vek{p}])
+\end{align*}
+
+odakle dobijamo traženu formulu
+$t=\frac{[\vek{v},\vek{w},\vek{u}]}{[\vek{v},\vek{w},\vek{p}]+[\vek{u},\vek{v},\vek{p}]+[\vek{w},\vek{u},\vek{p}]}$.
+\par
+
+\textbf{Presek trougla i ravni:} Trougao i ravan mogu da se ne seku, da trougao
+pripada ravni, da trougao dodiruje ravan ivicom, da trougao dodiruje ravan
+temenom ili da trougao seče ravan po duži. Prvo odredimo da li neka od tačaka
+pripada ravni. Ako sve tri pripadaju onda trougao pripada ravni, ako tačno
+dve pripadaju onda ivica trougla pripada ravni. Ako samo jedna pripada ne
+možemo ništa da zaključimo dok ne proverimo da li naspramna ivica seče ravan,
+ako seče onda trougao seče ravan, ako ne seče onda trougao dodiruje ravan
+temenom. Ako ništa od ovoga nije ispunjeno onda proveravamo da li ivice seku
+ravan. Tačno dve ivice će seći ravan, ili nijedna ivica neće seći ravan. Ako
+tačno dve ivice seku ravan onda možemo da odredimo duž po kojoj se trougao
+i ravan seku. Ako nijedna ivica ne seče ravan onda se ravan i trougao ne seku.
+
+
 \subsection{Konusni preseci}
 \textit{Definicija konusnog preseka, konika, teorema o žiži i
     direktrisi (formulacija), konusni preseci u prirodi (kosi hitac, Keplerovi
@@ -1208,17 +1254,136 @@ površine i dužine koristi zapreina i površina.
 \par
 \vspace*{1cm}
 
+\textbf{Definicija konusnog preseka:} Neka se prave $s$ i $i$ seku u tački $T$.
+Konus se dobija kada se oko prave $s$ rotira prava $i$. Prava $s$ se naziva
+osa, rotirana prava $i$ u raznim položajima izvodnica, a tačka $T$ teme konusa.
+Konusni preseci su svi preseci koji se dobijaju pri preseku konusa i ravni.
+\par
+
+\textbf{Konika:} Konusni presek koji ne sadrži teme konusa. Konike su krug,
+elipsa, parabola i hiperbola.
+\par
+
+\textbf{Teorema o žiži i direktrisi:} U ravni $\alpha$ konike postoje prava $d$
+(direktrisa) i tačka $F$ (žiža) takve da za svaku tačku konike $M$ važi
+$const=e=\frac{|MF|}{d(M,d)}$. Broj e se naziva ekscentricitet konike i važi:
+\begin{enumerate}[label=\textbf{(\arabic*)}]
+    \item za $e=0$ krug;
+    \item za $0<e<1$ elipsa;
+    \item za $e=1$ parabola;
+    \item za $e>1$ hiperbola.
+\end{enumerate}
+\par
+
+\textbf{Kosi hitac:} Putanja kosog hica ima oblik parabole.
+\par
+
+\textbf{Prvi Keplerov zakon:} Planete oko Sunca opisuju eliptične putanje, pri
+čemu se Sunce nalazi u zajedničkoj žiži.
+\par
+
+\textbf{Drugi Keplerov zakon:} Planeta formira jednake površine odsečka elipse
+sa Suncem u jednakim vremenskim intervalima.
+\par
+
+\textbf{Treći Keplerov zakon:} Kvadrati perioda obilaska planeta oko Sunca
+srazmerni su kubu veće poluose elipse.
+\par
+
+\textbf{Senke kruga:} Senka kružnog predmeta na ravnom zidu je konika. Zid
+će zapravo biti ravan koja seče "konus" formiran od svetlosti koju emituje
+kružni predmet.
+
 \subsection{Elipsa}
 \textit{Osnovni elementi elipse, Fokusna osobina elipse: formulacija, skica,
     (dokaz), parametarska jednačina elipse.}
 \par
 \vspace*{1cm}
 
+\textbf{Poluose elipse:} Za poluose $a$ i $b$ važi $a>b>0$.
+\par
+
+\textbf{Žiže elipse:} Tačke $F_1(\sqrt{a^2-b^2},0)$ i $F_2(-\sqrt{a^2-b^2},0)$.
+\par
+
+\textbf{Ekscentricitet elipse:} $e=\frac{\sqrt{a^2-b^2}}{a}$.
+\par
+
+\textbf{Direktrise elipse:} $d_1: x=\frac{a}{\sqrt{a^2-b^2}}$ i
+$d_2: x=-\frac{a}{\sqrt{a^2-b^2}}$.
+\par
+
+\textbf{Kanonska jednačina elipse:} $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$.
+\par
+
+\textbf{Fokusne osobine elipse:} Za proizvoljnu tačku $M$ važi
+$|MF_1|+|MF_2|=2a$.\\
+\textbf{Dokaz:} Neka za tačku $M(x,y)$ važi $|MF_1|+|MF_2|=p$. Za $|MF_1|$
+i $|MF_2|$ važe jednakosti $|MF_1|=\sqrt{y^2+(x-\sqrt{a^2-b^2})^2}$ i
+$|MF_2|=\sqrt{y^2+(x+\sqrt{a^2-b^2})^2}$. Iz jednačine elipse dobijamo
+$y^2=b^2-\frac{b^2}{a^2}x^2$. Dobijamo jednakosti:
+\begin{align*}
+    p   & =|MF_1|+|MF_2|                                                                                                         \\
+        & =\sqrt{y^2+(x-\sqrt{a^2-b^2})^2}+\sqrt{y^2+(x+\sqrt{a^2-b^2})^2}                                                       \\
+        & =\sqrt{y^2+x^2+a^2-b^2-2x\sqrt{a^2-b^2}}+\sqrt{y^2+x^2+a^2-b^2+2x\sqrt{a^2-b^2}}                                       \\
+        & =\sqrt{b^2-\frac{b^2}{a^2}x^2+x^2+a^2-b^2-2x\sqrt{a^2-b^2}}+\sqrt{b^2-\frac{b^2}{a^2}x^2+x^2+a^2-b^2+2x\sqrt{a^2-b^2}} \\
+        & =\sqrt{\frac{a^2-b^2}{a^2}x^2+a^2-2x\sqrt{a^2-b^2}}+\sqrt{\frac{a^2-b^2}{a^2}x^2+a^2+2x\sqrt{a^2-b^2}}                 \\
+    p^2 & =2(\frac{a^2-b^2}{a^2}x^2+a^2)+2\sqrt{(\frac{a^2-b^2}{a^2}x^2+a^2)^2-4x^2(a^2-b^2)}                                    \\
+        & =2(\frac{a^2-b^2}{a^2}x^2+a^2)+2\sqrt{(a^2-\frac{a^2-b^2}{a^2}x^2)^2}                                                  \\
+        & =2(\frac{a^2-b^2}{a^2}x^2+a^2)+2(a^2-\frac{a^2-b^2}{a^2}x^2)                                                           \\
+        & =4a^2                                                                                                                  \\
+    p   & =2a
+\end{align*}
+\par
+
+\textbf{Skiciranje:} Ova osobina se koristila za skiciranje elipsi. Na ravnoj
+podlozi se pričvrste dva eksera na udaljenosti $2\sqrt{a^2-b^2}$ i za
+njih se veže kanap dužine $2a$. Trag olovke koji drži kanap zategnutim će
+predstavljati elipsu.
+\par
+
+\textbf{Parametarska jednačina elipse:} $x=a\cos(\phi)$, $y=b\sin(\phi)$,
+$\phi\in[0,2\pi)$, ugao $\phi$ ne predstavlja ugao između vektora položaja
+i $x$ ose.
+
 \subsection{Hiperbola}
-\textit{Onovni elementi hiperbole, fokusna osobina hiperbole: formulacija,
+\textit{Osnovni elementi hiperbole, fokusna osobina hiperbole: formulacija,
     skica, parametarska jednačina hiperbole.}
 \par
 \vspace*{1cm}
+
+\textbf{Poluose hiperbole:} Za poluose $a$ i $b$ važi $a,b>0$.
+\par
+
+\textbf{Žiže hiperbole:} Tačke $F_1(\sqrt{a^2+b^2},0)$ i $F_2(-\sqrt{a^2+b^2},0)$.
+\par
+
+\textbf{Ekscentricitet hiperbole:} $e=\frac{\sqrt{a^2+b^2}}{a}$.
+\par
+
+\textbf{Direktrise hiperbole:} $d_1: x=\frac{a}{\sqrt{a^2+b^2}}$ i
+$d_2: x=-\frac{a}{\sqrt{a^2+b^2}}$.
+\par
+
+\textbf{Asimptote hiperbole:} $a_1: y=\frac{b}{a}x$ i
+$a_2: y=-\frac{b}{a}x$.
+\par
+
+\textbf{Kanonska jednačina hiperbole:} $\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$.
+\par
+
+\textbf{Fokusne osobine hiperbole:} Za proizvoljnu tačku $M$ važi
+$||MF_1|-|MF_2||=2a$.
+\par
+
+\textbf{Skiciranje:} Možemo da opišemo krug poluprečnika $2a$ oko tačke $F_1$.
+Zatim postavljamo drugi krug proizvoljnog poluprečnika oko tačke $M$ tako da
+dodiruje tačku $F_2$ i prvi krug. Ovako dobijamo sve tačke sa jedne polovine
+hiperbole. Analogno dobijamo i za drugu polovinu hiperbole.
+\par
+
+\textbf{Parametarska jednačina hiperbole:} $x=\pm a\cosh(\phi)$, $y=b\sinh(\phi)$,
+$\phi\in\mathbb{R}$.
 
 \subsection{Parabola}
 \textit{Osnovni elementi parabole, fokusna osobina parabole, putanja kosog hica
@@ -1226,18 +1391,109 @@ površine i dužine koristi zapreina i površina.
 \par
 \vspace*{1cm}
 
+\textbf{Parametar parabole:} Broj $p$.
+\par
+
+\textbf{Žiže parabole:} Tačka $F(\frac{p}{2},0)$.
+\par
+
+\textbf{Direktrisa parabole:} $d$: $x=-\frac{p}{2}$.
+\par
+
+\textbf{Osa parabole:} Prava $o$.
+\par
+
+\textbf{Jednačina parabole:} $y^2=2px$.
+\par
+
+\textbf{Fokusna osobina hiperbole:} Svaka tačka parabole je jednako udaljena od
+žiže i od direktrise.
+\par
+
+\textbf{Putanja kosog hica je parabola:} Pretpostavimo da ispaljujemo kosi
+hitac sa početnom brzinom $\vek{v_0}=(v_{0x},v_{0y})^T$. Na njega deluje samo
+gravitacija, dakle $\vek{a}=(0,-g)^T$. Ovo možemo da zapišemo i kao
+$a(t)=(0,-g)$. Integraljenjem dobijamo $v(t)=(cv_x,-gt+cv_y)$. Za $t=0$
+dobijamo $v(0)=(cv_x,cv_y)=(v_{0x},v_{0y})$. Još jednim integraljenjem dobijamo
+$s(t)=(v_{0x}t+cs_x,v_{0y}t-\frac{gt^2}{2}+cs_y)$. Za $t=0$ dobijamo
+$s(0)=(cs_x,cs_y)=(0,0)$. Dobijamo da je jednačina kosog hica
+$s(t)=(v_{0x}t,v_{0y}t-\frac{gt^2}{2})$. Važi da je $x=v_{0x}t$, odakle
+dobijamo $t=\frac{x}{v_{0x}}$. Sada za $y$ imamo $y=v_{0y}t-\frac{gt^2}{2}=
+    v_{0y}\frac{x}{v_{0x}}-\frac{gx^2}{2v_{0x}^2}=
+    x\frac{v_{0y}}{v_{0x}}-x^2\frac{g}{2v_{0x}^2}$. Ovo je oblik parabole.
+\par
+
+\textbf{Domet kosog hica i vreme leta:} Domet se dobija kada je
+$y=t(v_{0y}-\frac{gt}{2})=0$. Nas zanima $t\neq0$, dakle $t=2\frac{v_{0y}}{g}$.
+Ovim dobijamo vreme leta. Da bismo izračunali domet potrebno je da izračunamo
+$x$ za vreme leta. Dobijamo $x=\frac{2v_{0x}v_{0y}}{g}$.
+\par
+
+\textbf{Maksimalna visina kosog hica:} Maksimalna visina se dobija za
+$v_{0y}=0$. Dakle, $0=v_{0y}-gt$ odakle dobijamo $t=\frac{v_{0y}}{g}$.
+Maksimalna visina je $y=\frac{v_{0y}^2}{2g}$.
+\par
+
+
 \subsection{Optičke osobine krivih drugog reda}
 \textit{Optička osobina parabole (objašnjenje, skica, dokaz, primene), optička
     osobina elipse i hiperbole.}
 \par
 \vspace*{1cm}
 
+\textbf{Optička osobina parabole:} Zraci koji izviru iz žiže parabole se
+odbijaju paralelno sa osom parabole.
+\par
+
+\textbf{Dokaz:} Označimo sa $F(\frac{p}{2},0)$ žižu parabole, neka se zrak
+odbija od parabole u tački $M$ i neka prolazi kroz tačku $R$. Neka tangenta $t$
+iz tačke $M$ seče osu u tački $Q(x_0,y_0)$. Važi da je $|FQ|=\frac{p}{2}+x_0$ i
+da je $|FM|=d(M,d)+x_0=\frac{p}{2}+x_0$. Dakle trougao $FQM$ je jednakokraki
+iz čega zaključujemo da je $\angle FQM=\angle FMQ$. Iz zakona odbijanja
+svetlosti zaključujemo da je i $\angle(RM,t)=\angle FMQ$ što smo i hteli.
+\par
+
+\textbf{Primena:} Ako parabolu rotiramo oko njene ose dobijamo rotacioni
+paraboloid. On se primenjuje u radarima (u kojima se prijemnik postavi u žižu),
+farovi automobila, reflektori, itd.
+\par
+
+\textbf{Optička osobina elipse:} Svetlosni zrak koji izvire iz jedne žiže
+elipse se odbija i prolazi kroz drugu žižu.
+\par
+
+\textbf{Optička osobina hiperbole:} Svetlosni zrak koji izvire iz jedne žiže
+hiperbole i odbija se je kolinearan sa drugom žižom.
+
 \subsection{Krive drugog reda}
-\textit{Definicija, primeri, svodjenje krive drugog reda na kanonski oblik
+\textit{Definicija, primeri, svođenje krive drugog reda na kanonski oblik
     dokaz, nameštanje na pune kvadrate, primer svodjenja parabole i ”xy”
     hiperbole.}
 \par
 \vspace*{1cm}
+
+\textbf{Definicija krive drugog reda:} Skup tačaka koje zadovoljavaju jednačinu
+drugog stepena: $a_{11}x^2+a_{12}xy+a_{22}y^2+a_{13}x+a_{23}y+a_{33}=0$.
+\par
+
+\textbf{Svođenje krive drugog reda na kanonski oblik:} Kanonski oblici su
+formula elipse ($\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$), hiperbole
+($\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$), parabole ($y^2=2px$), praznog skupa
+($\frac{x^2}{a^2}+\frac{y^2}{b^2}=-1$), tačke
+($\frac{x^2}{a^2}+\frac{y^2}{b^2}=0$), dve prave koje se seku
+($\frac{x^2}{a^2}-\frac{y^2}{b^2}=0$), dve paralelne prave ($x^2=a^2$),
+"dvostruke" prave ($x^2=0$), prazan skup ($x^2=-a^2$). Nekim kretanjem se
+bilo koja jednačina može svesti na tačno jedan od ovih oblika.
+\par
+
+\textbf{Dokaz:} Rotacijom možemo da eliminišemo član uz $xy$, a zatim dopunom
+do punog kvadrata i translacijom možemo da dobijemo neki od kanonskih oblika.
+\par
+
+\textbf{Nameštanje na pune kvadrate:} Jednačinu $ax^2+bx+c=0$ možemo da
+namestimo na pun kvadrat sledećim postupkom
+$a(x^2+\frac{b}{a}x+\frac{c}{a})=a(x^2+2\frac{b}{2a}x+\frac{b^2}{4a^2}-\frac{b^2}{4a^2}+\frac{c}{a})
+    =a(x+\frac{b}{2a})^2-\frac{b^2}{4a}+c=0$.
 
 \subsection{Bezijeove krive}
 \textit{Difinicija, B. kriva stepena jedan je duž, B. krive stepena dva i tri
@@ -1246,6 +1502,87 @@ površine i dužine koristi zapreina i površina.
     algoritam, Racionalna parametrizacija kruga, primer fraktala}
 \par
 \vspace*{1cm}
+
+\textbf{Definicija Bezijeove krive:} Neka su tačke $P_0,\dotsc,P_n$, $n\geq2$
+tačke ravni. Bezijeova kriva stepena $n$ je:
+$$\alpha_n(t)=\sum_{i=0}^{n}\binom{n}{i}t^i(1-t)^{n-i}P_i=\sum_{i=0}^{n}B^n_i(t)P_i,\ t\in[0,1]$$
+$B_i$ je Bernštajnov polinom.
+\par
+
+\textbf{Bezijeova kriva stepena jedan je duž:} Neka su date tačke $P_0$ i $P_1$.
+Za Bezijeovu krivu dobijamo $\alpha_n(t)=(1-t)P_0+tP_1=P_0+t\vek{P_0P_1}$. Ovo
+je duž po definiciji.
+\par
+
+\textbf{Bezijeove krive stepena dva i tri (skica):} Za $n=2$ se dobija
+$\alpha_2(t)=(1-t)^2P_0+2t(1-t)P_1+t^2P_2$. Za $n=3$ se dobija
+$\alpha_3(t)=(1-t)^3P_0+3t(1-t)^2P_1+3t^2(1-t)P_2+t^3P_3$.
+\par
+
+\textbf{Matrični zapis:} Da bismo odredili matrični zapis prvo odredimo šta
+stoji uz svaku od tačaka. Za $n=2$ će matrični zapis biti
+$\alpha_2(t)=\left(1,t,t^2\right)\left(\begin{matrix}
+            1  & 0  & 0 \\
+            -2 & 2  & 0 \\
+            1  & -2 & 1
+        \end{matrix}\right)\left(\begin{matrix}
+            P_0 \\
+            P_1 \\
+            P_2
+        \end{matrix}\right)$.
+\par
+
+\textbf{Osobine Bezijeovih krivih:}
+\begin{enumerate}[label=\textbf{(\arabic*)}]
+    \item Najveći stepen $\alpha_n$ je $n$.
+    \item Važi $\alpha_n(0)=P_0$ i $\alpha_n(1)=P_n$.
+    \item Tangentni vektor u $P_0$ je $\vek{P_0P_1}$, a u $P_n$ je
+          $\vek{P_{n-1}P_n}$.
+    \item Osobina nenegativnosti je da su svi Bernštajnovi polinomi
+          nenegativni.
+    \item Osobina konveksnog omotača je da Bezijeova kriva pripada konveksnom
+          omotaču kontrolnog polinoma.
+    \item Osobina manje varijacije kaže da će za bilo koju pravu broj preseka
+          sa Bezijeovom
+          krivom biti manji ili jednak od broja preseka sa kontolnim omotačem.
+    \item Afina invarijantnost kaže da ćemo ako preslikamo sva temena nekim
+          afinim preslikavanjem, a zatim odredimo tačku $\alpha'_n(t_0)$ dobiti
+          istu tačku kao da smo preslikali tačku $\alpha_n(t_0)$ istim afinim
+          preslikavanjem.
+\end{enumerate}
+\par
+
+\textbf{Bezijeova kriva kroz $P_0(1, 1)$, $P_1(-1, 0)$, $P_2(1, -1)$:} Imamo da
+je: \begin{align*}
+    \alpha_2(t) & =(1-t)^2P_0+2t(1-t)P_1+t^2P_2         \\
+                & =(1-t)^2(1,1)+2t(1-t)(-1,0)+t^2(1,-1) \\
+                & =((1-t)^2-2t(1-t)+t^2,(1-t)^2-t^2)    \\
+                & =(t^2-2t+1-2t+2t^2+t^2,t^2-2t+1-t^2)  \\
+                & =(4t^2-4t+1,-2t+1)
+\end{align*}
+Primetimo da smo dobili $x=y^2$ što je jednačina parabole.
+\par
+
+\textbf{Dokaz da je Bezijeova kriva stepena 2 parabola:} Neka su date tačke
+$Q_0$, $Q_1$ i $Q_2$. Ove tačke možemo preslikati u tačke $P_0$, $P_1$ i $P_2$
+iz prethodnog primera. Zbog osobine afine invarijantnosti će se i Bezijeova
+kriva preslikati. S obzirom da je Bezijeova kriva formirana tačkama $P_0$,
+$P_1$ i $P_2$ parabola, tada je i Bezijeova kriva formirana tačkama $Q_0$,
+$Q_1$ i $Q_2$ takođe parabola.
+\par
+
+\textbf{De Kasteljau algoritam:} Iterativni algoritam. Želimo da bez računanja
+polinoma nađemo tačku $\alpha_n(t_0)$. U nultom koraku će
+$P_{00}=P_0,\dotsc,P_{0n}=P_n$. U $i$-tom koraku konstruišemo tačke tako da
+$P_{i-1j}P_{ij}:P_{ij}P_{i-1j+1}=t_0:(1-t_0)$ i da tačka $P_{ij}$ pripada duži
+$P_{i-1j}P_{i-1j+1}$. Poslednja tačka koju dobijemo je tražena tačka.
+\par
+
+\textbf{Racionalna parametrizacija kruga:} $x=\frac{1-t^2}{1+t^2}$,
+$y=\frac{2t}{1+t^2}$, $t\in[0,1]$.
+\par
+
+\textbf{Fraktali:} Kohova kriva, Hilbertova kriva, Peanova kriva.
 
 \subsection{Poligoni}
 \textit{Definicija, temena, ivice, dijagonale, prost poligon, unutrašnjost
