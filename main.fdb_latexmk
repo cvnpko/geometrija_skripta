@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1735765806.27911 "main.aux" "main.bbl" "main" 1735766896.57506 0
+["bibtex main"] 0 "main.aux" "main.bbl" "main" 1736182741.69236 -1
   "./main.bib" 1735762267.56612 556 be75f924010cc40d943bb40f6839e819 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1735766896.44437 5473 9545f172fcf76f5a14277858ff67bfc4 "pdflatex"
+  "main.aux" 1736182741.56807 5573 869b19de1c8b9dabd4a14c161dd999bf "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1735766895.96821 "/home/cwpko/Desktop/MATF/3_semestar/G/geometrija_skripta/main.tex" "main.pdf" "main" 1735766896.5752 0
+["pdflatex"] 1736182741.11149 "/home/cwpko/Desktop/MATF/3_semestar/G/geometrija_skripta/main.tex" "main.pdf" "main" 1736182741.69251 0
   "/etc/texmf/web2c/texmf.cnf" 1729275013.35261 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/cwpko/Desktop/MATF/3_semestar/G/geometrija_skripta/main.tex" 1735766895.81938 75260 b0800d0b72638ac601cd2c5301a9d1d5 ""
+  "/home/cwpko/Desktop/MATF/3_semestar/G/geometrija_skripta/main.tex" 1736182740.96608 75904 64ca1bb092a1626d1c0f8889b9e0abad ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1136768653 3584 13049b61b922a28b158a38aeff75ee9b ""
@@ -129,11 +129,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1729275652.72073 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1729275753 6831175 b276a6fdbec604d4e839afc30b8e3deb ""
-  "main.aux" 1735766896.44437 5473 9545f172fcf76f5a14277858ff67bfc4 "pdflatex"
-  "main.bbl" 1735765806.31082 464 743e70a29b323385bd8eabbb41c5fa53 "bibtex main"
-  "main.out" 1735766896.44537 6038 0e69de3fa3db5e9954a287746dcd0d49 "pdflatex"
-  "main.tex" 1735766895.81938 75260 b0800d0b72638ac601cd2c5301a9d1d5 ""
-  "main.toc" 1735766896.44537 3171 dd46d4dc6cc210ed550d2ec4800376cb "pdflatex"
+  "main.aux" 1736182741.56807 5573 869b19de1c8b9dabd4a14c161dd999bf "pdflatex"
+  "main.bbl" 1736182677.89342 464 743e70a29b323385bd8eabbb41c5fa53 "bibtex main"
+  "main.out" 1736182741.56807 6038 0e69de3fa3db5e9954a287746dcd0d49 "pdflatex"
+  "main.tex" 1736182740.96608 75904 64ca1bb092a1626d1c0f8889b9e0abad ""
+  "main.toc" 1736182741.56807 3171 dd46d4dc6cc210ed550d2ec4800376cb "pdflatex"
   "vektorski_proizvod_krug.png" 1735751029.10659 28774 366ecfb1d83e09474ac6a507fd13efea ""
   (generated)
   "main.aux"

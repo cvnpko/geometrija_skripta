@@ -87,10 +87,14 @@ pozitivnom smeru od $\vek{v}$ do $\vek{u}$, odnosno, od $AB$ do $BC$. Ugao je
 iz intervala $[0,2\pi)$.
 \par
 
+\textbf{Oznaka vektora:} Ako posmatramo vektore, onda ih označavamo sa
+$\vek{u}$. Ako posmatramo samo kolone koordinata vektora, onda ih označavamo sa
+$u$.
+\par
+
 \textbf{Mase tačaka:} Za tačku $A$ oznaka $A(m_A)$ znači da tačka $A$ ima
 dodeljenu masu $m_A$. Podrazumevaće se da se i bez navedene oznake oznaka
-$m_{A}$ odnosi na tačku $A$. Umesto $A$ može da stoji proizvoljna oznaka
-tačke.
+$m_{A}$ odnosi na tačku $A$.
 \par
 
 \textbf{Baza vektorskog prostora:} Označavamo $i$-ti vektori baze $e$ sa
@@ -147,8 +151,8 @@ Takođe, suprotan vektor vektora $\vek{AB}$ možemo da zapišemo i kao $\vek{BA}
 \textbf{Komplanarni vektori:} Vektori su komplanarni ako pripadaju istoj ravni.
 \par
 
-\textbf{Jedinični vektor:} Jedinični vektor je vektor koji je intenziteta $1$.
-Od svakog ne-nula vektora možemo da napravimo jedinični vektor normalizacijom.
+\textbf{Jedinični vektor:} Vektor čiji je intenzitet $1$. Od svakog ne-nula
+vektora možemo da napravimo jedinični vektor normalizacijom.
 \par
 
 \textbf{Normalizacija vektora:} Normalizacijom se od vektora $\vek{v}$ dobija
@@ -183,7 +187,7 @@ sledeća tvrđenja:
 
 \textbf{Definicija linearne nezavisnosti:} Vektori $\vek{v_1},\dotsc,\vek{v_n}$
 su linearno nezavisni ako važi:
-$$\alpha_1\vek{v_1}+\dotsc+\alpha_n\vek{v_n}=\vek{0} \iff \alpha_1=
+$$\alpha_1\vek{v_1}+\dotsc+\alpha_n\vek{v_n}=\vek{0} \implies \alpha_1=
     \dotsc=\alpha_n=0$$
 \par
 
@@ -197,12 +201,12 @@ zavisni tada važi $\vek{u}=\alpha\vek{v}\implies 1\vek{u}-\alpha\vek{v}+
     0\vek{w}=\vek{0}$. Dakle i $\vek{u}$, $\vek{v}$ i $\vek{w}$ su linearno
 zavisni. Pretpostavimo da su $\vek{u}$ i $\vek{v}$ linearno nezavisni.
 Posmatrajmo tačke u ravni $O$, $A$, $B$, $C$ takve da $\vek{OA}=\vek{u}$,
-$\vek{OB}=\vek{v}$, $\vek{OC}=\vek{w}$. Obeležimo tačke $X$ i $Y$ na pravim
+$\vek{OB}=\vek{v}$ i $\vek{OC}=\vek{w}$. Obeležimo tačke $X$ i $Y$ na pravim
 $OA$ i $OB$ tako da je $OXCY$ paralelogram. Važi $\vek{OX}=\alpha\vek{OA}$ i
 $\vek{OY}=\beta\vek{OB}$. Tada:
 $$\vek{OX}+\vek{OY}=\vek{OC}=\alpha\vek{OA}+\beta\vek{OB} \implies
     \alpha\vek{OA}+\beta\vek{OB}-\vek{OC}=\vek{0}$$
-što je kraj dokaza.
+iz čega zaključujemo da su linearno zavisni što je kraj dokaza.
 \par
 
 \textbf{T1.4:} U prostoru postoje tri linearno nezavisna vektora, a svaka
@@ -212,7 +216,7 @@ $$\vek{OX}+\vek{OY}=\vek{OC}=\alpha\vek{OA}+\beta\vek{OB} \implies
 
 \subsection{Koordinate vektora i tačaka}
 \textit{Baza i dimenzija vektorskog prostora, koordinate vektora u bazi,
-    primer, reper Oe, koordinate tačke u reperu, primer, koordinate vektora
+    primer, reper $Oe$, koordinate tačke u reperu, primer, koordinate vektora
     $\vek{AB}$ preko koordinata tačaka $A$, $B$ (dokaz).}
 \par
 \vspace*{1cm}
@@ -225,12 +229,12 @@ $$\vek{OX}+\vek{OY}=\vek{OC}=\alpha\vek{OA}+\beta\vek{OB} \implies
 
 \textbf{Koordinate vektora u bazi:} Ako je baza vektorskog prostora
 $e=(\vek{e_1}, \vek{e_2})$, tada se svaki vektor može zapisati kao
-$\vek{v}=\alpha_1\vek{e_1}+\alpha_2\vek{e_2}$ i kažemo da su njegove
-koordinate $(\alpha_1, \alpha_2)$. Njih zapisujemo sa
+$\vek{v}=\alpha_1\vek{e_1}+\alpha_2\vek{e_2}$ i kažemo da su koordinate
+vektora $\vek{v}$ $(\alpha_1, \alpha_2)$. Njih zapisujemo sa
 $[\vek{v}]_e=[\alpha_1, \alpha_2]^T$.
 \par
 
-\textbf{Reper Oe:} Ako fiksiramo bazu $e$ i tačku $O$, $Oe$ ćemo zvati reperom
+\textbf{Reper $Oe$:} Ako fiksiramo bazu $e$ i tačku $O$, $Oe$ ćemo zvati reperom
 ili koodinatnim sistemom.
 \par
 
@@ -250,7 +254,7 @@ $$[\vek{AB}]_e=[\vek{AO}+\vek{OB}]_e=[\vek{AO}]_e+[\vek{OB}]_e=
 \vspace*{1cm}
 
 \textbf{Definicija skalarnog proizvoda:} Skalarni proizvod vektora
-$\vek{u},\vek{v}\in\mathbb{V}$ je definisan kao $\vek{u}\cdot\vek{v}=|\vek{u}|
+$\vek{u},\vek{v}\in\mathbb{V}$ je definisan sa $\vek{u}\cdot\vek{v}=|\vek{u}|
     |\vek{v}|\cos(\angle{\vek{u}\vek{v}})$.
 \par
 
@@ -274,7 +278,7 @@ međusobno ortogonalna. Važi: $\vek{e_i}\cdot\vek{e_j} =
 \par
 
 \textbf{Formula za skalarni proizvod u ON bazi:} Neka za vektore $\vek{v},
-    \vek{u}\in\mathbb{V}$ važi $\vek{v}=x_1\vek{e_1}+x_2\vek{e_2}$ i
+    \vek{u}\in\mathbb{V}$ važe jednakosti $\vek{v}=x_1\vek{e_1}+x_2\vek{e_2}$ i
 $\vek{u}=y_1\vek{e_1}+y_2\vek{e_2}$. Tada je:
 \begin{align*}
     \vek{v}\cdot\vek{u} & = (x_1\vek{v}+x_2\vek{v})\cdot(y_1\vek{u}
@@ -294,8 +298,7 @@ $\vek{u}=y_1\vek{e_1}+y_2\vek{e_2}$. Tada je:
     \arccos(\frac{\vek{u}\cdot\vek{v}}{|\vek{u}||\vek{v}|})$
 \par
 
-Skalarni proizvod $\vek{u}\cdot\vek{v}$ možemo da zapišemo i kao $u^Tv$ gde su
-$u$ i $v$ redom kolone koordinata vektora $\vek{u}$ i $\vek{v}$.
+Skalarni proizvod $\vek{u}\cdot\vek{v}$ možemo da zapišemo i kao $u^Tv$.
 \par
 
 \subsection{Vektorski proizvod}
@@ -356,7 +359,8 @@ $(\vek{u},\vek{v},\vek{u}\times\vek{v})$ pozitivno orijentisana.
 \par
 
 \textbf{Formula za vektorski proizvod u ON+ bazi:} Neka su $\vek{v},\vek{u}\in
-    \mathbb{V}$ i $\vek{v}=x_1\vek{e_1}+x_2\vek{e_2}+x_3\vek{e_3}$, $\vek{u}=
+    \mathbb{V}$ i važe jednakosti
+$\vek{v}=x_1\vek{e_1}+x_2\vek{e_2}+x_3\vek{e_3}$, $\vek{u}=
     y_1\vek{e_1}+y_2\vek{e_2}+y_3\vek{e_3}$. Tada:
 \begin{align*}
     \vek{v}\times\vek{u} & = (x_1\vek{e_1}+x_2\vek{e_2}+x_3\vek{e_3})
@@ -437,25 +441,25 @@ trouglovi $ABP$, $BCP$ i $CAP$ iste orijentacije.
 
 \textbf{Formula za mešoviti proizvod u ON+ bazi:}
 $$[\vek{u},\vek{v},\vek{w}]=(\vek{u}\times\vek{v})\cdot\vek{w}= \begin{vmatrix}
-        \vek{e_1}   & \vek{e_2}   & \vek{e_3}   \\
-        x_{\vek{u}} & y_{\vek{u}} & z_{\vek{u}} \\
-        x_{\vek{v}} & y_{\vek{v}} & z_{\vek{v}}
+        \vek{e_1} & \vek{e_2} & \vek{e_3} \\
+        u_x       & u_y       & u_z       \\
+        v_x       & v_y       & v_z
     \end{vmatrix}\cdot\vek{w}=\text{*sredi se*}= \begin{vmatrix}
-        x_{\vek{u}} & y_{\vek{u}} & z_{\vek{u}} \\
-        x_{\vek{v}} & y_{\vek{v}} & z_{\vek{v}} \\
-        x_{\vek{w}} & y_{\vek{w}} & z_{\vek{w}}
+        u_x & u_y & u_z \\
+        v_x & v_y & v_z \\
+        w_x & w_y & w_z
     \end{vmatrix}$$
 \par
 
-\textbf{T1.7:} Zapremina paralelopipeda jednaka je mešovitom proizvodu tri
-vektora.
+\textbf{T1.7:} Zapremina paralelopipeda jednaka je apsolutnoj vrednosti
+mešovitog proizvoda tri vektora koji razapinju taj paralelopiped.
 \par
 \textbf{Dokaz:} Neka je dat paralelopiped $ABCDA_1B_1C_1D_1$ i neka su
 $\vek{AB}=\vek{u}$, $\vek{AD}=\vek{v}$ i $\vek{AA_1}=\vek{w}$. Tada je
 zapremina paralelopipeda:
 \begin{align*}
-    V & =P_{ABCD}h=|\vek{u}\times\vek{v}|\cdot h=||\vek{u}\times\vek{v}|
-    \cdot\vek{w}|\cos(\angle{(\vek{u}\times\vek{v})\vek{w}})|            \\
+    V & =P_{ABCD}h=|\vek{u}\times\vek{v}|h=\left|\left|\vek{u}\times\vek{v}\right|
+    \left|\vek{w}\right|\cos(\angle{(\vek{u}\times\vek{v})\vek{w}})\right|         \\
       & =|(\vek{u}\times\vek{v}) \cdot \vek{w}|=
     |[\vek{u},\vek{v},\vek{w}]|
 \end{align*}
@@ -491,7 +495,7 @@ zapremina paralelopipeda koji obrazuju veća od nule.
 \par
 \vspace*{1cm}
 
-\textbf{Zakon poluge:} Iz jednakosti momenta sila se izvodi zakon poluge
+\textbf{Zakon poluge:} Iz jednakosti momenta sila se dobija
 $|AT|:|TB|=m_B:m_A$ ili vektorski $m_A\vek{TA}+m_B\vek{TB}=\vek{0}$.
 \par
 
@@ -530,6 +534,7 @@ Tada:
     \vek{ST}          & =\frac{1}{M}(m_{A}\vek{SA}+m_{B}\vek{SB}
     +m_{C}\vek{SC})
 \end{align*}
+Za $m_{A}=m_{B}=m_{C}$ dobijamo definiciju težišta.
 \par
 
 \textbf{Baricentričke koordinate:} Baricentričke koordinate tačke $M$ su mase
@@ -594,7 +599,7 @@ pozitivnom smeru.
 \begin{enumerate}[label=\textbf{(\arabic*)}]
     \item $(R_\phi)^{-1}=R_{-\phi}=(R_\phi)^T$
     \item $det(R_\phi)=1$
-    \item $R_\phi\cdot R_\psi=R_{\phi+\psi}=R_\psi\cdot R_\phi$
+    \item $R_\phi R_\psi=R_{\phi+\psi}=R_\psi R_\phi$
 \end{enumerate}
 \par
 
@@ -641,7 +646,7 @@ je ortogonalna grupa reda 2. Broj 2 označava da se posmatra ravan.
 \subsection{Afina preslikavanja}
 \textit{Definicija, pasivna i aktivna tačka gledišta, osobine afinih
     preslikavanja (T5.2) (dokaz), određenost afinog preslikavanja sa tri para
-    odgovarajućih tačaka, predstavljanje afinih preslikavanja ravni 3 x 3
+    odgovarajućih tačaka, predstavljanje afinih preslikavanja ravni $3\times3$
     matricama, translacija, rotacija (oko O i oko proizvoljne tačke),
     refleksija u odnosu na pravu, skaliranje, smicanje, primeri.}
 \par
@@ -684,7 +689,7 @@ vektora baze $e$ ($i$-ta kolona će biti $\overline{f}(\vek{e_i})$).
 
 \textbf{Osobine afinih preslikavanja ravni (T5.2):}
 \begin{enumerate}[label=\textbf{(\arabic*)}]
-    \item Preslikaju prave u prave.
+    \item Preslikavaju prave u prave.
           \par
           \textbf{Dokaz:} S obzirom da je svako afino preslikavanje indukovano
           linearnim preslikavanjem vektorskog prostora, a linearno
@@ -712,9 +717,9 @@ vektora baze $e$ ($i$-ta kolona će biti $\overline{f}(\vek{e_i})$).
           $\vek{O'A'}=a_{ij}\vek{OA}$ i $\vek{O'B'}=a_{ij}\vek{OB}$. Za kraj,
           koristimo svojstvo $det(AB)=det(A)det(B)$.
           \begin{align*}
-              1           & =\frac{det(\vek{OA}\vek{OB})}{det(\vek{OA}\vek{OB})}                       \\
-              det(a_{ij}) & =\frac{det(a_{ij}\cdot\vek{OA}a_{ij}\cdot\vek{OB})}{det(\vek{OA}\vek{OB})} \\
-              det(a_{ij}) & =\frac{det(\vek{O'A'}\vek{O'B'})}{det(\vek{OA}\vek{OB})}                   \\
+              1           & =\frac{det(\vek{OA}\vek{OB})}{det(\vek{OA}\vek{OB})}                 \\
+              det(a_{ij}) & =\frac{det((a_{ij}\vek{OA})(a_{ij}\vek{OB}))}{det(\vek{OA}\vek{OB})} \\
+              det(a_{ij}) & =\frac{det(\vek{O'A'}\vek{O'B'})}{det(\vek{OA}\vek{OB})}             \\
           \end{align*}
 
     \item Čuvaju centar mase i baricentričke koordinate.
@@ -731,8 +736,15 @@ vektora baze $e$ ($i$-ta kolona će biti $\overline{f}(\vek{e_i})$).
 \par
 
 \textbf{Određenost afinog preslikavanja sa tri para odgovarajućih tačaka:}
-Ako su date tri nekolinearne tačke i njihove slike može se odrediti jedinstveno
-afino preslikavanje ravni.
+Neka su date tačke $O=(0,0)$, $A=(1,0)$ i $B=(0,1)$. Hoćemo da odredimo afino
+preslikavanje koje slika $O$, $A$ i $B$ u proizvoljne nekolinearne tačke $O'$,
+$A'$ i $B'$. Važi da je $f(O)=O'$, a kolone matrice $[\overline{f}]_{e}$ su
+kolone vektora $\vek{O'A'}$ i $\vek{O'B'}$ čime smo odredili afino
+preslikavanje. Hoćemo da preslikamo proizvoljne nekolinearne tačke $E$, $F$ i
+$G$ u $E'$, $F'$ i $G'$. Postoji afino preslikavanje $g$ koje slika tačke $O$,
+$A$ i $B$ u $E$, $F$ i $G$ i postoji afino preslikavanje $h$ koje slika tačke
+$O$, $A$ i $B$ u $E'$, $F'$ i $G'$. Traženo preslikavanje će biti
+$h\circ g^{-1}$.
 \par
 
 \textbf{Translacija:}
@@ -806,7 +818,7 @@ Matrice smicanja:
 $\mathbb{E}$ proizvoljne dimenzije.
 \par
 
-\textbf{Direktne izometrij:} Čuvaju orijentaciju (kretanja).
+\textbf{Direktne izometrije:} Čuvaju orijentaciju (kretanja).
 \par
 
 \textbf{Indirektne izometrije:} Menjaju orijentaciju.
@@ -820,26 +832,26 @@ $1=det(E)=det(AA^T)=det(A)det(A^T)=det(A)det(A)=det(A)^2$.
 \textbf{Opis afinih transformacija ravni:} \hyperref[subsec:pitanje_9]{Pitanje 9}.
 \par
 
-\textbf{Matrica rotacje oko $x$ ose:} $\mathcal{R}_x(\phi)=\begin{bmatrix}
+\textbf{Matrica rotacije oko $x$ ose:} $\mathcal{R}_x(\phi)=\begin{bmatrix}
         1 & 0          & 0           \\
         0 & \cos(\phi) & -\sin{\phi} \\
         0 & \sin(\phi) & \cos(\phi)
     \end{bmatrix}$
 \par
-\textbf{Matrica rotacje oko $y$ ose:} $\mathcal{R}_y(\phi)=\begin{bmatrix}
+\textbf{Matrica rotacije oko $y$ ose:} $\mathcal{R}_y(\phi)=\begin{bmatrix}
         \cos(\phi) & 0 & -\sin{\phi} \\
         0          & 1 & 0           \\
         \sin(\phi) & 0 & \cos(\phi)
     \end{bmatrix}$
 \par
-\textbf{Matrica rotacje oko $z$ ose:} $\mathcal{R}_z(\phi)=\begin{bmatrix}
+\textbf{Matrica rotacije oko $z$ ose:} $\mathcal{R}_z(\phi)=\begin{bmatrix}
         \cos(\phi) & -\sin{\phi} & 0 \\
         \sin(\phi) & \cos(\phi)  & 0 \\
         0          & 0           & 1
     \end{bmatrix}$
 \par
 \textbf{Rotacija oko proizvoljne prave koja sadrži $O$ (Rodrigezova formula):}
-Neka je dat ON reper Oe i neka su date tačka $M$ i prava $p_0$ koja sadrži
+Neka je dat ON reper $Oe$ i neka su date tačka $M$ i prava $p_0$ koja sadrži
 tačku $O$ i ugao $\phi$ za koji rotiramo tačku $M$ oko prave
 $p_0$. Neka je jedinični vektor pravca prave $p_0$ vektor $\vek{p}$. Posmatrajmo
 ravan $\alpha$ koja sadrži tačku $M$ i njen normalni vektor je vektor
@@ -849,9 +861,7 @@ $\vek{x_1}=\vek{OO'}$ i $\vek{x_2}=\vek{O'M}$. Tada:
     \vek{x}             & =\vek{x_1}+\vek{x_2} = \lambda\vek{p}+\vek{x_2}                                  \\
     \vek{p}\cdot\vek{x} & =\lambda(\vek{p}\cdot\vek{p})+\vek{p}\cdot\vek{x_2} =\lambda|\vek{p}|^2 =\lambda
 \end{align*}
-Označimo sa $p$, $x$, $x_1$, $x_2$ kolone koordinata vektora $\vek{p}$,
-$\vek{x}$, $\vek{x_1}$, $\vek{x_2}$. Tada za $x_1$ dobijamo
-$x_1=p\lambda=p(p^Tx)=(pp^T)x$, a za $x_2$ dobijamo
+Tada za $x_1$ dobijamo $x_1=p\lambda=p(p^Tx)=(pp^T)x$, a za $x_2$ dobijamo
 $x_2=x-x_1=Ex-(pp^T)x=(E-pp^T)x$. Neka je sada $M'$ tačka koja se dobija
 rotacijom tačke $M$ oko prave $p$ za ugao $\phi$. Možemo da posmatramo
 ortogonalnu bazu $(\vek{p},\vek{x_2},\vek{p}\times\vek{x_2})$. Tada je:
@@ -863,12 +873,13 @@ ortogonalnu bazu $(\vek{p},\vek{x_2},\vek{p}\times\vek{x_2})$. Tada je:
 Na kraju dobijamo koordinate tačke $M'$:
 $$[M']_{Oe}=[\vek{OM'}]_e=[\vek{OO'}]_e+[\vek{O'M'}]_e=(pp^T)x+\cos(\phi)(E-pp^T)x+\sin(\phi)\vek{p}_\times x$$
 Možemo da izdvojimo matricu
-$[R_p(\phi)]_e=p\cdot p^T+\cos(\phi)\cdot(E-p\cdot p^T)+\sin(\phi)\cdot\vek{p}_\times$
+$[R_p(\phi)]_e=pp^T+\cos(\phi)(E-pp^T)+\sin(\phi)\vek{p}_\times$
 koju nazivamo Rodrigezova formula.
 \par
 
-\textbf{Refleksija u odnosu na ravan koja sadrži O:} Neka je dat ON reper Oe
-$\alpha$ ravan koja prolazi kroz $O$ zadata jediničnim normalnim vektorom
+\textbf{Refleksija u odnosu na ravan koja sadrži O:}
+\label{refleksija_u_odnosu_na_ravan} Neka je dat ON reper $Oe$,
+ravan $\alpha$ koja prolazi kroz $O$ zadata jediničnim normalnim vektorom
 $\vek{p}$ i neka je data tačka $M$ na koju hoćemo da primenimo refleksiju u
 odnosu na ravan i neka se tom refleksijom dobija tačka $M'$. Neka je
 $\alpha\cap MM'=\{O'\}$. Dobijamo
@@ -896,7 +907,7 @@ prave koja sadrži tačku $O'$.
 izraziti kao kompozicija tri sopstvene rotacije oko koordinatnih osa:
 $R_{Ox_2}(\phi)\circ R_{Oy_1}(\theta)\circ R_{Oz}(\psi)$ gde su uglovi
 $\phi,\psi\in[0,2\pi)$, $\theta\in[-\frac{\pi}{2},\frac{\pi}{2}]$. Uglovi $\phi$,
-$\theta$, $\psi$ se nazivaju Ojerovi uglovi. Prvom rotacijom se $Oxyz$ slika u
+$\theta$, $\psi$ se nazivaju Ojlerovi uglovi. Prvom rotacijom se $Oxyz$ slika u
 $Ox_1y_1z_1$, drugom rotacijom u $Ox_2y_2z_2$ i trećom rotacijom u $Ox_3y_3z_3$.
 \par
 
@@ -945,8 +956,8 @@ $q \overline{q}=|q|^2 \implies q^{-1}=\frac{\overline{q}}{|q|^2}$.
 \par
 
 \textbf{Konjugacije kvaternionom:} Svaki kvaternion različit od nule određuje
-konjugaciju: $C_q=qpq^{-1}$. Dve konjugacije su iste ako i samo ako važi
-$q=\lambda h$, gde je $\lambda\in\mathbb{R}$. Konjugacija kvaternionom
+konjugaciju $C_q=qpq^{-1}$. Dve konjugacije su iste ako i samo ako važi
+$q=\lambda h$, gde je $\lambda\in\mathbb{R}$. \par
 \textbf{Izometrije:} $q=[\vek{v}\sin(\frac{\alpha}{2}),\cos(\frac{\alpha}{2})]$
 je rotacija oko jediničnog vektora $\vek{v}$ za ugao $\alpha$ u pozitivnom
 smeru.
@@ -967,7 +978,7 @@ smeru.
 \par
 
 \textbf{Normalni vektor:} Iz implicitnog zapisa možemo da pročitamo normalni
-vektor $\vek{n_p}=(a,b)$.
+vektor $\vek{n_p}=(a,b)^T$.
 \par
 
 \textbf{Vektor pravca:} Iz parametarskog zapisa možemo da pročitamo vektor
@@ -984,8 +995,8 @@ kao za prave, a zatim određujemo da li za obe prave važi da je $t\in[0,1]$.
 \par
 
 \textbf{Parametarsko zadavanje trougla i paralelograma:} Trougao možemo da
-zadamo sa $M(t_1,t_2)=A+t_1\vek{AB}+t_2\vek{AC}, t_1, t_2\in[0,1], t_1+t_2\leq1$.
-Paralelogram možemo da zadamo sa $M(t_1,t_2)=A+t_1\vek{AB}+t_2\vek{AC}, t_1, t_2\in[0,1]$.
+zadamo sa $M(t_1,t_2)=A+t_1\vek{AB}+t_2\vek{AC}$, $t_1,t_2\in[0,1]$, $t_1+t_2\leq1$.
+Paralelogram možemo da zadamo sa $M(t_1,t_2)=A+t_1\vek{AB}+t_2\vek{AC}$, $t_1,t_2\in[0,1]$.
 
 \subsection{Ravan u prostoru}
 \textit{Zadavanje ravni tačkom i normalnim vektorom (dokaz), skiciranje ravni,
@@ -1027,10 +1038,11 @@ Ako su tačke kolinearna ne može se jednoznačno odrediti ravan koja ih sadrži
 a $\vek{p}$ je vektor pravca.
 \par
 
-\textbf{,,Kanonska`` jednačina:} ,,Kanonska`` je pod navodnicima jer nešto što je
-kanonsko bi trebalo da bude jedinstveno, ali ova jednačina nije jedinstvena.
+\textbf{,,Kanonska`` jednačina:} ,,Kanonska`` je pod navodnicima jer bi nešto
+što je kanonsko trebalo da bude jedinstveno, što ova jednačina ne mora da bude.
 Kanonska jednačina prave:
-$\frac{x-x_0}{p_x}=\frac{y-y_0}{p_y}=\frac{z-z_0}{p_z}=t$.
+$\frac{x-x_0}{p_x}=\frac{y-y_0}{p_y}=\frac{z-z_0}{p_z}=t$. Dopuštamo da $p_x$,
+$p_y$ ili $p_z$ budu nula.
 \par
 
 \textbf{Prava $AB$:} Ako su date dve različite tačke $A$ i $B$ možemo
@@ -1040,7 +1052,7 @@ $M(t)=A+t\vek{AB}$.
 
 \textbf{Podela duži $AB$ na jednake delove:} Ako želimo da podelimo duž $AB$ na
 $n$ jednakih delova i želimo da nađemo $m$-tu tačku podele to radimo po formuli:
-$T_m=A+\vek{AB}\cdot\frac{m}{n}$, važi da je $T_0=A$ i $T_n=B$.
+$T_m=A+\frac{m}{n}\vek{AB}$, važi da je $T_0=A$ i $T_n=B$.
 \par
 
 \textbf{Prava kao presek dve ravni:} Dobija se kao rešenje sistema dve
@@ -1067,7 +1079,7 @@ $\lambda_1\cdot(a_1x+b_1y+c_1z+d_1)+\lambda_2(a_2x+b_2y+c_2z+d_2)=0$.
 \textbf{Međusobni položaj dve prave:} Dve prave mogu da budu paralelne,
 mimoilazne, da se poklapaju i da se seku. Možemo da rešavamo dve jednačine sa
 dve nepoznate. Ako postoji jedno rešenje onda se seku. Ako postoji beskonačno
-mnogo rešenja onda se poklapaju. Ako nema rešenja a vektori su kolinearni onda
+mnogo rešenja onda se poklapaju. Ako nema rešenja, a vektori su kolinearni onda
 su prave paralelne. Ako ništa od prethodnog ne važi onda su mimoilazne.
 \par
 
@@ -1088,7 +1100,7 @@ prave i ravni.
 \textbf{T4.3:} Mimoilazne prave $p$ i $q$ imaju jedinstvenu zajedničku normalu.
 \par
 \textbf{Dokaz:} Neka su date prave $p$ i $q$. Vektor pravca prave $n$ koja je
-normalna na obe prave će biti $\vek{p}\times\vek{q}$ gde su $\vek{p}$ i
+normalna na obe prave će biti $\vek{p}\times\vek{q}$, gde su $\vek{p}$ i
 $\vek{q}$ vektori pravca pravih $p$ i $q$. Sve prave čiji su vektori pravca
 ortogonalni i sa $\vek{p}$ i sa $\vek{q}$ i koje seku pravu $p$ će pripadati
 ravni $\alpha$ koja se konstruiše jednom tačkom sa prave $p$ i vektorima
@@ -1105,7 +1117,7 @@ $\frac{|[\vek{p},\vek{q},\vek{PQ}]|}{|p\times q|}$ gde su $P$ i $\vek{p}$ tačka
 i vektor pravca prave $p$, a $Q$ i $\vek{q}$ tačka i vektor pravca prave $q$.
 \par
 \textbf{Dokaz:} U brojiocu je zapravo zapremina paralelopipeda, a u imeniocu je
-površina baze pa se deljenjem tačno dobija visina koju tražimo.
+površina baze zbog čega se deljenjem tačno dobija visina koju tražimo.
 \par
 
 \subsection{Projekcije}
@@ -1128,7 +1140,8 @@ površina baze pa se deljenjem tačno dobija visina koju tražimo.
 prolazi kroz $O$ zadata jediničnim normalnim vektorom $\vek{p}$ i neka je data
 tačka $M$ koju hoćemo da projektujemo na ravan i neka se tom projekcijom dobija
 tačka $M'$. Označimo kolone vektora $\vek{p}$, $\vek{OM}$ i $\vek{OM'}$ redom
-sa $p$, $x$, $x'$. Tada, analogno dokazu formule refleksije u odnosu na ravan,
+sa $p$, $x$, $x'$. Tada, analogno \hyperref[refleksija_u_odnosu_na_ravan]
+{dokazu formule refleksije u odnosu na ravan},
 dobijamo formulu: $x'=(E-pp^T)x$.
 \par
 
@@ -1153,7 +1166,7 @@ $\begin{bmatrix}
         0 & d & 0 & 0 \\
         0 & 0 & d & 0 \\
         0 & 0 & 1 & 0
-    \end{bmatrix}=\begin{bmatrix}
+    \end{bmatrix}\begin{bmatrix}
         x \\
         y \\
         z \\
@@ -1164,13 +1177,13 @@ $\begin{bmatrix}
 \textbf{Kartografske projekcije:} Projektuju zakrivljene površine na ravan.
 \par
 
-\textbf{Stereografska projekcija definicija:} Specijalan slučaj centralne projekcije,
+\textbf{Definicija stereografske projekcije:} Specijalan slučaj centralne projekcije,
 vrsta kartografske projekcije kojom se jedinična sfera projektuje na ravan.
 Centar projekcije je neka tačka sfere, a ravan na koju se projektuje tangira
 sferu.
 \par
 
-\textbf{Stereografska projekcija izvođenje formula:} Neka je $C=(0,0,1)$ i
+\textbf{Izvođenje formula stereografske projekcije:} Neka je $C=(0,0,1)$ i
 $z=-1$. Posmatrajmo tačku na lopti $M=(x,y,z)$ i pravu
 $p(\lambda)=C+\lambda\vek{CM}$. Važi $x'=\lambda x$, $y'=\lambda y$ i
 $z'=\lambda z+\lambda=-1$. Odavde dobijamo $\lambda=\frac{1}{1-z}$. Na kraju
@@ -1186,9 +1199,12 @@ $y'=\frac{y}{1-z}$ i $z'=-1$.
 \vspace*{1cm}
 
 \textbf{Merenje uglova:} Veza stepena i radijana: $180^\circ=\pi$. Radijan
-predstavlja odnos dužine luka i dužine poluprečnika. Merenje nagiba u
-procentima: Ako merimo ugao između hipotenuze i jedne katete i dužina te katete
-je $a$, a dužina druge katete je $b$, tada će nagib biti $\frac{b}{a}100\%$.
+predstavlja odnos dužine luka i dužine poluprečnika.
+\par
+
+\textbf{Merenje nagiba u procentima:} Merimo ugao između hipotenuze i
+nalegle katete. Označimo dužinu te katete sa $a$, a dužinu druge katete
+sa $b$. Tada će nagib biti $\frac{b}{a}100\%$.
 Dakle, ako je dužina jedne katete $1$ metar, a dužina druge katete $5$
 centimetara, tada će nagib hipotenuze biti $5\%$.
 \par
@@ -1226,7 +1242,7 @@ vektor ravni, a $\vek{p}$ vektor pravca prave.
 \vspace*{1cm}
 
 \textbf{Rastojanje između tačke i prave:} Neka je data prava $p$ i tačka $A$
-čije rastojanje se traži. Možemo da izaberemo neku tačku $P$ na pravoj i da
+čije rastojanje se traži. Možemo da izaberemo neku tačku $B$ na pravoj i da
 izračunamo površinu paralelograma zadatog vektorima: $\vek{AB}$ i $\vek{p}$.
 Tada se tražena visina dobija formulom
 $d(A,p)=\frac{|\vek{AB}\times\vek{p}|}{|\vek{p}|}$.
@@ -1236,8 +1252,7 @@ površine i dužine koristi zapremina i površina.
 \par
 
 \textbf{Rastojanje između mimoilaznih pravih:}
-\hyperlink{subsec:pitanje_16}{pitanje 16}.
-
+\hyperref[subsec:pitanje_16]{Pitanje 16}.
 
 \subsection{Prodor prave kroz trougao}
 \textit{Uslov da prava prodire trougao (objašnjenje), određivanje prodorne
@@ -1795,7 +1810,7 @@ karakteristika.
 \par
 
 \textbf{Rod poliedra:} Rod poliedra je broj $r$ koji se intuitivno definiše kao
-,,broj rupa`` poliedra. Važi $\chi(\mathcal{M})=2-r$
+,,broj rupa`` poliedra. Važi $\chi(\mathcal{M})=2-2r$
 \par
 
 \subsection{Platonova tela}
