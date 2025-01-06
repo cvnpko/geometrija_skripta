@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1736182977.59216 "main.aux" "main.bbl" "main" 1736182978.18607 0
+["bibtex main"] 1736183218.0984 "main.aux" "main.bbl" "main" 1736183968.25029 0
   "./main.bib" 1736182976.83278 555 b18ce7e2a5531791dbf2f326e637c89c ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1736182978.06177 5573 869b19de1c8b9dabd4a14c161dd999bf "pdflatex"
+  "main.aux" 1736183968.12284 5573 ac0bcb2b9644799aacf2c2455df456f6 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1736182977.63104 "/home/cwpko/Desktop/MATF/3_semestar/G/geometrija_skripta/main.tex" "main.pdf" "main" 1736182978.18622 0
+["pdflatex"] 1736183967.64485 "/home/cwpko/Desktop/MATF/3_semestar/G/geometrija_skripta/main.tex" "main.pdf" "main" 1736183968.25044 0
   "/etc/texmf/web2c/texmf.cnf" 1729275013.35261 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/cwpko/Desktop/MATF/3_semestar/G/geometrija_skripta/main.tex" 1736182817.40266 75904 64ca1bb092a1626d1c0f8889b9e0abad ""
+  "/home/cwpko/Desktop/MATF/3_semestar/G/geometrija_skripta/main.tex" 1736183967.49784 76268 8ea00be5069fec7f9149312207298221 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1136768653 3584 13049b61b922a28b158a38aeff75ee9b ""
@@ -115,6 +115,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty" 1578692495 36103 3e78d14f0f4b1a30560fea5e04de805d ""
   "/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty" 1698869629 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
   "/usr/share/texlive/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1700082560 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1636152094 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb" 1729275649.9359 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
@@ -129,11 +130,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1729275652.72073 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1729275753 6831175 b276a6fdbec604d4e839afc30b8e3deb ""
-  "main.aux" 1736182978.06177 5573 869b19de1c8b9dabd4a14c161dd999bf "pdflatex"
-  "main.bbl" 1736182977.62678 462 4ededc1cf1e4205a2ef50f1c59a63bab "bibtex main"
-  "main.out" 1736182978.06277 6038 0e69de3fa3db5e9954a287746dcd0d49 "pdflatex"
-  "main.tex" 1736182817.40266 75904 64ca1bb092a1626d1c0f8889b9e0abad ""
-  "main.toc" 1736182978.06277 3171 dd46d4dc6cc210ed550d2ec4800376cb "pdflatex"
+  "main.aux" 1736183968.12284 5573 ac0bcb2b9644799aacf2c2455df456f6 "pdflatex"
+  "main.bbl" 1736183218.13193 462 4ededc1cf1e4205a2ef50f1c59a63bab "bibtex main"
+  "main.out" 1736183968.12284 6038 0e69de3fa3db5e9954a287746dcd0d49 "pdflatex"
+  "main.tex" 1736183967.49784 76268 8ea00be5069fec7f9149312207298221 ""
+  "main.toc" 1736183968.12384 3171 dd46d4dc6cc210ed550d2ec4800376cb "pdflatex"
   "vektorski_proizvod_krug.png" 1735751029.10659 28774 366ecfb1d83e09474ac6a507fd13efea ""
   (generated)
   "main.aux"
