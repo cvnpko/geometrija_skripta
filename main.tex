@@ -41,26 +41,20 @@ urlcolor=blue}
     \textsc{\LARGE Matematički fakultet}\\[5cm]
 
     \HRule\\[0.4cm]
-    {\LARGE\bfseries Odgovori na teorijska ispitna pitanja iz geometrije}
+    {\LARGE\bfseries Skica odgovora na teorijska ispitna pitanja iz geometrije kod profesora
+    Srđana Vukmirovića}
     \\[0.2cm]
-    \HRule\\[2cm]
+    \HRule\\
+    {\large\bfseries Za potpuno razumevanje i potpune odgovore je potrebno pogledati
+    knjigu ,,Geometrija za informatičare`` (link do knjige je ostavljen u odeljku \hyperref[literatura]{literatura})}
+    \\[0.2cm]
 
-    \vspace{17\baselineskip}
-    \begin{minipage}[t]{0.4\textwidth}
-        \begin{flushleft}
-            \large
-            \textit{Radio}\\
-            Lazar Jovanović 34/2023
-        \end{flushleft}
-    \end{minipage}
-    \hspace*{1cm}
-    \begin{minipage}[t]{0.4\textwidth}
-        \begin{flushright}
-            \large
-            \textit{Profesor}\\
-            dr Srđan Vukmirović
-        \end{flushright}
-    \end{minipage}
+    \vspace{16\baselineskip}
+    \begin{flushleft}
+        \large
+        \textit{Radio}\\
+        Lazar Jovanović 34/2023
+    \end{flushleft}
 
     \vfill\vfill\vfill\vfill
     {\large Beograd, 2024/2025}
@@ -76,9 +70,9 @@ urlcolor=blue}
 \par
 \vspace*{1cm}
 
-\textbf{Primeri:} Većina primera neće biti navedena.
+\textbf{Primeri i slike:} Većina primera i slika neće biti navedena.
 
-\textbf{Množenje i skalarni proizvod:} Množenje se neće označavati posebnom
+\textbf{Množenje i skalarni proizvod:} Množenje broja i vektora se neće označavati posebnom
 oznakom, dok će se za skalarni proizvod koristiti oznaka $\cdot$.
 \par
 
@@ -127,6 +121,10 @@ se označava sa AB.
 pravac, smer i intenzitet.
 \par
 
+\textbf{Predstavnik vektora:} Ako je usmerena duž $\vek{AB}$ predstavnik vektora
+$\vek{v}$, tada pišemo $\vek{v}=\vek{AB}$.
+\par
+
 \textbf{Sabiranje vektora}: Pri sabiranju se vektori nadovezuju, posmatraju se
 samo početna i krajnja tačka.
 \par
@@ -147,10 +145,12 @@ $-\vek{v}$) ima isti intenzitet i pravac kao vektor $\vek{v}$, a suprotan smer.
 Takođe, suprotan vektor vektora $\vek{AB}$ možemo da zapišemo i kao $\vek{BA}$
 \par
 
-\textbf{Kolinearni vektori:} Vektori su kolinearni ako pripadaju istoj pravoj.
+\textbf{Kolinearni vektori:} Vektori su kolinearni ako postoje njihovi predstavnici
+koji pripadaju istoj pravoj.
 \par
 
-\textbf{Komplanarni vektori:} Vektori su komplanarni ako pripadaju istoj ravni.
+\textbf{Komplanarni vektori:} Vektori su komplanarni ako postoje njihovi predstavnici
+koji pripadaju istoj ravni.
 \par
 
 \textbf{Jedinični vektor:} Vektor čiji je intenzitet $1$. Od svakog ne-nula
@@ -212,7 +212,7 @@ iz čega zaključujemo da su linearno zavisni što je kraj dokaza.
 \par
 
 \textbf{T1.4:} U prostoru postoje tri linearno nezavisna vektora, a svaka
-četiri su linearno zavisni. Dokaz je potpuno analogan dokazu
+četiri su linearno zavisni. Dokaz je sličan dokazu
 \hyperref[theorem:1.3]{T1.3}.
 
 
@@ -384,12 +384,12 @@ $\vek{v}=x_1\vek{e_1}+x_2\vek{e_2}+x_3\vek{e_3}$, $\vek{u}=
 \end{align*}
 \par
 
-\textbf{Matrica vektorskog množenja:} $\vek{v}_\times$ je matrica vektorskog
-množenja za fiksirani vektor $\vek{v}$. Kada se ona pomnoži nekim vektorom
-$\vek{u}$ dobija se $\vek{v}\times\vek{u}$. Izvodi se izračunavanjem
+\textbf{Matrica vektorskog množenja:} Vektorsko množenje vektora prostora
+fiksiranim vektorom $\vek{v}$ je linearno preslikavanje.
+Matrica $\vek{v}_\times$ tog množenja dobija se izračunavanjem
 $\vek{v}\times\vek{e_1}$ (prva kolona), $\vek{v}\times\vek{e_2}$
-(druga kolona), $\vek{v}\times\vek{e_3}$ (treća kolona). Neka je
-$\vek{v}=x_1\vek{e_1}+x_2\vek{e_2}+x_3\vek{e_3}$.\\
+(druga kolona), $\vek{v}\times\vek{e_3}$ (treća kolona). Na primer,
+neka je $\vek{v}=x_1\vek{e_1}+x_2\vek{e_2}+x_3\vek{e_3}$.\\
 Tada  $\vek{v}_\times=
     \begin{bmatrix}
         0    & x_3  & -x_2 \\
@@ -407,12 +407,13 @@ $[A]_{Oe}=(x_1,x_2)^T$, $[B]_{Oe}=(y_1,y_2)^T$ i $[C]_{Oe}=(z_1,z_2)^T$.
 Njegove koordinate možemo da proširimo sa
 $[A]_{Oe}=(x_1,x_2,0)^T$, $[B]_{Oe}=(y_1,y_2,0)^T$ i $[C]_{Oe}=(z_1,z_2,0)^T$.
 Kažemo da je trougao $ABC$ pozitivno orijentisan ako je
-$\vek{AB}\times\vek{AC}$ istog pravca i smera kao $\vek{e_3}$.
+$\vek{AB}\times\vek{AC}$ istog smera kao $\vek{e_3}$,
+tačnije, ako je $(y_1-x_1)(z_2-x_2)-(y_2-x_2)(z_1-x_1)>0$.
 \par
 
 \textbf{Kolinearnost tačaka:} Tri tačke su kolinearne ako je ,,površina
 trougla`` koji obrazuju $0$. Dakle
-$\frac{1}{2}\cdot|\vek{BC}\times\vek{BC}|=0$.
+$\displaystyle\frac{1}{2}\cdot|\vek{AB}\times\vek{AC}|=0$.
 \par
 
 \textbf{Da li tačka pripada trouglu:} Tačka $P$ pripada trouglu $ABC$ ako su
@@ -541,7 +542,7 @@ Za $m_{A}=m_{B}=m_{C}$ dobijamo definiciju težišta.
 
 \textbf{Baricentričke koordinate:} Baricentričke koordinate tačke $M$ su mase
 koje je potrebno dodeliti tačkama $A_1,\dotsc,A_n$ tako da tačka $M$ postane
-njihov centar mase. Baricentričke koordinate se dele na homogene i nehomogene.
+njihov centar mase. Baricentričke koordinate mogu biti homogene i nehomogene.
 U slučaju $n$ tačaka $A_1(m_{A_1}),\dotsc,A_n(m_{A_n})$, homogene
 baricentričke koordinate će biti $(m_{A_1}:\dotsc:m_{A_n})$. Homogene
 baricentričke koordinate su određene do na proporcionalnost. Za normalizovane
@@ -658,9 +659,9 @@ je ortogonalna grupa reda 2. Broj 2 označava da se posmatra ravan.
 $\overline{f}: \mathbb{V}\rightarrow\mathbb{V}$ linearno preslikavanje
 vektorskog prostora koji je pridružen prostoru tačaka $\mathbb{E}$. Afino
 preslikavanje $f: \mathbb{E}\rightarrow\mathbb{E}$ je preslikavanje tačaka koje
-je indukovano sa $\overline{f}$ u smislu da važi sledeća ekvivalencija za svake
-dve tačke $M$ i $N$:
-$$f(M)=M'\land f(N)=N' \iff \overline{f}(\vek{MN})=\vek{M'N'}$$
+je indukovano sa $\overline{f}$ u smislu da važi da je $f(M)=M'$ i $f(N)=N'$
+ako i samo ako je $\overline{f}(\vek{MN})=\vek{M'N'}$ za svake dve tačke $M$ i
+$N$.
 \par
 
 \textbf{Pasivna tačka gledišta:} Posmatramo istu tačku iz više repera. Tada se
@@ -708,25 +709,27 @@ vektora baze $e$ ($i$-ta kolona će biti $\overline{f}(\vek{e_i})$).
           prave, dobijamo 2 kolinearna vektora. Odavde se analogno završava
           dokaz.
 
-    \item Odnos površina slike i originala jednak je $|det(a_{ij})|$.
+    \item Odnos površina slike i originala jednak je $|det(m_{ij})|$.
           \par
-          \textbf{Dokaz:} Napomenimo da je $a_{ij}$ zapravo matrica
+          \textbf{Dokaz:} Napomenimo da je $M=\left\{m_{ij}\right\}$ zapravo matrica
           $[\overline{f}]_e$. Zbog jednostavnijeg zapisa i jer je reper
           fiksiran ćemo izostaviti reper iz zapisa. Neka je $f(O)=O'$,
           $f(A)=A'$ i $f(B)=B'$. Površina trougla $OAB$ je
           $\frac{1}{2}|det(\vek{OA}\vek{OB})|$, a površina trougla $O'A'B'$ je
           $\frac{1}{2}|det(\vek{O'A'}\vek{O'B'})|$. Takođe su
-          $\vek{O'A'}=a_{ij}\vek{OA}$ i $\vek{O'B'}=a_{ij}\vek{OB}$. Za kraj,
+          $\vek{O'A'}=M\vek{OA}$ i $\vek{O'B'}=M\vek{OB}$. Za kraj,
           koristimo svojstvo $det(AB)=det(A)det(B)$.
           \begin{align*}
-              1           & =\frac{det(\vek{OA}\vek{OB})}{det(\vek{OA}\vek{OB})}                 \\
-              det(a_{ij}) & =\frac{det((a_{ij}\vek{OA})(a_{ij}\vek{OB}))}{det(\vek{OA}\vek{OB})} \\
-              det(a_{ij}) & =\frac{det(\vek{O'A'}\vek{O'B'})}{det(\vek{OA}\vek{OB})}             \\
+              1           & =\frac{det(\vek{OA}\vek{OB})}{det(\vek{OA}\vek{OB})}       \\
+              det(a_{ij}) & =\frac{det((M\vek{OA})(M\vek{OB}))}{det(\vek{OA}\vek{OB})} \\
+              det(a_{ij}) & =\frac{det(\vek{O'A'}\vek{O'B'})}{det(\vek{OA}\vek{OB})}   \\
           \end{align*}
 
     \item Čuvaju centar mase i baricentričke koordinate.
           \par
-          \textbf{Dokaz:} Sledi direktno iz čuvanja razmere.
+          \textbf{Dokaz:} Centar mase se definiše kao linearna kombinacija
+          vektora, a kako je u osnovi afinog preslikavanja linearnost, čuva
+          se centar mase.
 
     \item Preslikavanja za koje važi $det(a_{ij})>0$ čuvaju orijentaciju,
           inače menjaju.
@@ -746,7 +749,7 @@ preslikavanje. Hoćemo da preslikamo proizvoljne nekolinearne tačke $E$, $F$ i
 $G$ u $E'$, $F'$ i $G'$. Postoji afino preslikavanje $g$ koje slika tačke $O$,
 $A$ i $B$ u $E$, $F$ i $G$ i postoji afino preslikavanje $h$ koje slika tačke
 $O$, $A$ i $B$ u $E'$, $F'$ i $G'$. Traženo preslikavanje će biti
-$h\circ g^{-1}$.
+$h\circ g^{-1}$ (potrebno je znati i na primeru).
 \par
 
 \textbf{Translacija:}
@@ -816,7 +819,7 @@ Matrice smicanja:
 \par
 \vspace*{1cm}
 
-\textbf{Definicija izometrije:} Preslikavanje koje čuva dužine u prostoru
+\textbf{Definicija izometrije:} Preslikavanje koje čuva dužine u euklidskom prostoru
 $\mathbb{E}$ proizvoljne dimenzije.
 \par
 
@@ -828,25 +831,26 @@ $\mathbb{E}$ proizvoljne dimenzije.
 
 \textbf{Ortogonalna matrica i njena determinanta:} Matrica $A$ za koju važi
 $AA^T=E$. Za determinantu ortogonalne matrice važi
-$1=det(E)=det(AA^T)=det(A)det(A^T)=det(A)det(A)=det(A)^2$.
+$1=det(E)=det(AA^T)=det(A)det(A^T)=det(A)det(A)=det(A)^2$. Odatle važi da je
+$\pm 1=det(A)$.
 \par
 
 \textbf{Opis afinih transformacija ravni:} \hyperref[subsec:pitanje_9]{Pitanje 9}.
 \par
 
-\textbf{Matrica rotacije oko $x$ ose:} $\mathcal{R}_x(\phi)=\begin{bmatrix}
+\textbf{Matrica rotacije oko $x$ ose:} $R_x(\phi)=\begin{bmatrix}
         1 & 0          & 0           \\
         0 & \cos(\phi) & -\sin{\phi} \\
         0 & \sin(\phi) & \cos(\phi)
     \end{bmatrix}$
 \par
-\textbf{Matrica rotacije oko $y$ ose:} $\mathcal{R}_y(\phi)=\begin{bmatrix}
-        \cos(\phi) & 0 & -\sin{\phi} \\
-        0          & 1 & 0           \\
-        \sin(\phi) & 0 & \cos(\phi)
+\textbf{Matrica rotacije oko $y$ ose:} $R_y(\phi)=\begin{bmatrix}
+        \cos(\phi)  & 0 & \sin{\phi} \\
+        0           & 1 & 0          \\
+        -\sin(\phi) & 0 & \cos(\phi)
     \end{bmatrix}$
 \par
-\textbf{Matrica rotacije oko $z$ ose:} $\mathcal{R}_z(\phi)=\begin{bmatrix}
+\textbf{Matrica rotacije oko $z$ ose:} $R_z(\phi)=\begin{bmatrix}
         \cos(\phi) & -\sin{\phi} & 0 \\
         \sin(\phi) & \cos(\phi)  & 0 \\
         0          & 0           & 1
@@ -907,14 +911,14 @@ prave koja sadrži tačku $O'$.
 
 \textbf{Druga Ojlerova teorema:} Svako kretanje koje fiksira $O$ se može
 izraziti kao kompozicija tri sopstvene rotacije oko koordinatnih osa:
-$R_{Ox_2}(\phi)\circ R_{Oy_1}(\theta)\circ R_{Oz}(\psi)$ gde su uglovi
+$\mathcal{R}_{Ox_2}(\phi)\circ \mathcal{R}_{Oy_1}(\theta)\circ \mathcal{R}_{Oz}(\psi)$ gde su uglovi
 $\phi,\psi\in[0,2\pi)$, $\theta\in[-\frac{\pi}{2},\frac{\pi}{2}]$. Uglovi $\phi$,
 $\theta$, $\psi$ se nazivaju Ojlerovi uglovi. Prvom rotacijom se $Oxyz$ slika u
 $Ox_1y_1z_1$, drugom rotacijom u $Ox_2y_2z_2$ i trećom rotacijom u $Ox_3y_3z_3$.
 \par
 
 \textbf{Veza sopstvenih i svetskih koordinata:}
-$[R_{Ox_2}(\phi)\circ R_{Oy_1}(\theta)\circ R_{Oz}(\psi)]_e=R_{Oz}(\psi)\circ R_{Oy}(\theta)\circ R_{Ox}(\phi)$.
+$[\mathcal{R}_{Ox_2}(\phi)\circ \mathcal{R}_{Oy_1}(\theta)\circ \mathcal{R}_{Oz}(\psi)]_e=[R_{Oz}]_e(\psi)\cdot [R_{Oy}]_e(\theta)\cdot [R_{Ox}](\phi)$.
 \par
 
 \textbf{Slučaj zaključanog žiroskopa:} Javlja se kada se ravni
@@ -960,9 +964,9 @@ $q \overline{q}=|q|^2 \implies q^{-1}=\frac{\overline{q}}{|q|^2}$.
 \textbf{Konjugacije kvaternionom:} Svaki kvaternion različit od nule određuje
 konjugaciju $C_q=qpq^{-1}$. Dve konjugacije su iste ako i samo ako važi
 $q=\lambda h$, gde je $\lambda\in\mathbb{R}$. \par
-\textbf{Izometrije:} $q=[\vek{v}\sin(\frac{\alpha}{2}),\cos(\frac{\alpha}{2})]$
-je rotacija oko jediničnog vektora $\vek{v}$ za ugao $\alpha$ u pozitivnom
-smeru.
+\textbf{Izometrije:} Ako je $q=[\vek{v}\sin(\frac{\alpha}{2}),\cos(\frac{\alpha}{2})]$
+tada konjugacija $C_q$ u prostoru imaginarnih kvaterniona indukuje rotaciju oko jediničnog
+vektora $\vek{v}$ za ugao $\alpha$ u pozitivnom smeru.
 \par
 
 \subsection{Afina geometrija ravni}
@@ -992,8 +996,9 @@ nepoznate.
 \par
 
 \textbf{Presek dve duži:} Duž $AB$ možemo da zadamo parametarski sa
-$M(t)=A+t\vek{AB}, t\in[0,1]$. Za presek dve duži određujemo tačku preseka
-kao za prave, a zatim određujemo da li za obe prave važi da je $t\in[0,1]$.
+$M(t)=A+t\vek{AB}$, $t\in[0,1]$. Slično, duž $CD$ možemo da zadamo parametarski sa $N(s)=C+s\vek{CD}$, $s\in[0,1]$.
+Za presek dve duži određujemo tačku preseka kao za prave, a zatim određujemo da li važi da su
+parametri $t$ i $s$ za tačku preseka iz intervala $[0,1]$.
 \par
 
 \textbf{Parametarsko zadavanje trougla i paralelograma:} Trougao možemo da
@@ -1017,10 +1022,14 @@ $ax+by+cz+d=0$.
 \par
 
 \textbf{Skiciranje ravni:} Skiciranje ravni može da se vrši tako što se prvo
-izračunaju i označe preseci sa osama.
+izračunaju i označe preseci sa osama. U slučaju da ima tačno jedan presek,
+ravan će prolaziti kroz tačke preseka i biće paralelna sa osama koje ne
+seče. U slučaju da ima tačno dva preseka, ravan će prolaziti kroz tačke
+preseka i biće paralelna sa osom koju ne seče. U slučaju da ima tačno tri
+preseka, imamo tri tačke koje određuju ravan, pa možemo da je skiciramo.
 \par
 
-\textbf{Parametarska jednačina ravni:} $M(t,s)=A+t\vek{v}+s\vek{u}$, gde je $A$
+\textbf{Parametarska jednačina ravni:} $M(t,s)=A+t\vek{v}+s\vek{u}$, gde je $t,s\in\mathbb{R}$, $A$
 tačka koja pripada ravni, a $\vek{v}$ i $\vek{u}$ su nekolinearni vektori
 paralelni sa ravni.
 \par
@@ -1079,10 +1088,10 @@ $\lambda_1\cdot(a_1x+b_1y+c_1z+d_1)+\lambda_2(a_2x+b_2y+c_2z+d_2)=0$.
 \vspace*{1cm}
 
 \textbf{Međusobni položaj dve prave:} Dve prave mogu da budu paralelne,
-mimoilazne, da se poklapaju i da se seku. Možemo da rešavamo dve jednačine sa
-dve nepoznate. Ako postoji jedno rešenje onda se seku. Ako postoji beskonačno
+mimoilazne, da se poklapaju i da se seku. Možemo da rešavamo četiri jednačine sa
+tri nepoznate. Ako postoji jedno rešenje onda se seku. Ako postoji beskonačno
 mnogo rešenja onda se poklapaju. Ako nema rešenja, a vektori su kolinearni onda
-su prave paralelne. Ako ništa od prethodnog ne važi onda su mimoilazne.
+su prave paralelne. Ako sistem nema rešenja, onda su mimoilazne.
 \par
 
 \textbf{Međusobni položaj prave i ravni:} Prava i ravan mogu da budu paralelne,
@@ -1096,22 +1105,23 @@ paralelne ili da se seku. Slučajevi su analogni slučajevima međusobnog polož
 prave i ravni.
 \par
 
-\textbf{Mimoilazne prave} Prave preko kojih ne može da se postavi ravan.
+\textbf{Mimoilazne prave:} Dve prave za koje ne postoji ravan koja ih sadrži.
 \par
 
 \textbf{T4.3:} Mimoilazne prave $p$ i $q$ imaju jedinstvenu zajedničku normalu.
 \par
-\textbf{Dokaz:} Neka su date prave $p$ i $q$. Vektor pravca prave $n$ koja je
-normalna na obe prave će biti $\vek{p}\times\vek{q}$, gde su $\vek{p}$ i
-$\vek{q}$ vektori pravca pravih $p$ i $q$. Sve prave čiji su vektori pravca
-ortogonalni i sa $\vek{p}$ i sa $\vek{q}$ i koje seku pravu $p$ će pripadati
-ravni $\alpha$ koja se konstruiše jednom tačkom sa prave $p$ i vektorima
-$\vek{p}$ i $\vek{p}\times\vek{q}$. Analogno možemo da konstruišemo ravan
-$\beta$ koja će sadržati sve prave čiji su vektori pravca ortogonalni i sa
-$\vek{p}$ i sa $\vek{q}$ i koje seku pravu $q$. Presek ove dve ravni će biti
-prava $n$ koja je jedinstvena jer su $p$ i $q$ mimoilazne. Prava $n$ je
-normalna na prave $p$ i $q$ jer je njen koeficijent pravca
-$\vek{p}\times\vek{q}$ i seče ih po konstrukciji.
+\textbf{Dokaz:} Neka je ravan $\alpha$ paralelna pravoj $q$ i sadrži pravu $p$ i
+neka je ravan $\beta$ paralelna pravoj $p$ i sadrži pravu $q$. Neka ravan $\gamma$
+sadrži pravu $p$ i normalna je na ravan $\alpha$.
+Neka je prava $p_1$ presek ravni $\beta$ i $\gamma$. Tada je
+$p$ paralelno sa $p_1$, po konstrukciji, i $p_1$ seče $q$, inače bi
+$p$ i $q$ bili paralelni, što je kontradikcija sa pretpostavkom.
+Prave $p_1$ i $q$ se seku u nekoj tački $N$. Neka je prava $n$ normalna
+na ravan $\beta$ i prolazi kroz tačku $N$, odakle je normalna i na pravu
+$q$. Kako je prava $n$ normalna i na ravan $\alpha$ i seče pravu $p$
+(jer seče i pravu $p_1$), tada su i $p$ i $n$
+normalne, što smo i hteli da dokažemo.\par
+Prava $n$ je jedinstvena, jer je tačka $N$ jedinstvena.
 \par
 
 \textbf{T4.4} Rastojanje između mimoilaznih pravih je:
@@ -1186,7 +1196,7 @@ sferu.
 \par
 
 \textbf{Izvođenje formula stereografske projekcije:} Neka je $C=(0,0,1)$ i
-$z=-1$. Posmatrajmo tačku na lopti $M=(x,y,z)$ i pravu
+$z=-1$. Posmatrajmo tačku na sferi $M=(x,y,z)$ i pravu
 $p(\lambda)=C+\lambda\vek{CM}$. Važi $x'=\lambda x$, $y'=\lambda y$ i
 $z'=\lambda z+\lambda=-1$. Odavde dobijamo $\lambda=\frac{1}{1-z}$. Na kraju
 dobijamo formule stereografske projekcije: $x'=\frac{x}{1-z}$,
@@ -1225,10 +1235,11 @@ vektor ravni, a $\vek{p}$ vektor pravca prave.
 
 \textbf{Ugao između pljosni tetraedra:}
 \begin{enumerate}[label=\textbf{(\arabic*)}]
-    \item Posmatrajmo jediničnu kocku $ABCDA'B'C'D'$. Tačke $A$, $C$, $B'$ i
+    \item[\textbf{(1. način)}] Posmatrajmo jediničnu kocku $ABCDA'B'C'D'$. Tačke $A$, $C$, $B'$ i
           $D'$ formiraju pravilni tetraedar. Lako možemo da odredimo
-          koordinate ovih tačaka.
-    \item Posmatrajmo pravilni jedinični tetraedar $ABCD$. Označimo sredinu
+          koordinate ovih tačaka, a zatim računski dobijamo da je ugao
+          između pljosni $\arccos(\frac{1}{3})$.
+    \item[\textbf{(2. način)}] Posmatrajmo pravilni jedinični tetraedar $ABCD$. Označimo sredinu
           stranice $AB$ sa $M$. Izdvojimo trougao $MDC$. Zanima nas ugao
           $\angle CMD$. Važi $|MD|=\frac{\sqrt{3}}{2}$, $|DC|=1$ i
           $|MC|=\frac{\sqrt{3}}{2}$. Preko kosinusne teoreme za trougao $CMD$
@@ -1835,6 +1846,7 @@ ikosaedru.
 $\chi(\mathcal{M})=2$.
 
 \newpage
+\label{literatura}
 \nocite{*}
 \addcontentsline{toc}{section}{Literatura}
 \raggedright
